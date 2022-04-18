@@ -128,3 +128,7 @@ Depois, ela deverá inserir os dois valores que deseja utilizar, e o programa im
 
 As opções disponíveis deverão ser: soma, subtração, multiplicação, divisão, e sair. Nessa última, o programa deverá parar de ser executado, mostrando uma mensagem "Até a próxima".
 ```
+### Edição HTML + CSS:<br>
+O objetivo destes sete dias foi montar o front-end de uma landing page seguindo o design proposto no FIGMA:<br>
+https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1 <br>
+- <a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7/">Resultado Final</a> :
