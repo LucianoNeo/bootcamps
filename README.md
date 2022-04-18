@@ -39,11 +39,10 @@ if (COMPARAR O numeroDez e a stringDez) {
   console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
   
   - <a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/JavaScript/day2/">Desafio dia 2</a> :
-  - pedir para o usuário responder 3 perguntas:
-
-- Qual o seu nome?
-- Quantos anos você tem?
-- Qual linguagem de programação você está estudando?
+Pedir para o usuário responder 3 perguntas:
+Qual o seu nome?
+Quantos anos você tem?
+Qual linguagem de programação você está estudando?
 
 À medida que as perguntas forem sendo feitas, a pessoa que estiver usando o programa deve responder cada uma delas.
 
