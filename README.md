@@ -97,3 +97,5 @@ Lista de compras:
     Laticínios: leite vegetal, leite de vaca, leite em pó
     Congelados:
     Doces: chiclete e bala de ursinho```
+    
+- <a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/JavaScript/day6">Desafio dia 6</a> :
