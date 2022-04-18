@@ -1,0 +1,103 @@
+
+body{
+  background-image: url('https://content.paodeacucar.com/wp-content/uploads/2019/06/8-dicas-%C3%BAteis-2.jpg');
+ background-size: cover;
+background-repeat: repeat-y;
+ text-align: center;
+ margin:0;
+  min-width: 410px;
+  
+}
+
+ header{
+      margin:auto;
+      text-align: right;
+    }
+
+p{
+  font-size: 15pt;
+  color: black;
+}
+
+h2{
+  color: black;
+  background-color: white;
+}
+
+.mae{
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-items: space-beetwen;
+  margin:0 auto;
+  padding: 10px;
+}
+
+.caixa1{
+  width: 400px;
+  height: 100px;
+  background-color: rgba(250, 235, 169, 0.8);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding :30px;
+  margin-right:auto;
+  margin-left:auto;
+  font-size:8pt;
+  
+}
+
+.caixa2{
+  font-family: 'Inspiration', cursive;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-image: url('https://thumbs.dreamstime.com/b/grocery-list-18477314.jpg');
+  background-size: cover;
+  width: 400px;
+  background-color: white;
+  //border-radius: 20px;
+  margin-top: 20px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-top :50px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.caixa2 h1 {
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+.caixa2 p {
+  font-size: 20pt;
+  font-weight: bold;
+  margin:0;
+}
+
+.caixa3{
+  display: none;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.6);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding :30px;
+  margin-right:auto;
+  margin-left:auto;
+  font-size:8pt;
+  color: white;
+  
+  height : 200px;
+}
+
+.caixa3 button{
+ 
+  background-color: red;
+  border-color: white;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  
+}

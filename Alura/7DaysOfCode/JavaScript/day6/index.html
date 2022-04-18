@@ -1,0 +1,45 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inspiration&family=PT+Sans+Narrow:wght@400;700&family=Prompt&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header> <img src="https://content.app-us1.com/MpJmZ/2022/03/17/d9680647-949b-4175-8e70-8682da05a143.png?r=616667757" alt=""></header>
+    <h2> Lista de Compras</h2>
+   <div class='mae'>
+     <div class='caixa1'>
+         <h1>Insira os itens na lista de compras:</h1>
+         <input id='item'>
+       <select name="lista" id="select">
+       <option>Frutas</option> 
+       <option>Laticinios</option> 
+       <option>Congelados</option> 
+       <option>Doces</option> 
+       
+       </select>
+       <button onclick='cadastrar()'>Adicionar</button>
+     </div>
+     <div class='caixa2'>
+       <h1></h1>
+    <div id='frutas'></div>
+    <div id='laticinios'></div>
+    <div id='congelados'></div>
+    <div id='doces'></div>
+      </div>
+     <div class='caixa3' id= 'caixa3'>
+         <h1>Digite o item que gostaria de remover:</h1>
+        <input id='itemRemove'>
+       <button onclick='remover()'>Remover</button>
+     </div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+  </html>
+  

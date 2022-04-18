@@ -1,0 +1,74 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  max-height: 200px;
+  background-image: url("https://nexxto.com/wp-content/uploads/2020/02/o-que-%C3%A9-temperatura-e1580232079703.jpg");
+  background-color: #000000;
+  background-size: 190vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: left;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: blue;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.dinheiro-logo {
+  width: 120px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+input {
+  margin: 12px;
+  padding: 6px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+button {
+  margin-top: 12px;
+  margin-left: 50px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.neo-logo {
+  background-color: white;
+  border: 2px solid green;
+  width: 60px;
+  top: 10px;
+  right: 10px;
+  border-radius: 30%;
+}

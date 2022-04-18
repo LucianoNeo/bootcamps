@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon CardGame Elmachips Edition</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>
+    Imersão Dev - Aula 07
+  </title>
+</head>
+
+<body>
+  <a href="https://lucianoneo.github.io/portfolio">
+    <img src="https://neoscan.com.br/img/NEO1.jpg" alt="" class="neo-logo">
+  </a>
+  <div class="container">
+    <img src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" class="esquerda" alt="">
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="">
+    <img src="https://www.elmachips.com.br/img/logo-elmachips.png" class="direita" alt="">
+    <h1 class="page-title">Pokémon CardGame ElmaChips Edition</h1>
+
+    <button class="center" onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+    <h2>Escolha o seu atributo</h2>
+    <div id="ref" class="ref">    
+    <h2>Sua Carta</h2>
+    <h2>Carta do Oponente</h2>
+    </div>
+  </div>
+  <div class="cartas">
+  <div class="carta1" id="carta1"></div>
+  <div id='opcoes' class='carta-status'></div>
+  </div>
+  <h1></h1>  
+  <div class="center">
+   <button type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+      </div>
+  <div class="resultado" id="resultado"></div> 
+  <div class="center">
+  <button type="button" id="btnReiniciar" onclick="reiniciar()" disabled="true">Reiniciar</button>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

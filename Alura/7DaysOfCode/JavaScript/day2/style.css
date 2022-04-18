@@ -1,0 +1,30 @@
+body{
+font-family: 'Prompt', sans-serif;
+height: 500px;
+background-color: rgb(15, 14, 14);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: green;
+}
+
+.container{
+    
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+input{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(15, 14, 14);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#div1,#div2,#div3 {
+    display: none;
+}
+
+.resultado{
+    font-size: 18pt;
+}

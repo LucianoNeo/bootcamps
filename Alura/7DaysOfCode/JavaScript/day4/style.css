@@ -1,0 +1,98 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    height: 96vh;
+    background-image: url("https://www.dheka.com.br/site/wp-content/uploads/2019/09/ProcessThinking-Inovacao.jpg");
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    text-shadow: 2px 2px black;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 500px;
+    background: rgba(85, 85, 115, 0.8);
+    border-radius: 40px;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 16px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  @media (max-height: 500px) {
+    body {
+      min-height: 800px;
+    }
+  }
+  
+  input {
+    margin: 4px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .resultado {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .neo-logo {
+    background-color: white;
+    border: 2px solid green;
+    width: 60px;
+    top: 10px;
+    right: 10px;
+    border-radius: 30%;
+  }
+  
+  .img-resultado {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 100px;
+    opacity: 1;
+    display: none;
+  }
+  .img-resultado2 {
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 300px;
+    opacity: 1;
+    display: none;
+  }
+  
+  .restart {
+    margin: 0 auto;
+    width: 100px;
+    opacity: 1;
+    display: none;
+    cursor: pointer;
+  }
+  

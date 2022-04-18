@@ -1,0 +1,39 @@
+body{
+    background-image: url('https://cdn.wizard.com.br/wp-content/uploads/2016/05/18172126/numeros-em-ingl%C3%AAs.jpg');
+   background-size: cover;
+  background-repeat: repeat-y;
+   text-align: center;
+   margin:0;
+   min-width: 410px;
+    
+  }
+  
+   header{
+        margin:auto;
+        text-align: right;
+      }
+  
+
+      .container{
+        max-width: 400px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        margin-top: 20px;
+        padding :30px;
+        margin-right:auto;
+        margin-left:auto;
+       text-align: center; 
+      }
+
+      .container input {
+        max-width: 100px;
+        text-align: center; 
+      }
+
+      .resultado {
+          color: green;
+          margin-top: 20px;
+          font-size: 16pt;
+          font-weight: bold;
+          text-shadow: 1px 2px black;
+      }

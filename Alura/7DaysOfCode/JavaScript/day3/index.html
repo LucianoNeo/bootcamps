@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seus Objetivos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Prompt&family=Roboto:wght@400;700&family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header> <img src="https://content.app-us1.com/MpJmZ/2022/03/17/d9680647-949b-4175-8e70-8682da05a143.png?r=616667757" alt=""><header>
+<div id='container1'class='container'>
+<p>Olá, vamos falar sobre seus objetivos!</p>
+<input type="button" value="INICIAR" onclick="seleciona('container2','container1','','')">
+</div>
+<div id='container2'class='container'>
+
+<p>Qual área você deseja seguir?</p>
+<div class="inside">
+<p>Front-End
+<img src="https://w7.pngwing.com/pngs/672/817/png-transparent-front-end-web-development-front-and-back-ends-javascript-software-developer-developer-angle-text-rectangle.png" alt="" srcset="" id="front" onclick="seleciona('container3Front','container2','front','back','r2')">
+</p>
+<p>Back-End
+<img src="https://thumbs.dreamstime.com/b/%C3%ADcone-do-back-end-liso-na-moda-vetor-no-backgro-branco-130325461.jpg" alt="" srcset="" id="back" onclick="seleciona('container3Back','container2','back','front','r2')">
+</p>
+</div>
+</div>
+  
+<div id='container3Front'class='container'>
+    <p>O que você pretende aprender?</p>
+    <div class="inside">
+    <p>React
+    <img src="https://blog.hariken.co/wp-content/uploads/2019/03/react-logo.png" alt="" srcset="" id="react" onclick="seleciona('container4','container3Front','react','vue','r2')">
+    </p>
+    <p>Vue
+    <img src="https://w7.pngwing.com/pngs/76/997/png-transparent-vue-js-software-framework-user-interface-web-application-cascading-style-sheets-vue-js-angle-triangle-logo.png" alt="" srcset="" id="vue" onclick="seleciona('container4','container3Front','vue','react','r2')">
+    </p>
+    </div>
+    
+</div>
+
+<div id='container3Back'class='container'>
+    <p>O que você pretende aprender?</p>
+    <div class="inside">
+    <p>C#
+    <img src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="" srcset="" id="c" onclick="seleciona('container4','container3Back','c','java','r2')">
+    </p>
+    <p>Java
+    <img src="https://logospng.org/download/java/logo-java-512.png" alt="" srcset="" id="java" onclick="seleciona('container4','container3Back','java','c','r2')">
+    </p>
+    </div>
+    
+</div>
+
+<div id='container4'class='container'>
+    <p>Deseja continuar se especializando na area escolhida ou se desenvolver para se tornar Full-Stack ?</p>
+    <div class="inside">
+    <p>Continuar
+    <img src="https://thumbs.dreamstime.com/b/especialista-showing-line-graph-dos-desenhos-animados-no-vetor-da-tabuleta-104116856.jpg" alt="" srcset="" id="con" onclick="seleciona('container4','container3Back','con','full','r3')">
+    </p>
+    <p>Full-Stack
+    <img src="https://www.projetodraft.com/wp-content/uploads/2017/08/full-stacker.jpg" alt="" srcset="" id="full" onclick="seleciona('container4','container3Back','full','con','r3')">
+    </p>
+    </div>
+    
+</div>
+  
+
+<div class="resultado" id="resultado"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: solid 1px rgb(146, 146, 238);
+  background-color: rgb(0, 0, 0);
+  min-height: 200px;
+  margin: 5px;
+  color: rgb(15, 163, 35);
+}
+
+header{
+  height: 50px;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-align:center;
+  font-size: 12pt;
+  font-weight: bold;
+  padding-left: 10px;
+  border: solid 1px rgb(146, 146, 238);
+  margin: auto;
+}
+
+body p{
+  margin-left: 10px;
+}
+
+.promptB {
+  margin: 10px;
+  padding: 10px;
+  color: rgb(15, 163, 35);
+}
+
+ button{
+  margin-left: 10px;
+  padding: 5px;
+  color: rgb(15, 163, 35);
+  background-color: black;
+  border-style: dotted;
+  border-color: rgb(15, 163, 35);
+}
+
+input {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  border: none;
+  width: 80px;
+  color: rgb(15, 163, 35);
+  margin-left: 10px;
+  font-size: 12pt;
+}
+
+input:focus-visible{  
+  box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  
+}
+
+
+.esconde {
+  padding: 10px;
+  margin-left: 10px;
+  display: none
+}
+
+.resultado {
+  margin: 20px;
+  padding: 10px;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+p{
+  color: lime; 
+  font-family: "Courier";
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 2s steps(60, end); 
+}
+
+p:nth-child(2){
+  animation: type2 4s steps(60, end);
+}
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Days of Code - Day 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>🔲 Command Prompt</h1> <img src="https://content.app-us1.com/MpJmZ/2022/03/17/d9680647-949b-4175-8e70-8682da05a143.png?r=616667757" alt=""></header>
+
+<div class="promptB" id="promptB">
+<p>Bem vindo à calculadora do Neo!</p>
+
+<p>Selecione a operação que deseja fazer:</p>
+<p><button id="soma" onclick="seleciona('soma')">Somar</button><button id="subtrair" onclick="seleciona('subtrair')">Subtrair</button><button id="multiplicar" onclick="seleciona('multiplicar')">Multiplicar</button><button id="dividir" onclick="seleciona('dividir')">Dividir</button></p>
+</div>
+
+<div class="esconde" id="promptC">
+    <p>Digite o primeiro numero da operação:</p>
+    <input type="number" id="num1"> <button id="ok" onclick="andamento2()">OK</button>
+</div>
+
+<div class="esconde" id="promptD">
+    <p>Digite o segundo numero da operação:</p>
+    <input type="number" id="num2"> <button id="ok2" onclick="calcular()">OK</button>
+</div>
+
+<div class="resultado" id="resultado">
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

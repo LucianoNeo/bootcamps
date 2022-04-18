@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://www.tampabay.com/resizer//UUs7FuTuqnXvao4N72ATcD6XLbA=/900x506/smart/cloudfront-us-east-1.images.arcpublishing.com/tbt/4FRXYILEOFCTJJAY2FM7W43IB4.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: white;
+  //min-height: 500px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.page-title {
+  color: red;
+  margin: 0 0 5px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.mostrarFilmes img {
+  margin: 10px;
+  max-height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 2em #000000;
+  transition: all 0.5s ease;
+  filter: grayscale(100%) brightness(50%) blur(1px);
+}
+
+.mostrarFilmes img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+  filter: grayscale(0%) brightness(100%) blur(0px);
+}
+
+.form-wrapper {
+  margin: 0 0 15px;
+}
+
+.form-wrapper input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  text-align:center;
+}
+
+.form-wrapper button {
+  border: 0;
+  color: #ffffff;
+  background: #da1e26;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-wrapper button:hover {
+  opacity: 0.8;
+}
+
+.mostrarFilmes {
+  display: inline-flex;
+  max-width: 80vw;
+ flex-wrap: wrap;
+ margin-right: 4px;
+}
+
+.neo-logo {
+ position: absolute;
+ background-color:white;
+ border: 2px solid green;
+ width: 60px;
+ top: 10px;
+ left: 10px;
+ border-radius: 30%;
+ padding-top: 1px;
+}
+
+.mostrarFilmes button {
+  border: 0;
+  color: #ffffff;
+  background: #da1e26;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mostrarFilmes button:hover {
+  opacity: 0.8;
+}
