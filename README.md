@@ -9,7 +9,7 @@ Bootcamp onde dei meu início aos meus estudos com HTML5 + CSS3 + Javascript ES6
 - <a href="https://lucianoneo.github.io/bootcamps/Alura/ImersaoDev/conversor-de-temperatura">Conversor de temperatura</a>
 
 ## <img src="https://7daysofcode.io/assets/img/share-img-doc.1647533642.png" width="200">
-Edição Lógica com Javascript:<br>
+### Edição Lógica com Javascript:<br>
 Durante 7 dias, recebemos um desafio a ser resolvido com a linguagem Javascript.
 - <a href="https://github.com/LucianoNeo/bootcamps/blob/main/Alura/7DaysOfCode/JavaScript/day1.js">Desafio dia 1</a> : 
 Reescrever o código abaixo de maneira que ele imprima as informações de maneira correta, que faça sentido e sem erros:
