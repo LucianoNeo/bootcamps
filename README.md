@@ -74,11 +74,12 @@ Em seguida, o programa vai perguntar para você qual o valor que você deseja ch
 
 No fim, caso você não acerte nenhuma vez, ele vai imprimir qual era o número inicial.
 
-Depois que o programinha estiver funcionando, tente usar um número randômico em vez de um número pré-definido.```
+Depois que o programinha estiver funcionando, tente usar um número randômico em vez de um número pré-definido.
+```
 
 - <a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/JavaScript/day5">Desafio dia 5/a> :
-
-```Então hoje, para facilitar a sua ida ao supermercado, você deve criar um programa em Javascript que perguntará se você deseja adicionar uma comida na sua lista de compras, e você deve poder responder com sim ou não.
+```
+Então hoje, para facilitar a sua ida ao supermercado, você deve criar um programa em Javascript que perguntará se você deseja adicionar uma comida na sua lista de compras, e você deve poder responder com sim ou não.
 
 Em seguida, ele perguntará qual comida você deseja inserir, e você digitará o nome dela, como por exemplo batata.
 
@@ -95,5 +96,4 @@ Lista de compras:
     Frutas: banana, tomate, maçã, uva, abacate
     Laticínios: leite vegetal, leite de vaca, leite em pó
     Congelados:
-    Doces: chiclete e bala de ursinho
-```
+    Doces: chiclete e bala de ursinho```
