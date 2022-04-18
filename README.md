@@ -12,7 +12,7 @@ Bootcamp onde dei meu início aos meus estudos com HTML5 + CSS3 + Javascript ES6
 ### Edição Lógica com Javascript:<br>
 Durante 7 dias, recebemos um desafio a ser resolvido com a linguagem Javascript.
 - <a href="https://github.com/LucianoNeo/bootcamps/blob/main/Alura/7DaysOfCode/JavaScript/day1.js">Desafio dia 1</a> : 
-Reescrever o código abaixo de maneira que ele imprima as informações de maneira correta, que faça sentido e sem erros:
+```Reescrever o código abaixo de maneira que ele imprima as informações de maneira correta, que faça sentido e sem erros:
 
 let numeroUm = 1
 let stringUm = '1'
@@ -37,9 +37,9 @@ if (COMPARAR O numeroDez e a stringDez) {
   console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes')
 } else {
   console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
-  
+  ```
   - <a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/JavaScript/day2/">Desafio dia 2</a> :
-Pedir para o usuário responder 3 perguntas:
+```Pedir para o usuário responder 3 perguntas:
 Qual o seu nome?
 Quantos anos você tem?
 Qual linguagem de programação você está estudando?
@@ -49,3 +49,4 @@ Qual linguagem de programação você está estudando?
 No final, o sistema vai exibir a mensagem:
 
 "Olá [nome], você tem [idade] anos e já está aprendendo [linguagem]!"
+```
