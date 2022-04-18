@@ -7,3 +7,6 @@ Bootcamp onde dei meu início aos meus estudos com HTML5 + CSS3 + Javascript ES6
 - <a href="https://lucianoneo.github.io/bootcamps/Alura/ImersaoDev/neoflix">NeoFlix</a> (cards de filmes baseados na netflix)
 - <a href="https://lucianoneo.github.io/bootcamps/Alura/ImersaoDev/conversor-de-moedas">Conversor de moedas</a> 
 - <a href="https://lucianoneo.github.io/bootcamps/Alura/ImersaoDev/conversor-de-temperatura">Conversor de temperatura</a>
+
+## <img src="https://7daysofcode.io/assets/img/share-img-doc.1647533642.png" width="200">
+Edição Javascript:
