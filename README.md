@@ -131,4 +131,4 @@ As opções disponíveis deverão ser: soma, subtração, multiplicação, divis
 ### Edição HTML + CSS:<br>
 O objetivo destes sete dias foi montar o front-end de uma landing page seguindo o design proposto no FIGMA:<br>
 https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1 <br>
-<a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7/">Resultado Final</a> :
+<a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7/">Resultado Final</a>
