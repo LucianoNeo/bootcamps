@@ -77,7 +77,7 @@ No fim, caso você não acerte nenhuma vez, ele vai imprimir qual era o número 
 Depois que o programinha estiver funcionando, tente usar um número randômico em vez de um número pré-definido.
 ```
 
-- <a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/JavaScript/day5">Desafio dia 5/a> :
+- <a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/JavaScript/day5">Desafio dia 5</a> :
 ```
 Então hoje, para facilitar a sua ida ao supermercado, você deve criar um programa em Javascript que perguntará se você deseja adicionar uma comida na sua lista de compras, e você deve poder responder com sim ou não.
 
