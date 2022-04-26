@@ -21,6 +21,9 @@ header{
   border: solid 1px rgb(146, 146, 238);
   margin: auto;
 }
+h1{
+  font-size: 14px;
+}
 
 body p{
   margin-left: 10px;
