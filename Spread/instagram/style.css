@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img{
+    height: 110vh;
+}
+
+.logo{
+    height: 3rem;
+
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 1.3rem 0;
+    align-items: center;
+}
+.profile{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+}
+.container:nth-child(1){
+    min-height: 19rem;
+    margin-bottom: 7px;
+    padding: 30px;
+    
+}
+
+.container:nth-child(2){
+    padding: 20px;
+    
+}
+
+.container:nth-child(2) span,p{
+    color: rgb(165, 161, 161)
+}
+
+.preto{
+    color: black
+}
+
+.container a{
+    color: #0095f6;
+}
+
+
+.row{
+    flex-direction: row;
+}
+
+.container button{
+    background-color: #0095f6;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.app{
+    padding: 30px;
+    text-align: center;
+}
+
+.app img{
+    padding-top: 10px;
+    width: 40%;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .grupo {
+        border: 1px solid transparent;
+    }
+}
