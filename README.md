@@ -1,6 +1,6 @@
 # bootcamps
 Repositório dedicado aos exercícios e projetos desenvolvidos durante bootcamps.
-# <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200">
+# <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 ## Primeiro Desafio do bootcamp:
 -Replicação da tela de login do Instagram:<br>
 <a href="https://lucianoneo.github.io/bootcamps/Spread/instagram">Instagram</a> 
