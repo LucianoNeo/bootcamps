@@ -2,6 +2,9 @@
 Neste segundo desafio da introdução a JavaScript do BootCamp FullStack da Spread, o objetivo era desenvolver uma TO-DO LIST
 que adicionasse elementos e ao selecionar o checkbox da tarefa,riscasse o texto.
 
+Projeto rodando:<br>
+https://lucianoneo.github.io/bootcamps/Spread/to-do-list/
+
 ## EXTRAS
 Além do básico requisitado, desenvolvi: 
 - Validação do campo de inserção que não pode ser deixado em branco
