@@ -10,6 +10,6 @@ Além do básico requisitado, desenvolvi:
 - responsividade
 
 ## LINGUAGENS UTILIZADAS
--HTML5
--CSS3
--JAVASCRIPT
+- HTML5
+- CSS3
+- JAVASCRIPT
