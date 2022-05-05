@@ -13,6 +13,9 @@ function subNumPares(array){
         }        
     }
     return console.log(array)
+
+
+    
 }
 
 subNumPares([0,2,5,10,20,5,0])
