@@ -1,6 +1,29 @@
 # bootcamps
 Repositório dedicado aos exercícios e projetos desenvolvidos durante bootcamps.
 # <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
+## Utilização de classes e métodos em javascript
+- Neste projeto foi utilizado o conceito de classes para simular um sistema bancário de abertura de contas. Problemas propostos:
+- Criar a classe ContaBancaria, que possui os parâmetros agencia, numero, tipo e saldo;
+- Dentro de ContaBancaria, construa o getter e o setter de saldo;
+- Dentro de ContaBancaria, crie os métodos sacar e depositar;
+- Criar uma classe-filha chamada ContaCorrente que herda todos esses parâmetros e ainda possua o parâmetro cartaoCredito;
+- Ainda em ContaCorrente, construa o getter e o setter de cartaoCredito;
+- Ainda em ContaCorrente, faça com que o tipo seja 'conta corrente' por padrão;
+- Criar uma classe-filha chamada ContaPoupanca que herda todos os parâmetros de ContaBancaria;
+- Criar uma classe-filha chamada ContaUniversitaria que herda todos os parâmetros de ContaBancaria;
+- Fazer com que o método saque de ContaUniversitaria apenas seja capaz de sacar valores menores que 500 reais.
+Rodando em:<br>
+https://lucianoneo.github.io/Cursos/Spread/classes/
+
+
+## Aplicação de JavaScript Assíncrono
+- Neste projeto foi utilizado javascript assíncrono para acessar uma REST API e capturar uma foto para mostrar no site.
+Projeto rodando: <br>
+https://lucianoneo.github.io/Cursos/Spread/async/exercicio/<br>
+Código:<br>
+https://github.com/LucianoNeo/Cursos/tree/master/Spread/async/exercicio
+
+
 ## Primeiro desafio do bootcamp Spread FullStack Developer:
 -Replicação da tela de login do Instagram:<br>
 Foi utilizado os conceitos de flexbox para replicar as dimensões e disposições dos itens na tela, nesta primeira etapa, somente utilizando HTML5 + CSS3.<br>
