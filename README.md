@@ -18,7 +18,7 @@ Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/classes
 
 ## Aplicação de JavaScript Assíncrono
-- Neste projeto foi utilizado javascript assíncrono para acessar uma REST API e capturar uma foto para mostrar no site.
+- Neste projeto foi utilizado javascript assíncrono para acessar uma REST API e capturar uma foto para mostrar no site.<br>
 Projeto rodando: <br>
 https://lucianoneo.github.io/Cursos/Spread/async/exercicio/<br>
 Código:<br>
