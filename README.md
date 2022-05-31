@@ -4,7 +4,7 @@ Repositório dedicado aos exercícios e projetos desenvolvidos durante bootcamps
 ## Manipulação do DOM usando JavaScript
 - Neste projeto foi utilizado a manipulação do DOM para alternar entre Dark Mode e Light Mode.<br>
 Projeto rodando:<br>
-https://lucianoneo.github.io/Cursos/Spread/dom/
+https://lucianoneo.github.io/Cursos/Spread/dom/<br>
 Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
 
