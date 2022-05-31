@@ -1,6 +1,13 @@
 # bootcamps
 Repositório dedicado aos exercícios e projetos desenvolvidos durante bootcamps.
 # <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
+## Manipulação do DOM usando JavaScript
+-Neste projeto foi utilizado a manipulação do DOM para alternar entre Dark Mode e Light Mode.
+Projeto rodando:<br>
+https://lucianoneo.github.io/Cursos/Spread/dom/
+Código:<br>
+https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
+
 ## Utilização de classes e métodos em javascript
 - Neste projeto foi utilizado o conceito de classes para simular um sistema bancário de abertura de contas. Problemas propostos:
 - Criar a classe ContaBancaria, que possui os parâmetros agencia, numero, tipo e saldo;
