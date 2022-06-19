@@ -2,6 +2,11 @@
 Repositório dedicado aos exercícios e projetos desenvolvidos durante bootcamps.
 # <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 
+## Gerador de frases de Cavaleiros do Zodiaco
+- Primeiro projeto criado com REACTJS utiliza consulta à API (projeto do servidor REST incluso) para gerar frases do anime cavaleiros do zodiaco.
+A prévia pode ser vista no repositório do projeto:
+https://github.com/LucianoNeo/Cursos/tree/master/Spread/REACTJS/reactHooks/projeto-frases-cdz/cdz-quotes-client
+
 ## Sistema de Estacionamento
 - Neste projeto foi criado um sistema de estacionamento utilizando HTML5, CSS3 e TYPESCRIPT.<br>
 Projeto rodando:<br>
