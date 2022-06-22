@@ -1,7 +1,20 @@
+import { gql ,useQuery} from "@apollo/client"
+import { Header } from "./components/Header"
+import { Lesson } from "./components/Lesson"
+import { Sidebar } from "./components/Sidebar"
+import { Video } from "./components/Video"
+import { Event } from "./pages/Event"
+
+
+
+
 function App() {
 
-  return (
-    <h1 className="text-5xl font-bold text-violet-800">Hola</h1>
+    return (
+      <div>
+      <Event />
+      </div>
+    
   )
 }
 

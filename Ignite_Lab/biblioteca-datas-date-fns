@@ -1,0 +1,8 @@
+
+# INSTALAR LIB
+npm i date-fns
+
+
+# IMPORT
+import { isPast} from 'date-fns'
+
