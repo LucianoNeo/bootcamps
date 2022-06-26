@@ -2,7 +2,7 @@ import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, GithubLogo, Lightning, LinkedinLogo, TwitterLogo } from "phosphor-react";
 import '@vime/core/themes/default.css'
 import { useGetLessonBySlugQuery } from "../generated";
-
+import avatar from '../assets/avatar.jpg'
 
 
 interface VideoProps {
@@ -112,7 +112,7 @@ if (!data || !data.lesson){
         </div>
         <footer className="bg-gray-900 h-10 flex w-11/12 items-center justify-between p-6 border-t border-gray-600 m-auto">
             <div className="flex items-center">
-                <img src="../../src/assets/avatar.jpg" alt="" className="h-8 w-8 rounded-full mr-3"/>
+            <img src={avatar} alt="" className="h-8 w-8 rounded-full mr-3"/>
                 <span>Desenvolvido por LucianoNeo</span>
             </div>
             <div className="flex justify-end">

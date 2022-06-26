@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../generated";
 import personagens from '../assets/code.png'
+import avatar from '../assets/avatar.jpg'
 import { GithubLogo, LinkedinLogo, TwitterLogo } from "phosphor-react";
 
 export function Subscribe(){
@@ -73,7 +74,7 @@ async function handleSubscribe(event:FormEvent) {
             <img src={personagens} className="mt-10 w-full"/>
             <footer className=" h-10 flex w-full items-center justify-between p-6  m-auto">
             <div className="flex items-center">
-                <img src="../../src/assets/avatar.jpg" alt="" className="h-8 w-8 rounded-full mr-3"/>
+                <img src={avatar} alt="" className="h-8 w-8 rounded-full mr-3"/>
                 <span>Desenvolvido por LucianoNeo</span>
             </div>
             <div className="flex justify-end">
