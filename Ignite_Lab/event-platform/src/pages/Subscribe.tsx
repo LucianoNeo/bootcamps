@@ -3,8 +3,8 @@ import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../generated";
-
-
+import personagens from '../assets/code.png'
+import { GithubLogo, LinkedinLogo, TwitterLogo } from "phosphor-react";
 
 export function Subscribe(){
 
@@ -34,10 +34,9 @@ async function handleSubscribe(event:FormEvent) {
     <div className="max-w-[640px]">
         <Logo />
         <h1 className="mt-8 text-[2.5rem] leading-tight">
-        Construa uma <strong className="text-blue-500">aplicação completa</strong> , do zero, com <strong className="text-blue-500" >React </strong> JS
-        </h1>
+        Aprenda técnicas de luta com os  <strong className="text-blue-500">melhores e maiores</strong> personagens de anime <strong className="text-blue-500" >de TODOS OS TEMPOS! </strong> </h1>
         <p className="mt-4 text-gray-200 leading-relaxed">
-        Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
+        Em apenas uma semana você vai dominar na prática as principais técnicas utilizadas quando o mundo corre perigo.
         </p>
     </div>
     <div>
@@ -71,8 +70,22 @@ async function handleSubscribe(event:FormEvent) {
 
 </div>
 
-            <img src="/src/assets/code.png" className="mt-10"/>
-
+            <img src={personagens} className="mt-10 w-full"/>
+            <footer className=" h-10 flex w-full items-center justify-between p-6  m-auto">
+            <div className="flex items-center">
+                <img src="../../src/assets/avatar.jpg" alt="" className="h-8 w-8 rounded-full mr-3"/>
+                <span>Desenvolvido por LucianoNeo</span>
+            </div>
+            <div className="flex justify-end">
+            <a href="https://github.com/Lucianoneo" target='blank' 
+            className="mr-3 hover:text-blue-600 transition-colors" ><GithubLogo size={35} /></a>  
+            <a href="https://www.linkedin.com/in/luciano-dos-santos-bueno-58363373/" target='blank'
+            className="mr-3 hover:text-blue-600 transition-colors" ><LinkedinLogo size={35} 
+             /></a>
+            <a href="https://twitter.com/lucianoneo" target='blank' 
+            className="mr-3 hover:text-blue-600 transition-colors"><TwitterLogo size={35} /></a>
+            </div>
+            </footer>
         </div>
         )
     }

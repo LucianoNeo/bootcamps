@@ -1,5 +1,5 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
-import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
+import { CaretRight, DiscordLogo, FileArrowDown, GithubLogo, Lightning, LinkedinLogo, TwitterLogo } from "phosphor-react";
 import '@vime/core/themes/default.css'
 import { useGetLessonBySlugQuery } from "../generated";
 
@@ -110,7 +110,21 @@ if (!data || !data.lesson){
             </div>
 
         </div>
-
+        <footer className="bg-gray-900 h-10 flex w-11/12 items-center justify-between p-6 border-t border-gray-600 m-auto">
+            <div className="flex items-center">
+                <img src="../../src/assets/avatar.jpg" alt="" className="h-8 w-8 rounded-full mr-3"/>
+                <span>Desenvolvido por LucianoNeo</span>
+            </div>
+            <div className="flex justify-end">
+            <a href="https://github.com/Lucianoneo" target='blank' 
+            className="mr-3 hover:text-blue-600 transition-colors" ><GithubLogo size={35} /></a>  
+            <a href="https://www.linkedin.com/in/luciano-dos-santos-bueno-58363373/" target='blank'
+            className="mr-3 hover:text-blue-600 transition-colors" ><LinkedinLogo size={35} 
+             /></a>
+            <a href="https://twitter.com/lucianoneo" target='blank' 
+            className="mr-3 hover:text-blue-600 transition-colors"><TwitterLogo size={35} /></a>
+            </div>
+            </footer>
     </div>
         )
 }
