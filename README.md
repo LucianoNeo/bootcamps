@@ -1,6 +1,6 @@
 # BOOTCAMPS / EVENTOS
 Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br>
-<img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/icon.jpg'>
+<img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/icon.jpg' width='150px'>
 # IGNITE LAB 02
 <div style='display:flex flex-wrap:wrap justify-content: center'>
 <img src='screen1.jpg' max-height='300px'>
