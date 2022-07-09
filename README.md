@@ -24,8 +24,8 @@ Live demo: https://anime-lessons.vercel.app/ <br>
 Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event-platform
 <br>Responsividade desenvolvida pós evento:
 <div style='display:flex'>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/event-platform/screen3.jpg'>
 <img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/event-platform/screen4.jpg'>
-<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/event-platform/screen5.jpg'>
 </div>
 <hr>
 
