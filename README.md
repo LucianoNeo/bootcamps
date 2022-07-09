@@ -31,6 +31,7 @@ A prévia pode ser vista no repositório do projeto:
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/REACTJS/reactHooks/projeto-frases-cdz/cdz-quotes-client
 
 ## Sistema de Estacionamento
+<img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/typescript/estacionamento/Screenshot_1.jpg' max-width='300px'>
 - Neste projeto foi criado um sistema de estacionamento utilizando HTML5, CSS3 e TYPESCRIPT.<br>
 Projeto rodando:<br>
 https://lucianoneo.github.io/Cursos/Spread/typescript/estacionamento<br>
