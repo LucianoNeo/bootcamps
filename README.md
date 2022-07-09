@@ -65,6 +65,14 @@ Bootcamp onde dei início aos meus estudos com HTML5 + CSS3 + Javascript ES6. Fo
 - <a href="https://lucianoneo.github.io/bootcamps/Alura/ImersaoDev/conversor-de-temperatura">Conversor de temperatura</a>
 
 ## <img src="https://7daysofcode.io/assets/img/share-img-doc.1647533642.png" width="200">
+
+### Edição HTML + CSS:<br>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Alura/7DaysOfCode/HTML-CSS/Screenshot_2.jpg'/>
+O objetivo destes sete dias foi montar o front-end de uma landing page seguindo o design proposto no FIGMA:<br>
+https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1 <br>
+<a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7/">Resultado Final</a>
+
+
 ### Edição Lógica com Javascript:<br>
 Durante 7 dias, recebemos um desafio a ser resolvido com a linguagem Javascript.
 - <a href="https://github.com/LucianoNeo/bootcamps/blob/main/Alura/7DaysOfCode/JavaScript/day1.js">Desafio dia 1</a> : 
@@ -184,7 +192,3 @@ Depois, ela deverá inserir os dois valores que deseja utilizar, e o programa im
 
 As opções disponíveis deverão ser: soma, subtração, multiplicação, divisão, e sair. Nessa última, o programa deverá parar de ser executado, mostrando uma mensagem "Até a próxima".
 ```
-### Edição HTML + CSS:<br>
-O objetivo destes sete dias foi montar o front-end de uma landing page seguindo o design proposto no FIGMA:<br>
-https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1 <br>
-<a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7/">Resultado Final</a>
