@@ -48,15 +48,8 @@ Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
 
 
-## Aplicação de JavaScript Assíncrono
-- Neste projeto foi utilizado javascript assíncrono para acessar uma REST API e capturar uma foto para mostrar no site.<br>
-Projeto rodando: <br>
-https://lucianoneo.github.io/Cursos/Spread/async/exercicio/<br>
-Código:<br>
-https://github.com/LucianoNeo/Cursos/tree/master/Spread/async/exercicio
-
-
 ## Primeiro desafio do bootcamp Spread FullStack Developer:
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Spread/instagram/Screenshot_1.jpg'/>
 -Replicação da tela de login do Instagram:<br>
 Foi utilizado os conceitos de flexbox para replicar as dimensões e disposições dos itens na tela, nesta primeira etapa, somente utilizando HTML5 + CSS3.<br>
 <a href="https://lucianoneo.github.io/bootcamps/Spread/instagram">Instagram</a> 
