@@ -1,5 +1,13 @@
 # Anime-Lessons
-Projeto desenvolvido durante o evento ignite-lab da RocketSeat.  
+
+<img src='screen1.jpg'>
+<img src='screen2.jpg'>
+<img src='screen3.jpg'>
+<img src='screen4.jpg'>
+<br>
+<br>
+
+Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat.  
 Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 
 <img src='https://img.shields.io/badge/REACTJS-blue'>
@@ -15,5 +23,10 @@ Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 <img src='https://img.shields.io/badge/VIMEJS-orange'>
 
 Projeto hospedado e rodando na 
-<a href=''><img src='https://img.shields.io/badge/VERCEL-strong'>
+<a href='https://anime-lessons.vercel.app/'><img src='https://img.shields.io/badge/VERCEL-blue'>
 </a>
+
+## Adições pós evento
+- Rodapé
+- personalização do tema para liçoes dos animes
+- responsividade
