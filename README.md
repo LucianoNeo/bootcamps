@@ -12,6 +12,8 @@ Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><
 Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat. <br> 
 Trata-se de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 <br>
+<br>
+<br>
 <div style='display:flex; align-items:center'>
 <img src='https://img.shields.io/badge/REACTJS-blue'>
 <img src='https://img.shields.io/badge/REACT_ROUTER_DOM-red'>
