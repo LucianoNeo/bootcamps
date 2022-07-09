@@ -7,8 +7,11 @@ Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><
 <img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/screen1.jpg' max-height='300px'>
 <img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/screen2.jpg' max-height='300px'>
 </div>
-# Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat.  
+<br>
+<br>
+Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat. <br> 
 Trata-se de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
+<br>
 <div style='display:flex; align-items:center'>
 <img src='https://img.shields.io/badge/REACTJS-blue'>
 <img src='https://img.shields.io/badge/REACT_ROUTER_DOM-red'>
