@@ -1,5 +1,7 @@
-# bootcamps
-Repositório dedicado aos exercícios e projetos desenvolvidos durante bootcamps.
+# BOOTCAMPS / EVENTOS
+Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.
+<img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/icon.jpg'>
+# IGNITE LAB 02
 # <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 
 ## Gerador de frases de Cavaleiros do Zodiaco
