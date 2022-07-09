@@ -6,7 +6,8 @@ import avatar from '../assets/avatar.jpg'
 
 
 interface VideoProps {
-    lessonSlug: string
+    lessonSlug: string,
+    visible: string;
 }
 
 export function Video(props: VideoProps){
@@ -23,13 +24,13 @@ const { data } = useGetLessonBySlugQuery({
 if (!data || !data.lesson){
     return(
         <div className="flex-1">
-            <p>Carregando...</p>
+           
         </div>
     )
 }
 
     return(
-        <div className="flex-1 ">
+        <div className={`sm:flex-1 ${props.visible}`}>
         <div className="bg-black flex justify-center">
             <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
         <Player>
@@ -41,7 +42,8 @@ if (!data || !data.lesson){
         </div>
 
         <div className="p-8 max-w-[1100px] mx-auto ">
-        <div className="flex items-start gap-16">
+        
+        <div className="flex flex-col sm:flex-row items-start gap-16">
             <div className="flex-1">
                 <h1 className="text-2xl font-bold">
                     {data.lesson.title}
@@ -49,10 +51,20 @@ if (!data || !data.lesson){
                 <p className="my-4 text-gray-200 leading-relaxed">
                 {data.lesson.description}
                 </p>
+
+                {data.lesson.teacher && (
+            <div className="flex items-center gap-4 mt-6">
+            <img src={data.lesson.teacher.avatarURL} alt="" className="h-16 w-16 rounded-full border-2 border-blue-500"/>
+        <div className="leading-relaxed">
+            <strong className="font-bold text-2xl block">{data.lesson.teacher.name}</strong>
+            <span className="text-gray-200 text-sm block">{data.lesson.teacher.bio}</span>
+        </div>
+        </div>
+        )}
             </div>
 
-         
-            <div className="flex flex-col gap-4">           
+            <div className="flex flex-col gap-4 w-full sm:max-w-[250px] mx-auto">             
+
             <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
                 <DiscordLogo size={24}/>
             Comunidade do discord
@@ -65,17 +77,9 @@ if (!data || !data.lesson){
 
         </div>
         
-        {data.lesson.teacher && (
-            <div className="flex items-center gap-4 mt-6">
-            <img src={data.lesson.teacher.avatarURL} alt="" className="h-16 w-16 rounded-full border-2 border-blue-500"/>
-        <div className="leading-relaxed">
-            <strong className="font-bold text-2xl block">{data.lesson.teacher.name}</strong>
-            <span className="text-gray-200 text-sm block">{data.lesson.teacher.bio}</span>
-        </div>
-        </div>
-        )}
+        
 
-            <div className="gap-8 mt-20 grid grid-cols-2">
+            <div className="gap-8 mt-20 grid grid-cols-1 sm:grid-cols-2">
 
             <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
             <div className="bg-green-700 h-full p-6 flex items-center">
