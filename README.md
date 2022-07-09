@@ -8,7 +8,7 @@ Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><
 <img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/screen2.jpg' max-height='300px'>
 </div>
 # Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat.  
-Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
+Trata-se de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 <div style='display:flex; align-items:center'>
 <img src='https://img.shields.io/badge/REACTJS-blue'>
 <img src='https://img.shields.io/badge/REACT_ROUTER_DOM-red'>
@@ -25,11 +25,10 @@ Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event
 <hr>
  <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 # Projetos desenvolvidos durante o bootcamp Spread Fullstack Developer na Digital Innovation One
-<br>
 ## Gerador de frases de Cavaleiros do Zodiaco
 <img src='https://camo.githubusercontent.com/e8120bb8a4bd70085b69ef893799f47a913e511c7a80d61fcb09e96f49091a0d/68747470733a2f2f6c756369616e6f6e656f2e6769746875622e696f2f437572736f732f5370726561642f52454143544a532f7265616374486f6f6b732f70726f6a65746f2d6672617365732d63647a2f53637265656e73686f745f312e6a7067'>
 - Primeiro projeto criado com REACTJS utiliza consulta à API (projeto do servidor REST incluso) para gerar frases do anime cavaleiros do zodiaco.
-A prévia pode ser vista no repositório do projeto:
+Live demo:
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/REACTJS/reactHooks/projeto-frases-cdz/cdz-quotes-client
 
 ## Sistema de Estacionamento
