@@ -9,14 +9,14 @@
 
 Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat.  
 Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
-
+<div style='display:flex'>
 <img src='https://img.shields.io/badge/REACTJS-blue'>
 <img src='https://img.shields.io/badge/REACT_ROUTER_DOM-red'>
 <img src='https://img.shields.io/badge/TYPESCRIPT-blue'>
 <img src='https://img.shields.io/badge/GRAPHCMS-green'>
 <img src='https://img.shields.io/badge/GRAPHQL-lightgreen'>
 <img src='https://img.shields.io/badge/APOLLO-green'>
-
+</div>
 <img src='https://img.shields.io/badge/TAILWINDCSS-lightblue'>
 
 <img src='https://img.shields.io/badge/VITE-blue'>
