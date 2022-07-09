@@ -30,7 +30,7 @@ Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event
 <img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/REACTJS/rest-http/pokedex-em-reactjs/demo.jpg'>
 <br>
 Pokédex desenvolvida com REACTJS , utilizando requisições a API com axios.<br>
-Live demo: 
+Live demo: https://pokedex-one-black.vercel.app/ <br>
 Repositório: https://github.com/LucianoNeo/Cursos/tree/master/Spread/REACTJS/rest-http/pokedex-em-reactjs
 
 ## Gerador de frases de Cavaleiros do Zodiaco
