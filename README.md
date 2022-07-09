@@ -1,5 +1,5 @@
 # BOOTCAMPS / EVENTOS
-Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br>
+Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><br><br>
 <img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/icon.jpg' width='200px'>
 <br>
 <br>
