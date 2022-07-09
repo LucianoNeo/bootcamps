@@ -22,7 +22,7 @@ Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 </div><br>
 Live demo: https://anime-lessons.vercel.app/ <br>
 Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event-platform
-=======================================================================================================
+<hr>
  <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 
 ## Gerador de frases de Cavaleiros do Zodiaco
@@ -54,7 +54,7 @@ https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
 Foi utilizado os conceitos de flexbox para replicar as dimensões e disposições dos itens na tela, nesta primeira etapa, somente utilizando HTML5 + CSS3.<br>
 <a href="https://lucianoneo.github.io/bootcamps/Spread/instagram">Instagram</a> 
 
-=======================================================================================================
+<hr>
 
 # <img src="https://cdn.imp-multimedia.com/fub6qiwuto8wwk8wkc.png" width="200">
 ## <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" width="200">
