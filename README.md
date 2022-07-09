@@ -6,6 +6,19 @@ Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br>
 <img src='screen1.jpg' max-height='300px'>
 <img src='screen2.jpg' max-height='300px'>
 </div>
+Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat.  
+Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
+<div style='display:flex; align-items:center'>
+<img src='https://img.shields.io/badge/REACTJS-blue'>
+<img src='https://img.shields.io/badge/REACT_ROUTER_DOM-red'>
+<img src='https://img.shields.io/badge/TYPESCRIPT-blue'>
+<img src='https://img.shields.io/badge/GRAPHCMS-green'>
+<img src='https://img.shields.io/badge/GRAPHQL-lightgreen'>
+<img src='https://img.shields.io/badge/APOLLO-green'>
+<img src='https://img.shields.io/badge/VITE-blue'>
+<img src='https://img.shields.io/badge/VIMEJS-orange'>
+<img src='https://img.shields.io/badge/TAILWINDCSS-lightblue'>
+</div>
 # <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 
 ## Gerador de frases de Cavaleiros do Zodiaco
