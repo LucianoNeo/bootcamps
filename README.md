@@ -40,6 +40,7 @@ Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/typescript/estacionamento
 
 ## Manipulação do DOM usando JavaScript
+<img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/dom/Screenshot_2.jpg'/>
 - Neste projeto foi utilizado a manipulação do DOM para alternar entre Dark Mode e Light Mode.<br>
 Projeto rodando:<br>
 https://lucianoneo.github.io/Cursos/Spread/dom/<br>
