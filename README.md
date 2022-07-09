@@ -34,7 +34,7 @@ https://github.com/LucianoNeo/Cursos/tree/master/Spread/REACTJS/reactHooks/proje
 ## Sistema de Estacionamento
 <img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/typescript/estacionamento/Screenshot_1.jpg' max-width='300px'>
 - Neste projeto foi criado um sistema de estacionamento utilizando HTML5, CSS3 e TYPESCRIPT.<br>
-Projeto rodando:<br>
+Live demo:<br>
 https://lucianoneo.github.io/Cursos/Spread/typescript/estacionamento<br>
 Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/typescript/estacionamento
@@ -42,7 +42,7 @@ https://github.com/LucianoNeo/Cursos/tree/master/Spread/typescript/estacionament
 ## Manipulação do DOM usando JavaScript
 <img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/dom/Screenshot_2.jpg'/>
 - Neste projeto foi utilizado a manipulação do DOM para alternar entre Dark Mode e Light Mode.<br>
-Projeto rodando:<br>
+Live demo:<br>
 https://lucianoneo.github.io/Cursos/Spread/dom/<br>
 Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
@@ -52,7 +52,7 @@ https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
 <img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Spread/instagram/Screenshot_1.jpg'/>
 -Replicação da tela de login do Instagram:<br>
 Foi utilizado os conceitos de flexbox para replicar as dimensões e disposições dos itens na tela, nesta primeira etapa, somente utilizando HTML5 + CSS3.<br>
-<a href="https://lucianoneo.github.io/bootcamps/Spread/instagram">Instagram</a> 
+Live demo: https://lucianoneo.github.io/bootcamps/Spread/instagram
 
 <hr>
 
