@@ -1,9 +1,10 @@
 # Anime-Lessons
-
-<img src='screen1.jpg'>
-<img src='screen2.jpg'>
-<img src='screen3.jpg'>
-<img src='screen4.jpg'>
+<div style='display:flex flex-wrap:wrap justify-content: center'>
+<img src='screen1.jpg' max-height='300px'>
+<img src='screen2.jpg' max-height='300px'>
+<img src='screen3.jpg' max-height='300px'>
+<img src='screen4.jpg' max-height='300px'>
+</div>
 <br>
 <br>
 
@@ -16,11 +17,13 @@ Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 <img src='https://img.shields.io/badge/GRAPHCMS-green'>
 <img src='https://img.shields.io/badge/GRAPHQL-lightgreen'>
 <img src='https://img.shields.io/badge/APOLLO-green'>
-</div>
-<img src='https://img.shields.io/badge/TAILWINDCSS-lightblue'>
-
 <img src='https://img.shields.io/badge/VITE-blue'>
 <img src='https://img.shields.io/badge/VIMEJS-orange'>
+<img src='https://img.shields.io/badge/TAILWINDCSS-lightblue'>
+</div>
+
+
+
 
 Projeto hospedado e rodando na 
 <a href='https://anime-lessons.vercel.app/'><img src='https://img.shields.io/badge/VERCEL-blue'>
