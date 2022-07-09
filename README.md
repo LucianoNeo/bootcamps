@@ -78,7 +78,7 @@ Bootcamp onde dei início aos meus estudos com HTML5 + CSS3 + Javascript ES6. Fo
 <img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Alura/7DaysOfCode/HTML-CSS/Screenshot_2.jpg'/>
 O objetivo destes sete dias foi montar o front-end de uma landing page seguindo o design proposto no FIGMA:<br>
 https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1 <br>
-<a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7/">Resultado Final</a>
+Live demo: https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7
 
 
 ### Edição Lógica com Javascript:<br>
