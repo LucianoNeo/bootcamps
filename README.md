@@ -25,6 +25,7 @@ Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event
 <hr>
  <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 # Projetos desenvolvidos durante o bootcamp Spread Fullstack Developer na Digital Innovation One
+<hr>
 ## Pokedex 
 <img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/REACTJS/rest-http/pokedex-em-reactjs/demo.jpg'>
 <br>
