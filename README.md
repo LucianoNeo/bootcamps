@@ -22,9 +22,13 @@ Trata-se de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 </div><br>
 Live demo: https://anime-lessons.vercel.app/ <br>
 Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event-platform
-<br>Projeto responsivo:
+<br>Responsividade desenvolvida pós evento:
+<div style='display:flex'>
 <img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/event-platform/screen4.jpg'>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/event-platform/screen5.jpg'>
+</div>
 <hr>
+
  <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 # Projetos desenvolvidos durante o bootcamp Spread Fullstack Developer na Digital Innovation One
 <hr>
