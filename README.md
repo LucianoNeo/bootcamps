@@ -1,6 +1,29 @@
-# bootcamps
-Repositório dedicado aos exercícios e projetos desenvolvidos durante bootcamps.
-# <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
+# BOOTCAMPS / EVENTOS
+Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><br><br>
+<img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/icon.jpg' width='200px'>
+<br>
+<br>
+<div style='display:flex flex-wrap:wrap justify-content: center'>
+<img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/screen1.jpg' max-height='300px'>
+<img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/screen2.jpg' max-height='300px'>
+</div>
+Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat.  
+Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
+<div style='display:flex; align-items:center'>
+<img src='https://img.shields.io/badge/REACTJS-blue'>
+<img src='https://img.shields.io/badge/REACT_ROUTER_DOM-red'>
+<img src='https://img.shields.io/badge/TYPESCRIPT-blue'>
+<img src='https://img.shields.io/badge/GRAPHCMS-green'>
+<img src='https://img.shields.io/badge/GRAPHQL-lightgreen'>
+<img src='https://img.shields.io/badge/APOLLO-green'>
+<img src='https://img.shields.io/badge/VITE-blue'>
+<img src='https://img.shields.io/badge/VIMEJS-orange'>
+<img src='https://img.shields.io/badge/TAILWINDCSS-lightblue'>
+</div><br>
+Live demo: https://anime-lessons.vercel.app/ <br>
+Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event-platform
+=======================================================================================================
+ <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 
 ## Gerador de frases de Cavaleiros do Zodiaco
 <img src='https://camo.githubusercontent.com/e8120bb8a4bd70085b69ef893799f47a913e511c7a80d61fcb09e96f49091a0d/68747470733a2f2f6c756369616e6f6e656f2e6769746875622e696f2f437572736f732f5370726561642f52454143544a532f7265616374486f6f6b732f70726f6a65746f2d6672617365732d63647a2f53637265656e73686f745f312e6a7067'>
@@ -9,6 +32,7 @@ A prévia pode ser vista no repositório do projeto:
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/REACTJS/reactHooks/projeto-frases-cdz/cdz-quotes-client
 
 ## Sistema de Estacionamento
+<img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/typescript/estacionamento/Screenshot_1.jpg' max-width='300px'>
 - Neste projeto foi criado um sistema de estacionamento utilizando HTML5, CSS3 e TYPESCRIPT.<br>
 Projeto rodando:<br>
 https://lucianoneo.github.io/Cursos/Spread/typescript/estacionamento<br>
@@ -16,42 +40,21 @@ Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/typescript/estacionamento
 
 ## Manipulação do DOM usando JavaScript
+<img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/dom/Screenshot_2.jpg'/>
 - Neste projeto foi utilizado a manipulação do DOM para alternar entre Dark Mode e Light Mode.<br>
 Projeto rodando:<br>
 https://lucianoneo.github.io/Cursos/Spread/dom/<br>
 Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
 
-## Utilização de classes e métodos em javascript
-- Neste projeto foi utilizado o conceito de classes para simular um sistema bancário de abertura de contas. Problemas propostos:
-- Criar a classe ContaBancaria, que possui os parâmetros agencia, numero, tipo e saldo;
-- Dentro de ContaBancaria, construa o getter e o setter de saldo;
-- Dentro de ContaBancaria, crie os métodos sacar e depositar;
-- Criar uma classe-filha chamada ContaCorrente que herda todos esses parâmetros e ainda possua o parâmetro cartaoCredito;
-- Ainda em ContaCorrente, construa o getter e o setter de cartaoCredito;
-- Ainda em ContaCorrente, faça com que o tipo seja 'conta corrente' por padrão;
-- Criar uma classe-filha chamada ContaPoupanca que herda todos os parâmetros de ContaBancaria;
-- Criar uma classe-filha chamada ContaUniversitaria que herda todos os parâmetros de ContaBancaria;
-- Fazer com que o método saque de ContaUniversitaria apenas seja capaz de sacar valores menores que 500 reais.<br>
-Rodando em:<br>
-https://lucianoneo.github.io/Cursos/Spread/classes/<br>
-Código:<br>
-https://github.com/LucianoNeo/Cursos/tree/master/Spread/classes
-
-## Aplicação de JavaScript Assíncrono
-- Neste projeto foi utilizado javascript assíncrono para acessar uma REST API e capturar uma foto para mostrar no site.<br>
-Projeto rodando: <br>
-https://lucianoneo.github.io/Cursos/Spread/async/exercicio/<br>
-Código:<br>
-https://github.com/LucianoNeo/Cursos/tree/master/Spread/async/exercicio
-
 
 ## Primeiro desafio do bootcamp Spread FullStack Developer:
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Spread/instagram/Screenshot_1.jpg'/>
 -Replicação da tela de login do Instagram:<br>
 Foi utilizado os conceitos de flexbox para replicar as dimensões e disposições dos itens na tela, nesta primeira etapa, somente utilizando HTML5 + CSS3.<br>
 <a href="https://lucianoneo.github.io/bootcamps/Spread/instagram">Instagram</a> 
 
-###########################################################################################
+=======================================================================================================
 
 # <img src="https://cdn.imp-multimedia.com/fub6qiwuto8wwk8wkc.png" width="200">
 ## <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" width="200">
