@@ -21,7 +21,8 @@ Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 <img src='https://img.shields.io/badge/TAILWINDCSS-lightblue'>
 </div><br>
 Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event-platform
-# <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
+=======================================================================================================
+ <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
 
 ## Gerador de frases de Cavaleiros do Zodiaco
 <img src='https://camo.githubusercontent.com/e8120bb8a4bd70085b69ef893799f47a913e511c7a80d61fcb09e96f49091a0d/68747470733a2f2f6c756369616e6f6e656f2e6769746875622e696f2f437572736f732f5370726561642f52454143544a532f7265616374486f6f6b732f70726f6a65746f2d6672617365732d63647a2f53637265656e73686f745f312e6a7067'>
@@ -72,7 +73,7 @@ https://github.com/LucianoNeo/Cursos/tree/master/Spread/async/exercicio
 Foi utilizado os conceitos de flexbox para replicar as dimensões e disposições dos itens na tela, nesta primeira etapa, somente utilizando HTML5 + CSS3.<br>
 <a href="https://lucianoneo.github.io/bootcamps/Spread/instagram">Instagram</a> 
 
-###########################################################################################
+=======================================================================================================
 
 # <img src="https://cdn.imp-multimedia.com/fub6qiwuto8wwk8wkc.png" width="200">
 ## <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" width="200">
