@@ -31,17 +31,17 @@ async function handleSubscribe(event:FormEvent) {
 
     return(
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-<div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
-    <div className="max-w-[640px]">
+<div className="w-full max-w-[1100px] flex flex-col sm:flex-row items-center justify-between mt-20 mx-auto text-center sm:text-left">
+    <div className="max-w-[640px] items-center flex flex-col sm:items-start px-5">
         <Logo />
-        <h1 className="mt-8 text-[2.5rem] leading-tight">
+        <h1 className="mt-8 text-[2.5rem] leading-tight ">
         Aprenda técnicas de luta com os  <strong className="text-blue-500">melhores e maiores</strong> personagens de anime <strong className="text-blue-500" >de TODOS OS TEMPOS! </strong> </h1>
         <p className="mt-4 text-gray-200 leading-relaxed">
         Em apenas uma semana você vai dominar na prática as principais técnicas utilizadas quando o mundo corre perigo.
         </p>
     </div>
     <div>
-        <div className="p-8 bg-gray-700 border border-gray-500 rounded">
+        <div className="w-screen sm:w-full mt-4 p-8 bg-gray-700 border border-gray-500 rounded">
         <strong className="text-2x mb-6 block">Inscreva-se gratuitamente</strong>
         <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
 
