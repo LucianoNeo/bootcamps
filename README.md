@@ -7,8 +7,13 @@ Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><
 <img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/screen1.jpg' max-height='300px'>
 <img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/screen2.jpg' max-height='300px'>
 </div>
-Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat.  
-Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
+<br>
+<br>
+Projeto desenvolvido durante o evento Ignite-Lab02 da RocketSeat. <br> 
+Trata-se de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
+<br>
+<br>
+<br>
 <div style='display:flex; align-items:center'>
 <img src='https://img.shields.io/badge/REACTJS-blue'>
 <img src='https://img.shields.io/badge/REACT_ROUTER_DOM-red'>
@@ -22,19 +27,33 @@ Se trata de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 </div><br>
 Live demo: https://anime-lessons.vercel.app/ <br>
 Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event-platform
-=======================================================================================================
+<br>Responsividade desenvolvida pós evento:
+<div style='display:flex'>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/event-platform/screen3.jpg'>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/event-platform/screen4.jpg'>
+</div>
+<hr>
+
  <img src="https://hermes.digitalinnovation.one/tracks/a0fb3b13-3dd0-495e-8f07-77cc1a85991f.png" width="200" target="_blank">
+# Projetos desenvolvidos durante o bootcamp Spread Fullstack Developer na Digital Innovation One
+<hr>
+## Pokedex 
+<img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/REACTJS/rest-http/pokedex-em-reactjs/demo.jpg'>
+<br>
+Pokédex desenvolvida com REACTJS , utilizando requisições a API com axios.<br>
+Live demo: https://pokedex-one-black.vercel.app/ <br>
+Repositório: https://github.com/LucianoNeo/Cursos/tree/master/Spread/REACTJS/rest-http/pokedex-em-reactjs
 
 ## Gerador de frases de Cavaleiros do Zodiaco
 <img src='https://camo.githubusercontent.com/e8120bb8a4bd70085b69ef893799f47a913e511c7a80d61fcb09e96f49091a0d/68747470733a2f2f6c756369616e6f6e656f2e6769746875622e696f2f437572736f732f5370726561642f52454143544a532f7265616374486f6f6b732f70726f6a65746f2d6672617365732d63647a2f53637265656e73686f745f312e6a7067'>
-- Primeiro projeto criado com REACTJS utiliza consulta à API (projeto do servidor REST incluso) para gerar frases do anime cavaleiros do zodiaco.
-A prévia pode ser vista no repositório do projeto:
+- Primeiro projeto criado com REACTJS utiliza consulta à API (projeto do servidor REST incluso) para gerar frases do anime cavaleiros do zodiaco.<br>
+Repositório:
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/REACTJS/reactHooks/projeto-frases-cdz/cdz-quotes-client
 
 ## Sistema de Estacionamento
 <img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/typescript/estacionamento/Screenshot_1.jpg' max-width='300px'>
 - Neste projeto foi criado um sistema de estacionamento utilizando HTML5, CSS3 e TYPESCRIPT.<br>
-Projeto rodando:<br>
+Live demo:<br>
 https://lucianoneo.github.io/Cursos/Spread/typescript/estacionamento<br>
 Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/typescript/estacionamento
@@ -42,7 +61,7 @@ https://github.com/LucianoNeo/Cursos/tree/master/Spread/typescript/estacionament
 ## Manipulação do DOM usando JavaScript
 <img src='https://raw.githubusercontent.com/LucianoNeo/Cursos/master/Spread/dom/Screenshot_2.jpg'/>
 - Neste projeto foi utilizado a manipulação do DOM para alternar entre Dark Mode e Light Mode.<br>
-Projeto rodando:<br>
+Live demo:<br>
 https://lucianoneo.github.io/Cursos/Spread/dom/<br>
 Código:<br>
 https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
@@ -52,9 +71,9 @@ https://github.com/LucianoNeo/Cursos/tree/master/Spread/dom
 <img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Spread/instagram/Screenshot_1.jpg'/>
 -Replicação da tela de login do Instagram:<br>
 Foi utilizado os conceitos de flexbox para replicar as dimensões e disposições dos itens na tela, nesta primeira etapa, somente utilizando HTML5 + CSS3.<br>
-<a href="https://lucianoneo.github.io/bootcamps/Spread/instagram">Instagram</a> 
+Live demo: https://lucianoneo.github.io/bootcamps/Spread/instagram
 
-=======================================================================================================
+<hr>
 
 # <img src="https://cdn.imp-multimedia.com/fub6qiwuto8wwk8wkc.png" width="200">
 ## <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" width="200">
@@ -65,6 +84,14 @@ Bootcamp onde dei início aos meus estudos com HTML5 + CSS3 + Javascript ES6. Fo
 - <a href="https://lucianoneo.github.io/bootcamps/Alura/ImersaoDev/conversor-de-temperatura">Conversor de temperatura</a>
 
 ## <img src="https://7daysofcode.io/assets/img/share-img-doc.1647533642.png" width="200">
+
+### Edição HTML + CSS:<br>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Alura/7DaysOfCode/HTML-CSS/Screenshot_2.jpg'/>
+O objetivo destes sete dias foi montar o front-end de uma landing page seguindo o design proposto no FIGMA:<br>
+https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1 <br>
+Live demo: https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7
+
+
 ### Edição Lógica com Javascript:<br>
 Durante 7 dias, recebemos um desafio a ser resolvido com a linguagem Javascript.
 - <a href="https://github.com/LucianoNeo/bootcamps/blob/main/Alura/7DaysOfCode/JavaScript/day1.js">Desafio dia 1</a> : 
@@ -184,7 +211,3 @@ Depois, ela deverá inserir os dois valores que deseja utilizar, e o programa im
 
 As opções disponíveis deverão ser: soma, subtração, multiplicação, divisão, e sair. Nessa última, o programa deverá parar de ser executado, mostrando uma mensagem "Até a próxima".
 ```
-### Edição HTML + CSS:<br>
-O objetivo destes sete dias foi montar o front-end de uma landing page seguindo o design proposto no FIGMA:<br>
-https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1 <br>
-<a href="https://lucianoneo.github.io/bootcamps/Alura/7DaysOfCode/HTML-CSS/day7/">Resultado Final</a>
