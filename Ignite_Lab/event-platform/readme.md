@@ -35,3 +35,11 @@ Projeto hospedado e rodando na
 
 <img src='screen3.jpg' max-height='300px'>
 <img src='screen4.jpg' max-height='300px'>
+
+## Detalhes técnicos:
+A interface da plataforma foi desenvolvida com REACTJS e TAILWINDCSS. Projeto criado utilizando a ferramenta VITE<br>
+Para obter acesso à plataforma o usuário deve cadastrar usuário e email na página inicial, estes que são enviados ao banco de dados GRAQHQL utilizando APOLLO CLIENT e se comunicando com a API do GRAPHCMS.
+Toda a criação do backend está centralizada no GRAPHCMS.<br>
+O redirecionamento de páginas é executado com REACT ROUTER DOM.<br>
+Assim que efetuado a inscrição o usuário é redirecionado para a página de aulas/videos, que são carregadas dinamicamente com as informações do banco do GRAPHCMS. Contendo uma barra lateral com as datas, horários e nome das aulas/videos, e o conteudo principal que contém o vídeo (carregado utilizando a biblioteca VIMEJS) e detalhes sobre a aula e professor/palestrante.
+A responsividade é controlada através de classes do TAILWINDCSS e ESTADOS(useState) do react (para controle de variáveis que ativam ou desativam elementos na tela)
