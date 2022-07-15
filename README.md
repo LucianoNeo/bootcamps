@@ -25,8 +25,7 @@ Trata-se de uma plataforma de aulas/eventos desenvolvida com as tecnologias:
 <img src='https://img.shields.io/badge/VIMEJS-orange'>
 <img src='https://img.shields.io/badge/TAILWINDCSS-lightblue'>
 </div><br>
-Live demo: https://anime-lessons.vercel.app/ <br>
-Repositório: https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event-platform
+Detalhes : https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/event-platform
 <br>Responsividade desenvolvida pós evento:
 <div style='display:flex'>
 <img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/event-platform/screen3.jpg'>
