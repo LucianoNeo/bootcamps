@@ -50,3 +50,10 @@ Chama-se com 'nbc' o snippet de criacao do componente.
 
 # Phosphor icons
 npm install --save phosphor-react-native
+
+# REACT NAVIGATION
+npm install @react-navigation/native
+
+expo install react-native-screens
+
+npm install @react-navigation/native-stack
