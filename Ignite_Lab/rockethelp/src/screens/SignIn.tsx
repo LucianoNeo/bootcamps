@@ -4,14 +4,20 @@ import { useState } from 'react'
 import Logo from '../assets/logo_primary.svg'
 import { Button } from '../components/Button'
 import { Input } from '../components/input'
-
+import auth from '@react-native-firebase/auth'
+import { Alert } from 'react-native'
 
 export function SignIn() {
     const { colors } = useTheme()
-    const [name,setName] = useState('')
+    const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
 
 function handleSignIN(){
+if(!email || !password){
+    return Alert.alert('Entrar','Informe e-mail e senha.')
+}
+
+
 
 }
 
@@ -29,7 +35,7 @@ function handleSignIN(){
                 placeholder='E-mail'
                 mb={4}
                 InputLeftElement={<Icon as={<Envelope color={colors.gray[300]} />} ml={4} />}
-                onChangeText={setName}
+                onChangeText={setEmail}
             />
             
             <Input

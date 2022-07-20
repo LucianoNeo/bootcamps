@@ -57,3 +57,55 @@ npm install @react-navigation/native
 expo install react-native-screens
 
 npm install @react-navigation/native-stack
+
+
+# RN FIREBASE
+rnfirebase.io
+npm install --save @react-native-firebase/app
+
+# modificar o arquivo app.json para
+```
+{
+  "expo": {
+    "name": "rockethelp",
+    "slug": "rockethelp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "@react-native-firebase/app"
+    ]
+  }
+}
+
+```
+# criar arquivos do android e ios no firebase
+
+Visao geral do projeto => adicionar app
+salvar arquivos na raiz do projeto
+
+# adicionar ao app.json
+```
+"android": {
+      "package": "com.rockethelp",
+      "googleServicesFile": "./google-services.json"
+    },
+    "ios": {
+      "bundleIdentifier": "com.rockethelp",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    }
+    
+```
+
+# executar expo pre build pra configurar firebase automaticamente
+
+expo prebuild
+
+
+# instalar dependencias do firebase (FIRESTORE)
+PARA ANDROID
+npm install @react-native-firebase/firestore 
+
+# instalar dependencias do firebase (AUTH)
+npm install @react-native-firebase/auth
