@@ -1,5 +1,27 @@
 # BOOTCAMPS / EVENTOS
 Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><br><br>
+
+## ROCKET HELP
+Projeto desenvolvido durante o evento Ignite-Lab React Native da Rocketseat, trata-se de um aplicativo para #iOS e #Android que faz a gestão de manutenção de computadores/equipamentos.
+<p align='center'>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/rockethelp/screen2.jpg'>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/rockethelp/screen3.jpg'>
+<img src='https://raw.githubusercontent.com/LucianoNeo/bootcamps/main/Ignite_Lab/rockethelp/screen4.jpg'>
+</p>
+Detalhes no repositório:<br>
+https://github.com/LucianoNeo/bootcamps/tree/main/Ignite_Lab/rockethelp <br>
+Desenvolvido com as tecnologias:
+<p align:'center'>
+<img src='https://img.shields.io/badge/REACTNATIVE-blue'>
+<img src='https://img.shields.io/badge/EXPO-red'>
+<img src='https://img.shields.io/badge/TYPESCRIPT-blue'>
+<img src='https://img.shields.io/badge/FIREBASE-blue'>
+<img src='https://img.shields.io/badge/NATIVEBASE-lightgreen'>
+<img src='https://img.shields.io/badge/REACT_NAVIGATION-green'>
+</p>
+<br>
+<hr>
+
 <img src='https://github.com/LucianoNeo/bootcamps/raw/main/Ignite_Lab/event-platform/icon.jpg' width='200px'>
 <br>
 <br>
