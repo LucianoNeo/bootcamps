@@ -19,6 +19,12 @@ export function Home() {
       patrimony: '65478',
       when: '18/07/2022 as 10:00h',
       status: 'open'
+    },
+    {
+      id: '345',
+      patrimony: '25879',
+      when: '18/07/2022 as 15:00h',
+      status: 'closed'
     }
   ])
 
@@ -54,11 +60,11 @@ export function Home() {
       <VStack flex={1} px={6}>
         <HStack w='full' mt={8} mb={4} justifyContent='space-between' alignItems={'center'}>
           <Heading color={'gray.100'}>
-            Meus Chamados
+            Solicitações
           </Heading>
 
           <Text color='gray.200'>
-            3
+            {orders.length}
           </Text>
         </HStack>
         <HStack space={3} mb={8}>
