@@ -1,6 +1,6 @@
 import AssinaturaNewsletter from "../components/AssinaturaNewsletter";
 import Menu from "../components/Menu";
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const Main = styled.main`
     width: 100vw;
@@ -11,11 +11,20 @@ const Main = styled.main`
     align-items: center;
    
 `
+const GlobalStyle = createGlobalStyle`
+    *{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
 
+`
 export default function HomePage() {
     return (
+
         <Main>
-            <img src="./assets/img/blob.png" alt="" srcset=""
+            <GlobalStyle />
+            <img src="./assets/img/blob.png" alt="" 
                 style={{
                     zIndex: 0,
                     position: 'absolute',
@@ -23,6 +32,7 @@ export default function HomePage() {
                     height: '400px',
                     right: '0px',
                     top: '0',
+                    zIndex:'-1'
                 }}
             />
             <Menu />
