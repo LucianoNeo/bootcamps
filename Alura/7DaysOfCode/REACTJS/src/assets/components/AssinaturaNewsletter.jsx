@@ -105,17 +105,16 @@ z-index: 2;
 
 
 export default function AssinaturaNewsletter() {
-    const [buttonEnabled, setbuttonEnabled] = useState(false)
+    const [buttonDisabled, setbuttonDisabled] = useState(true)
     const [emailValue, setEmailValue] = useState('')
 
     function handleChange(e) {
         setEmailValue(e.target.value)
-
     }
 
     function validateEmail(email) {
         let re = /\S+@\S+\.\S+/;
-        re.test(email) ? setbuttonEnabled(false) : setbuttonEnabled(true);
+        re.test(email) ? setbuttonDisabled(false) : setbuttonDisabled(true);
     }
 
 
@@ -145,7 +144,7 @@ export default function AssinaturaNewsletter() {
                         placeholder=" Insira seu e-mail" type='email' />
 
                     <InputButton
-                        disabled={buttonEnabled}
+                        disabled={buttonDisabled}
                         type='submit'
                     >Assinar newsletter</InputButton>
                 </FormEmail>
