@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import sgMail from "@sendgrid/mail"
+
+sgMail.setApiKey(import.meta.env.VITE_SENDGRID_API_KEY)
+
 
 const Main = styled.div`
 width: 70vw;
@@ -104,6 +108,9 @@ z-index: 2;
 `
 
 
+
+
+
 export default function AssinaturaNewsletter() {
     const [buttonDisabled, setbuttonDisabled] = useState(true)
     const [emailValue, setEmailValue] = useState('')
@@ -116,6 +123,19 @@ export default function AssinaturaNewsletter() {
         let re = /\S+@\S+\.\S+/;
         re.test(email) ? setbuttonDisabled(false) : setbuttonDisabled(true);
     }
+
+    const msg = {
+        to: 'tec.info.luciano@hotmail.com', // Change to your recipient
+        from: `${emailValue}`, // Change to your verified sender
+        subject: 'Newsletter CasaVerde',
+        text: `Olá, ${emailValue}.
+
+        Boas-vindas à Casa Verde! Você se cadastrou em nossa newsletter e vai começar a receber e-mails com as novidades de nossa loja e dicas de como cuidar de suas plantas.
+        
+        Até logo!`,
+        html: '<p>Sua casa com as <p><strong>MELHORES plantas</strong>',
+    }
+
 
 
     useEffect(() => {
@@ -134,6 +154,14 @@ export default function AssinaturaNewsletter() {
                 <FormEmail
                     onSubmit={(e) => {
                         e.preventDefault()
+                        sgMail
+                            .send(msg)
+                            .then(() => {
+                                console.log('Email enviado')
+                            })
+                            .catch((error) => {
+                                console.error(error)
+                            })
                         alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail: ${emailValue}`)
                         setEmailValue('')
                     }}
