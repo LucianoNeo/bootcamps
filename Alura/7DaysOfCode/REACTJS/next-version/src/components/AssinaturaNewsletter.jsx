@@ -1,13 +1,9 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import sgMail from "@sendgrid/mail"
-import Message from "./Message";
-
-sgMail.setApiKey(import.meta.env.VITE_SENDGRID_API_KEY)
 
 
 const Main = styled.div`
-width: 70vw;
+width: 80vw;
 display: flex;
 z-index: 2;
 margin-top: 160px;
@@ -19,13 +15,13 @@ const Container = styled.div`
     &:after {
       content: "";
       display: block;
-      width: 787px;
+      width: 757px;
       height: 975px;
       background-image: url('./assets/img/planta-newsletter.png');
       position: absolute;
       --baseDistance: -287px;
       top: calc(var(--baseDistance) + 250px);
-      right: 0;
+      right: 100px;
       z-index: -1;
       pointer-events: none;
   }
@@ -130,7 +126,7 @@ export default function AssinaturaNewsletter() {
     
 
     const PostData = ()=>{
-        fetch('http://localhost:5000/send',{
+        fetch('http://localhost:3000/api/sendEmail',{
         method:'post',
         headers:{
         'Content-Type':'application/json'
@@ -145,7 +141,7 @@ export default function AssinaturaNewsletter() {
         .then(data=>{
         alert(`Obrigado por se cadastrar na Newsletter ${emailValue}`)
         }).catch(err=>{
-        console.log(err)
+        console.error(err)
         })
         }
 
