@@ -42,6 +42,9 @@ li a {
     text-decoration: none;
     color: #202020;
     padding: 8px;
+    :hover{
+    font-weight: bold;
+    }
 }
     @media(min-width: 920px) {
     li {

@@ -4,15 +4,14 @@ import styled from 'styled-components'
 import ComoConseguir from "../src/components/ComoConseguir";
 import Produtos from "../src/components/Produtos";
 import { useEffect, useState } from "react";
+import Footer from "../src/components/Footer";
 
 const Main = styled.main`
     width: 100vw;
-    //height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 144px;
     @media(max-width: 900px) {
     width: 100vw;
     }
@@ -23,7 +22,7 @@ export default function HomePage() {
 
     
     return (
-
+        <>
         <Main>
             <img src="./assets/img/blob.png" alt="" 
                 style={{
@@ -40,6 +39,9 @@ export default function HomePage() {
             <AssinaturaNewsletter />
             <ComoConseguir/>
             <Produtos/>
+            
         </Main>
+        <Footer/>
+        </>
     );
 }

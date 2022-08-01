@@ -7,10 +7,11 @@ import Produto from './Produto'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 44px;
-    width: 90vw;
+    width: 99vw;
     z-index: 2;
-    justify-content: center; 
+    justify-content: flex-start; 
+    margin-top: 50px;
+
 `
 
 const ContainerTexto = styled.div`
@@ -26,6 +27,12 @@ const ContainerProdutos = styled.div`
     flex-wrap: wrap;
     gap: 16px;
     margin-top: 4px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
 
     @media(max-width: 900px) {
     flex-direction: column;

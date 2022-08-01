@@ -5,9 +5,15 @@
 
 body{
     background: rgba(196,196,196,0.1);
+    overflow-x: hidden;
 }
     *{
   margin: 0;
   padding:0;
   box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
 }
