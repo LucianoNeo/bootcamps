@@ -1,38 +1,33 @@
 import AssinaturaNewsletter from "../src/components/AssinaturaNewsletter";
 import Menu from "../src/components/Menu";
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 import ComoConseguir from "../src/components/ComoConseguir";
 import Produtos from "../src/components/Produtos";
+import { useEffect, useState } from "react";
 
 const Main = styled.main`
     width: 100vw;
-    height: 100vh;
+    //height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 144px;
+    @media(max-width: 900px) {
+    width: 100vw;
+    }
    
 `
-const GlobalStyle = createGlobalStyle`
 
-body{
-    background: rgba(196,196,196,0.1);
-}
-    *{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
-}
-
-`
 export default function HomePage() {
+
+    
     return (
 
         <Main>
-            <GlobalStyle />
             <img src="./assets/img/blob.png" alt="" 
                 style={{
-                    zIndex: 0,
+                    zIndex : 0,
                     position: 'absolute',
                     width: '40%',
                     height: '400px',

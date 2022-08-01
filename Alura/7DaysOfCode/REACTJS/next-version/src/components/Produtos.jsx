@@ -1,25 +1,38 @@
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import Produto from './Produto'
+
 
 const Container = styled.div`
     display: flex;
+    flex-direction: column;
     margin-top: 44px;
-    background-color: #FFF;
     width: 90vw;
-    height: 568px;
     z-index: 2;
-    justify-content: center;
-    
+    justify-content: center; 
 `
 
 const ContainerTexto = styled.div`
     display: flex;
     flex-direction: column;
-    height: 440px;
-    justify-content: space-around;
-    padding-left: 21px;
-    padding-top: 58px;
+    text-align: center;
+    gap: 12px;
 `
+const ContainerProdutos = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 4px;
 
+    @media(max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+`
 const Textoleve = styled.span`
 font-family: 'Montserrat';
 font-style: normal;
@@ -31,61 +44,56 @@ opacity: 0.5;
 `
 const TextoBold = styled.strong`
 font-family: 'Elsie Swash Caps', cursive;
-font-size: 42px;
+font-size: 82px;
 line-height: 94px;
 color: #202020;
 `
 
-const Separador = styled.div`
-    display:flex;
-    align-items:center; 
-    gap:16px;
-`
-
-const Marcador = styled.div`
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: #FFCB47;
-`
-
-
 function Produtos() {
+
+
+    const [produtos,setProdutos] = useState()
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        axios.get('http://localhost:3000/api/produtos/')
+        .then((response) => {
+            setIsLoading(true)
+            setProdutos(response.data)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+        .finally(() => {
+            setIsLoading(false)
+        })
+    }, [])
+
+if (isLoading) return <TextoBold>Carregando produtos</TextoBold>
+
     return (
-        <Container id='ofertas'>
-            
+        <Container id='plantas'>
+
             <ContainerTexto>
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <Textoleve>
-                        Conheça nossos
-                    </Textoleve>
-                    <TextoBold>
-                        produtos
-                    </TextoBold>
-                </div>
-
-                <Separador>
-                    <Marcador />
-                    <Textoleve>
-                        Escolha suas plantas
-                    </Textoleve>
-                </Separador>
-
-
-                <Separador>
-                    <Marcador />
-                    <Textoleve>
-                        Faça seu pedido
-                    </Textoleve>
-                </Separador>
-
-                <Separador>
-                    <Marcador />
-                    <Textoleve>
-                        Aguarde na sua casa
-                    </Textoleve>
-                </Separador>
+                <Textoleve>
+                    Conheça nossas
+                </Textoleve>
+                <TextoBold>
+                    plantas
+                </TextoBold>
             </ContainerTexto>
+            <ContainerProdutos>
+            {produtos.map((produto, key) => {
+                    return(
+                        <Produto 
+                        key={key}
+                        img = {produto.img}
+                        name = {produto.name}
+                        preco = {produto.preco}
+                        />
+                    )
+                })}
+            </ContainerProdutos>
         </Container>
     )
 }

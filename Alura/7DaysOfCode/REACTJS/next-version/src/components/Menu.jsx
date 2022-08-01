@@ -62,7 +62,7 @@ export default function Menu() {
                         /
                     </li>
                     <li>
-                        <a href="#"> Ofertas</a>
+                        <a href="#plantas"> Nossas Plantas</a>
                         /
                     </li>
                     <li>

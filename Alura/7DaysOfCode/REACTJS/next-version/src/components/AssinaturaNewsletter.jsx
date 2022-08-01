@@ -7,11 +7,20 @@ width: 80vw;
 display: flex;
 z-index: 2;
 margin-top: 160px;
+@media(max-width: 900px) {
+    width: 100vw;
+    }
 `
+
 const Container = styled.div`
     display: 'flex',
     flex-direction= 'flex';
     max-width: '585px';
+
+    @media(max-width: 900px) {
+    width: 100vw;
+    }
+
     &:after {
       content: "";
       display: block;
@@ -24,6 +33,10 @@ const Container = styled.div`
       right: 100px;
       z-index: -1;
       pointer-events: none;
+
+      @media(max-width: 900px) {
+    display: none;
+    }
   }
 `
 const WrapperTexto = styled.div`

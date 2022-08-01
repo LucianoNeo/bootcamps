@@ -1,22 +1,31 @@
+
 import styled from 'styled-components'
+
 
 const Container = styled.div`
     display: flex;
     margin-top: 195px;
     background-color: #FFF;
-    width: 75vw;
+    width: 995px;
     height: 440px;
     z-index: 2;
-    
+    background-image: url("./assets/img/planta-comoconseguir.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right:81px ;
+
+    @media(max-width: 900px) {
+    width: 100vh;
+    }
 `
 
 const ContainerTexto = styled.div`
     display: flex;
     flex-direction: column;
-    height: 440px;
+    height: 100%;
     justify-content: space-around;
-    padding-left: 21px;
-    padding-top: 58px;
 `
 
 const Textoleve = styled.span`
@@ -48,15 +57,9 @@ const Marcador = styled.div`
     background: #FFCB47;
 `
 
-
 function ComoConseguir() {
     return (
         <Container id='comoFazer'>
-            <img
-                src="./assets/img/planta-comoconseguir.png" alt=""
-                style={{ width: '50%' }}
-            />
-
             <ContainerTexto>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <Textoleve>
