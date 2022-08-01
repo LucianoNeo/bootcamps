@@ -7,6 +7,12 @@ height: 200px;
 background: #FFFFFF;
 box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
 overflow: hidden;
+border-radius: 5px;
+:hover{
+    transform: scale(1.2);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
 `
 
 const Titulo = styled.strong`
@@ -59,7 +65,7 @@ function Produto(props) {
             style={{maxWidth:'200px'}}/>
             <ContainerTexto>
                 <Titulo>{props.name}</Titulo>
-                <Preco>R$ {props.preco.toFixed(2).replace('.',',')}</Preco>
+                <Preco>R$ {props.price.toFixed(2).replace('.',',')}</Preco>
                 <Comprar id='comprar'>
                     <span>Comprar</span>
                     <img src="./assets/img/seta.png" alt="" width={14} height={8}/>

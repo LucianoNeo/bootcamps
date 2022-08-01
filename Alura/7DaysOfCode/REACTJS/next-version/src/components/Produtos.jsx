@@ -65,11 +65,11 @@ function Produtos() {
             console.log(err)
         })
         .finally(() => {
-            setIsLoading(false)
+                setIsLoading(false)           
         })
     }, [])
 
-if (isLoading) return <TextoBold>Carregando produtos</TextoBold>
+if (isLoading) return <Textoleve>Carregando produtos...</Textoleve>
 
     return (
         <Container id='plantas'>
@@ -89,7 +89,7 @@ if (isLoading) return <TextoBold>Carregando produtos</TextoBold>
                         key={key}
                         img = {produto.img}
                         name = {produto.name}
-                        preco = {produto.preco}
+                        price = {produto.price}
                         />
                     )
                 })}
