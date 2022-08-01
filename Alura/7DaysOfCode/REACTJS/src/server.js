@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 
 const transporter = nodemailer.createTransport(sendGridTransport({
     auth: {
-        api_key: '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'
+        api_key: 
     }
 }))
 

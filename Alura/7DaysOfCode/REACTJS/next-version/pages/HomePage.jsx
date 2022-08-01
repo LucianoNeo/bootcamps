@@ -2,6 +2,7 @@ import AssinaturaNewsletter from "../src/components/AssinaturaNewsletter";
 import Menu from "../src/components/Menu";
 import styled, { createGlobalStyle } from 'styled-components'
 import ComoConseguir from "../src/components/ComoConseguir";
+import Produtos from "../src/components/Produtos";
 
 const Main = styled.main`
     width: 100vw;
@@ -43,6 +44,7 @@ export default function HomePage() {
             <Menu />
             <AssinaturaNewsletter />
             <ComoConseguir/>
+            <Produtos/>
         </Main>
     );
 }
