@@ -9,7 +9,7 @@ https://www.figma.com/file/0yOQR6fGtbdrmqeStiO0jf/7Days-React?node-id=1%3A2
 
 ## Detalhes técnicos:
 
-- Desenvolvido com NextJS para poder utilizar os endpoints de backend, que foram necessários para enviar o email de confirmação de inscrição da Newsletter e para realizar a consulta dos produtos que estão cadastrados na API.
+- Desenvolvido com NextJS para poder utilizar os endpoints de backend, que foram necessários para enviar o email de confirmação de inscrição da Newsletter(utilizando a API do TWILLIO SENDGRID) e para realizar a consulta dos produtos que estão cadastrados na API.
 - Para estilização foi utilizado styled-components.
 - Seção de produtos possui ordenação por nome e preço além de um filtro de preço mínimo e máximo.
 - Os produtos são filtrados do backend por disponíveis e indisponíveis, ambos são mostrados com cards diferentes para cada tipo.
