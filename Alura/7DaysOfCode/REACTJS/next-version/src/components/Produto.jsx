@@ -72,7 +72,7 @@ const ContainerTexto = styled.div`
 function Produto(props) {
     return (
         <CardProduto>
-            <Image src={props.img} alt=""
+            <img src={props.img} alt=""
             style={{maxWidth:'200px'}}/>
             <ContainerTexto>
                 <Titulo>{props.name}</Titulo>
@@ -80,7 +80,7 @@ function Produto(props) {
                 <Preco>R$ {props.price.toFixed(2).replace('.',',')}</Preco>
                 <Comprar id='comprar'>
                     <span>Comprar</span>
-                    <Image src="./assets/img/seta.png" alt="" width={14} height={8}/>
+                    <img src="./assets/img/seta.png" alt="" width={14} height={8}/>
                 </Comprar>
             </ContainerTexto>
         </CardProduto>

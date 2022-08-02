@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import Image from 'next/image';
-
 
 const CardProduto = styled.div`
 display: flex;
@@ -69,7 +67,7 @@ const ContainerTexto = styled.div`
 function ProdutoEmFalta(props) {
     return (
         <CardProduto>
-            <Image src={props.img} alt=""
+            <img src={props.img} alt=""
             style={{maxWidth:'200px'}}/>
             <ContainerTexto>
                 <Titulo>{props.name}</Titulo>

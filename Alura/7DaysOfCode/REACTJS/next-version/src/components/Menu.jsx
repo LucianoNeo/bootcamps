@@ -58,7 +58,7 @@ li a {
 export default function Menu() {
     return (
         <Header>
-            <Image src="./assets/img/logo.png" alt="" height={45} />
+            <img src="./assets/img/logo.png" alt="" height={45} />
             <nav>
                 <Navbar>
                     <li>
