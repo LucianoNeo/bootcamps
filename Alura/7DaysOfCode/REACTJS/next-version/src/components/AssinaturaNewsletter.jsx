@@ -139,7 +139,7 @@ export default function AssinaturaNewsletter() {
     
 
     const PostData = ()=>{
-        fetch('http://localhost:3000/api/sendEmail',{
+        fetch('https://casaverdebyneo.vercel.app/api/sendEmail',{
         method:'post',
         headers:{
         'Content-Type':'application/json'

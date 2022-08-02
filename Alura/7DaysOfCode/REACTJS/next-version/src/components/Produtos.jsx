@@ -137,7 +137,7 @@ function Produtos() {
     }
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/produtos/')
+        axios.get('https://casaverdebyneo.vercel.app/api/produtos/')
             .then((response) => {
                 setIsLoading(true)
                 setProdutosBase(response.data.sort(ordenaPorNome))
