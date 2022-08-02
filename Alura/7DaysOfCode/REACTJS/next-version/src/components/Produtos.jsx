@@ -27,7 +27,7 @@ const ContainerProdutos = styled.div`
     flex-wrap: wrap;
     gap: 16px;
     margin-top: 4px;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     height: 350px;
     overflow-y: scroll;
@@ -50,6 +50,49 @@ font-family: 'Elsie Swash Caps', cursive;
 font-size: 82px;
 line-height: 94px;
 color: #202020;
+`
+const Filtros = styled.div`
+    padding: 10px;
+    display: flex;
+    width: 97%;
+    justify-content: flex-end;
+    gap: 10px;
+`
+
+const Ordenar = styled.select`
+font-family: 'Montserrat';
+  font-size: 20px;
+  font-style: normal;
+  outline-color: #ffcb47;
+  box-shadow: 10px 10px 30px 0px #0000000f;
+  
+`
+
+const Precos = styled.input`
+font-family: 'Montserrat';
+  font-size: 22px;
+  font-style: normal;
+  outline-color: #ffcb47;
+  box-shadow: 10px 10px 30px 0px #0000000f;
+  width: 120px;
+  border: 0;
+  //text-align: end;
+`
+const InputButton = styled.button`
+width: 100px;
+background: #FFCB47;
+box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+font-family: 'Montserrat';
+font-style: normal;
+font-size: 18px;
+border: none;
+cursor: pointer;
+color: #FFFFFF;
+z-index: 2;
+opacity: 0.8;
+:hover{
+    opacity: 1;
+}
 `
 
 function Produtos() {
@@ -95,6 +138,24 @@ function Produtos() {
                 <TextoBold>
                     plantas
                 </TextoBold>
+                <Filtros>
+                    <Textoleve>
+                        Ordenar por:
+                    </Textoleve>
+                    <Ordenar name="selectProdutos" id="selectProdutos">
+                        <option value="Nome">Nome</option>
+                        <option value="Preço">Preço</option>
+                    </Ordenar>
+                    <Textoleve>
+                        Preço Mínimo:
+                    </Textoleve>
+                    <Precos placeholder='R$'></Precos>
+                    <Textoleve>
+                        Preço Máximo:
+                    </Textoleve>
+                    <Precos placeholder='R$'></Precos>
+                    <InputButton>Filtrar</InputButton>
+                </Filtros>
             </ContainerTexto>
             <ContainerProdutos>
                 {disponiveis.map((produto, key) => {
