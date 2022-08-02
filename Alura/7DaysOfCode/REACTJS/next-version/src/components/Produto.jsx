@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import Image from 'next/image';
+
 
 const CardProduto = styled.div`
 display: flex;
@@ -70,7 +72,7 @@ const ContainerTexto = styled.div`
 function Produto(props) {
     return (
         <CardProduto>
-            <img src={props.img} alt=""
+            <Image src={props.img} alt=""
             style={{maxWidth:'200px'}}/>
             <ContainerTexto>
                 <Titulo>{props.name}</Titulo>
@@ -78,7 +80,7 @@ function Produto(props) {
                 <Preco>R$ {props.price.toFixed(2).replace('.',',')}</Preco>
                 <Comprar id='comprar'>
                     <span>Comprar</span>
-                    <img src="./assets/img/seta.png" alt="" width={14} height={8}/>
+                    <Image src="./assets/img/seta.png" alt="" width={14} height={8}/>
                 </Comprar>
             </ContainerTexto>
         </CardProduto>

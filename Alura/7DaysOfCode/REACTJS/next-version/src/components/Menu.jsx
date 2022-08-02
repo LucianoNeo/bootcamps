@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components'
 
 const Header = styled.header`
@@ -57,7 +58,7 @@ li a {
 export default function Menu() {
     return (
         <Header>
-            <img src="./assets/img/logo.png" alt="" height={45} />
+            <Image src="./assets/img/logo.png" alt="" height={45} />
             <nav>
                 <Navbar>
                     <li>
