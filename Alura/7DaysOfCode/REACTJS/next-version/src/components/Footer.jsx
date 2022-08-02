@@ -11,6 +11,11 @@ color: #222;
 font-family: 'Montserrat';
 font-size: 18px;
 gap: 20px;
+@media(max-width: 900px) {
+    width: 200vw;
+    
+    
+    }
 `
 
 export default function Footer() {

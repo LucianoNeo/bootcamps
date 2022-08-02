@@ -6,7 +6,7 @@ const Container = styled.div`
     display: flex;
     margin-top: 195px;
     background-color: #FFF;
-    width: 995px;
+    width:90vw;
     height: 440px;
     z-index: 2;
     background-image: url("./assets/img/planta-comoconseguir.png");
@@ -17,7 +17,9 @@ const Container = styled.div`
     padding-right:81px ;
 
     @media(max-width: 900px) {
-    width: 100vh;
+    width: 200vw;
+    background-size: 70%;
+    background-position: -180px;
     }
 `
 

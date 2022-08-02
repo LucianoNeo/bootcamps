@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Header = styled.header`
-width: 80vw;
+width: 200vw;
 height: 48.84px;
 display: flex;
 flex-direction: column;
@@ -16,7 +16,7 @@ z-index: 5;
 
 
 @media(min-width: 920px) {
-  
+        width: 80vw;
         flex-direction: row;
         padding: 0;
         padding-left: 16px;
@@ -32,7 +32,7 @@ z-index: 2;
 flex: 1;
 justify-content: center;
 flex-wrap: wrap;
-font-size: 12px;
+font-size: 20px;
 
 li a {
     display: inline-block;
@@ -46,7 +46,7 @@ li a {
     font-weight: bold;
     }
 }
-    @media(min-width: 920px) {
+    @media(min-width: 900px) {
     li {
         font-size: 16px;
     }

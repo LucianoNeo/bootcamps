@@ -12,8 +12,13 @@ const Main = styled.main`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-image: url("./assets/img/blob.png");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position-x: right;
     @media(max-width: 900px) {
-    width: 100vw;
+    width: 211vw;
+    background-size: 400px;
     }
    
 `
@@ -24,17 +29,6 @@ export default function HomePage() {
     return (
         <>
         <Main>
-            <img src="./assets/img/blob.png" alt="" 
-                style={{
-                    zIndex : 0,
-                    position: 'absolute',
-                    width: '40%',
-                    height: '400px',
-                    right: '0px',
-                    top: '0',
-                    zIndex:'-1'
-                }}
-            />
             <Menu />
             <AssinaturaNewsletter />
             <ComoConseguir/>
