@@ -1,6 +1,20 @@
 # BOOTCAMPS / EVENTOS
 Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><br><br>
 
+## CASA VERDE
+![Screenshot_1](https://user-images.githubusercontent.com/16579699/182496095-70ef51ec-fcfa-484e-9a5f-94192ba97595.jpg)
+<br>
+Se trata de um projeto idealizado para o desafio #7daysOfCode de #REACTJS, que consiste em uma landing-page de uma loja de plantas, onde pode-se se inscrever numa newsletter e realizar compra dos itens disponíveis na loja.<br><br>
+Detalhes:<br>
+https://github.com/LucianoNeo/bootcamps/tree/main/Alura/7DaysOfCode/REACTJS/next-version
+<br><br>
+<p align:'center'>
+<img src='https://img.shields.io/badge/NEXTJS-blue'>
+<img src='https://img.shields.io/badge/JAVASCRIPT-yellow'>
+<img src='https://img.shields.io/badge/SENDGRID-blue'>
+<img src='https://img.shields.io/badge/REACT_JS-green'>
+</p>
+
 ## ROCKET HELP
 Projeto desenvolvido durante o evento Ignite-Lab React Native da Rocketseat, trata-se de um aplicativo para #iOS e #Android que faz a gestão de manutenção de computadores/equipamentos.
 <p align='center'>
