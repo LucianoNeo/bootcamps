@@ -4,75 +4,75 @@ export default function handler(req, res) {
   res.status(200).json([
     {
       name: "Ajuga Reptans",
-      price: 20.00,
+      price: 10,
       img: "./assets/img/produto-01.png",
-      ordem: 0
+      quantity: 1
     },
     {
       name: "Cordyline fruticosa",
-      price: 35.00,
+      price: 35,
       img: "./assets/img/produto-02.png",
-      ordem: 3
+      quantity: 3
     },
     {
       name: "Crassula ovata",
-      price: 23.20,
+      price: 23.2,
       img: "./assets/img/produto-03.png",
-      ordem: 2
+      quantity: 12
     },
     {
       name: "Cyperus rotundus",
-      price: 20.00,
+      price: 25.5,
       img: "./assets/img/produto-04.png",
-      ordem: 2
+      quantity: 22
     },
     {
       name: "Delairea odorata",
-      price: 20.00,
+      price: 5,
       img: "./assets/img/produto-05.png",
-      ordem: 2
+      quantity: 20
     },
     {
       name: "Datura metel",
-      price: 20.00,
+      price: 80,
       img: "./assets/img/produto-06.png",
-      ordem: 2
+      quantity: 10
     },
     {
       name: "Ajuga Reptans",
-      price: 20.00,
+      price: 22.50,
       img: "./assets/img/produto-01.png",
-      ordem: 0
+      quantity: 0
     },
     {
       name: "Cordyline fruticosa",
-      price: 35.00,
+      price: 35,
       img: "./assets/img/produto-02.png",
-      ordem: 3
+      quantity: 0
     },
     {
       name: "Crassula ovata",
-      price: 23.20,
+      price: 23.2,
       img: "./assets/img/produto-03.png",
-      ordem: 2
+      quantity: 4
     },
     {
       name: "Cyperus rotundus",
-      price: 20.00,
+      price: 20,
       img: "./assets/img/produto-04.png",
-      ordem: 2
+      quantity: 1
     },
     {
       name: "Delairea odorata",
-      price: 20.00,
+      price: 28,
       img: "./assets/img/produto-05.png",
-      ordem: 2
+      quantity: 0
     },
     {
       name: "Datura metel",
-      price: 20.00,
+      price: 20,
       img: "./assets/img/produto-06.png",
-      ordem: 2
+      quantity: 5
     },
 
 

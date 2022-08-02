@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Produto from './Produto'
-
+import ProdutoEmFalta from './ProdutoEmFalta'
 
 const Container = styled.div`
     display: flex;
@@ -34,11 +34,7 @@ const ContainerProdutos = styled.div`
     overflow-x: hidden;
     height: 500px;
 
-    @media(max-width: 900px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
+    
 `
 const Textoleve = styled.span`
 font-family: 'Montserrat';
@@ -59,24 +55,35 @@ color: #202020;
 function Produtos() {
 
 
-    const [produtos,setProdutos] = useState()
+    const [produtos, setProdutos] = useState()
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         axios.get('http://localhost:3000/api/produtos/')
-        .then((response) => {
-            setIsLoading(true)
-            setProdutos(response.data)
-        })
-        .catch((err) => {
-            console.log(err)
-        })
-        .finally(() => {
-                setIsLoading(false)           
-        })
+            .then((response) => {
+                setIsLoading(true)
+                setProdutos(response.data)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+            .finally(() => {
+                setIsLoading(false)
+            })
     }, [])
 
-if (isLoading) return <Textoleve>Carregando produtos...</Textoleve>
+    if (isLoading) return <Textoleve>Carregando produtos...</Textoleve>
+
+    function retornaDisponiveis(produto) {
+        if (produto.quantity > 0)
+            return produto;
+    }
+    function retornaIndisponiveis(produto) {
+        if (produto.quantity == 0)
+            return produto;
+    }
+    const disponiveis = produtos.filter(retornaDisponiveis)
+    const indisponiveis = produtos.filter(retornaIndisponiveis)
 
     return (
         <Container id='plantas'>
@@ -90,13 +97,25 @@ if (isLoading) return <Textoleve>Carregando produtos...</Textoleve>
                 </TextoBold>
             </ContainerTexto>
             <ContainerProdutos>
-            {produtos.map((produto, key) => {
-                    return(
-                        <Produto 
-                        key={key}
-                        img = {produto.img}
-                        name = {produto.name}
-                        price = {produto.price}
+                {disponiveis.map((produto, key) => {
+                    return (
+                        <Produto
+                            key={key}
+                            img={produto.img}
+                            name={produto.name}
+                            price={produto.price}
+                            quantity={produto.quantity}
+                        />
+                    )
+                })}
+                {indisponiveis.map((produto, key) => {
+                    return (
+                        <ProdutoEmFalta
+                            key={key}
+                            img={produto.img}
+                            name={produto.name}
+                            price={produto.price}
+                            quantity={produto.quantity}
                         />
                     )
                 })}

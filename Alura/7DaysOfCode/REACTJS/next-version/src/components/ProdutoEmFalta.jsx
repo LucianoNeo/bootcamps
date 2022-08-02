@@ -4,10 +4,11 @@ const CardProduto = styled.div`
 display: flex;
 width: 379px;
 height: 200px;
-background: #FFFFFF;
+background: #FFF;
 box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
 overflow: hidden;
 border-radius: 5px;
+opacity: 0.8;
 :hover{
     transform: scale(1.2);
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
@@ -33,9 +34,9 @@ opacity: 0.5;
 
 const Disponiveis = styled.span`
 font-family: 'Montserrat';
-font-weight: 400;
+font-weight: bold;
 font-size: 14px;
-color: #202020;
+color: red;
 opacity: 0.5;
 `
 
@@ -47,15 +48,11 @@ font-weight: 400;
 width: 111px;
 font-size: 16px;
 line-height: 20px;
-color: #FFCB47;
-cursor: pointer;
+color: #444;
 justify-content: space-between;
 border: none;
 background-color: #FFF;
 align-items: center;
-:hover{
-    transform: scale(1.2);
-}
 
 `
 const ContainerTexto = styled.div`
@@ -67,19 +64,16 @@ const ContainerTexto = styled.div`
 `
 
 
-function Produto(props) {
+function ProdutoEmFalta(props) {
     return (
         <CardProduto>
             <img src={props.img} alt=""
             style={{maxWidth:'200px'}}/>
             <ContainerTexto>
                 <Titulo>{props.name}</Titulo>
-                <Disponiveis>Disponíveis:  {props.quantity}</Disponiveis>
+                <Disponiveis>PRODUTO INDISPONÍVEL</Disponiveis>
+                <Preco>Último preço: </Preco>
                 <Preco>R$ {props.price.toFixed(2).replace('.',',')}</Preco>
-                <Comprar id='comprar'>
-                    <span>Comprar</span>
-                    <img src="./assets/img/seta.png" alt="" width={14} height={8}/>
-                </Comprar>
             </ContainerTexto>
         </CardProduto>
 
@@ -87,4 +81,4 @@ function Produto(props) {
     )
 }
 
-export default Produto
+export default ProdutoEmFalta
