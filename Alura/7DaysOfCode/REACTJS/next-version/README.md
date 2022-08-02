@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CASA VERDE 
+Se trata de um projeto idealizado para o desafio #7daysOfCode de #REACTJS, que consiste em uma landing-page de uma loja de plantas, onde pode-se se inscrever numa newsletter e realizar compra dos itens disponíveis na loja.<br>
 
-## Getting Started
+[day7.webm](https://user-images.githubusercontent.com/16579699/182494907-45cf6499-8064-44ac-be31-66e3d961e592.webm)
 
-First, run the development server:
+Projeto realizado a partir do design fornecido pela ALURA no figma:<br>
+https://www.figma.com/file/0yOQR6fGtbdrmqeStiO0jf/7Days-React?node-id=1%3A2
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Detalhes técnicos:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Desenvolvido com NextJS para poder utilizar os endpoints de backend, que foram necessários para enviar o email de confirmação de inscrição da Newsletter e para realizar a consulta dos produtos que estão cadastrados na API.
+- Para estilização foi utilizado styled-components.
+- Seção de produtos possui ordenação por nome e preço além de um filtro de preço mínimo e máximo.
+- Os produtos são filtrados do backend por disponíveis e indisponíveis, ambos são mostrados com cards diferentes para cada tipo.
+- Adicionado responsividade ao final do projeto.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
