@@ -15,13 +15,13 @@ export default function handler(req, res) {
       quantity: 3
     },
     {
-      name: "Crassula ovata",
+      name: "Zenith Ardente",
       price: 23.2,
       img: "./assets/img/produto-03.png",
       quantity: 12
     },
     {
-      name: "Cyperus rotundus",
+      name: "Cactus Forensis",
       price: 25.5,
       img: "./assets/img/produto-04.png",
       quantity: 22
@@ -33,19 +33,19 @@ export default function handler(req, res) {
       quantity: 20
     },
     {
-      name: "Datura metel",
+      name: "Satira metel",
       price: 80,
       img: "./assets/img/produto-06.png",
       quantity: 10
     },
     {
-      name: "Ajuga Reptans",
+      name: "Dente de leão",
       price: 22.50,
       img: "./assets/img/produto-01.png",
       quantity: 0
     },
     {
-      name: "Cordyline fruticosa",
+      name: "Espada de São Jorge",
       price: 35,
       img: "./assets/img/produto-02.png",
       quantity: 0
@@ -63,7 +63,7 @@ export default function handler(req, res) {
       quantity: 1
     },
     {
-      name: "Delairea odorata",
+      name: "Expecta Patros",
       price: 28,
       img: "./assets/img/produto-05.png",
       quantity: 0
