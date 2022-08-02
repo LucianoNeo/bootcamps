@@ -15,5 +15,8 @@ https://www.figma.com/file/0yOQR6fGtbdrmqeStiO0jf/7Days-React?node-id=1%3A2
 - Os produtos são filtrados do backend por disponíveis e indisponíveis, ambos são mostrados com cards diferentes para cada tipo.
 - Adicionado responsividade ao final do projeto.
 
+## Deploy na Vercel:
+https://casaverdebyneo.vercel.app/
+
 
 
