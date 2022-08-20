@@ -1,70 +1,144 @@
-import React, { useEffect, useState } from 'react'
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, Pressable, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, Dimensions, Modal } from 'react-native'
+
+import { useEffect, useState, useCallback } from 'react'
+
 import Api from '../services/Api'
 
-const PokeCard: React.FC = () => {
-    const [pokemon,setPokemon] = useState()
+import { ICharacter } from '../types'
+function RMCharacter() {
+
+    const [character, setCharacter] = useState<ICharacter[]>()
+    const [showModal, setShowModal] = useState(false)
+    const [selected, setSelected] = useState<Number>()
+    const [characterDetails, setCharacterDetails] = useState<ICharacter>()
+
+
     useEffect(() => {
-        Api.get('6').then((response) => setPokemon(response.data))
-        
+        Api.get('character').then(res => setCharacter(res.data.results))
+
     }, [])
 
-    if(!pokemon) return (<Text>Carregando</Text>)
+    const getDataCharacter = (id: Number) => {
+        const value: ICharacter[] | any = character?.filter(item => item.id === id)
+
+        let parsed: any = {}
+
+        value.forEach(function (item: any) {
+            for (var i in item) {
+                parsed[i] = item[i];
+            }
+        });
+        setCharacterDetails(parsed)
+    }
+
 
     return (
-        <View style={styles.screen}>
-        <View style={styles.container}>
-            <Text style={styles.textBase}>
-                PokéCard 
-            </Text>
-          
-            <Image
-            source={require('../assets/img/charizard.png')}
-            style={styles.pokeImg}
-            />
-         
-            <Text style={styles.textInfo}>Nome: {pokemon.name}</Text>
-            <Text style={styles.textInfo}>Peso: {pokemon.weight} kg</Text>
-            <Text style={styles.textInfo}>Altura: {pokemon.height} m</Text>
-            <Text style={styles.textInfo}>Tipo: {pokemon.types[0].type.name}</Text>
-            
-        </View>
-        </View>
+        <SafeAreaView style={styles.containerAndroid}>
+            <ScrollView>
+                <View style={styles.container}>
+
+                    {character?.map(
+                        (item, index) => (
+                            <View key={index} style={styles.card}>
+                                <Modal
+                                    animationType='slide'
+                                    visible={showModal}
+                                    onRequestClose={() => setShowModal(!showModal)}
+
+                                >
+                                    <View style={styles.containerModal}>
+                                        <Text>
+                                            Name: {characterDetails?.name}
+                                        </Text>
+                                        <Text>
+                                            Species: {characterDetails?.species}
+                                        </Text>
+                                        <Text>
+                                            Gender: {characterDetails?.gender}
+                                        </Text>
+                                        <Pressable
+                                            onPress={() => setShowModal(!showModal)}
+                                        >
+                                            <Text style={styles.pressables}>Fechar</Text>
+                                        </Pressable>
+                                    </View>
+                                </Modal>
+                                <Image
+                                    style={{ width: 100, height: 100 }}
+                                    source={{ uri: item.image }}
+                                />
+                                <View style={styles.textBox}>
+                                    <Text
+                                        style={styles.textName}
+                                    >{item.name}</Text>
+
+                                    <Pressable
+                                    
+                                        onPress={() => {
+                                            getDataCharacter(item.id)
+                                            setShowModal(!showModal)
+                                        }
+                                        }
+                                    >
+                                        <Text style={styles.pressables}> Ver mais</Text>
+                                    </Pressable>
+                                </View>
+                            </View>
+                        )
+                    )}
+
+                </View>
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 
-
 const styles = StyleSheet.create({
-    screen:{
-        flex:1,
-        justifyContent: 'center',
-        alignItems:'center',
+    containerAndroid: {
+        marginTop: StatusBar.currentHeight + 10,
+        backgroundColor: '#7B25F0',
     },
     container: {
-        margin: 'auto',
-        width: '90%',
-        borderRadius: 20,
-        height: '70%',
-        backgroundColor: 'rgba(255,100,100,0.9)',
-        alignItems: 'center',
+        flex: 1,
+        width: Dimensions.get('window').width,
         justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#eee'
     },
-    textBase: {
+    containerModal: {
+        flex: 1,
+        width: Dimensions.get('window').width,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#00C200'
+    },
+    card: {
+        width: Dimensions.get('window').width - 50,
+        backgroundColor: '#7B25F0',
+        paddingHorizontal: 15,
+        paddingVertical: 15,
+        borderRadius: 12,
+        margin: 12,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+
+    textBox: {
+        color: 'white',
+        paddingHorizontal: 20,
+    },
+    textName: {
+        color: 'white',
         fontSize: 20,
-        color: 'white'
+        fontWeight: 'bold',
+
     },
-    textInfo: {
-        marginTop:20,
-        fontSize: 18,
-        color: 'white'
-    },
-    pokeImg:{
-        marginTop:100,
-        width: 250,
-        height: 180,
+    text: { color: 'white', },
+    pressables:{
+        fontWeight:'bold',
+        marginTop:50,
     }
-});
 
+})
 
-export default PokeCard
-
+export default RMCharacter
