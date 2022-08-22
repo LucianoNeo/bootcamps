@@ -71,7 +71,7 @@ function RMCharacter() {
                             <View key={index} style={styles.card}>
 
                                 <Image
-                                    style={{ width: 100, height: 100 }}
+                                    style={{ width: 100, height: 100 , borderRadius: 10}}
                                     source={{ uri: item.image }}
                                 />
                                 <View style={styles.textBox}>
@@ -87,7 +87,7 @@ function RMCharacter() {
                                         }
                                         }
                                     >
-                                        <Text style={styles.pressables}> Details</Text>
+                                        <Text style={styles.pressables}>Details</Text>
                                     </TouchableOpacity>
                                 </View>
                             </View>
@@ -121,10 +121,10 @@ const styles = StyleSheet.create({
     },
     containerModal: {
         height: 500,
-        width: Dimensions.get('window').width - 10,
+        width: Dimensions.get('window').width - 50,
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#00C200',
+        backgroundColor: '#85e885',
         borderRadius: 20,
         paddingVertical: 20,
     },
@@ -155,9 +155,12 @@ const styles = StyleSheet.create({
         marginTop: 50,
         backgroundColor: '#7B25F0',
         color: 'white',
-        paddingHorizontal: 40,
-        paddingVertical: 20,
+        paddingHorizontal: 30,
+        paddingVertical: 10,
         borderRadius: 10,
+        borderColor: 'white',
+        borderWidth: 1,
+        maxWidth:120,
     },
     imageModal: {
         width: 200,
@@ -167,6 +170,7 @@ const styles = StyleSheet.create({
     title:{
         fontSize: 30,
         fontWeight: 'bold',
+        textAlign: 'center'
     }
 
 })
