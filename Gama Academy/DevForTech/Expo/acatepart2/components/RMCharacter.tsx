@@ -1,6 +1,6 @@
 import { View, Text, Pressable, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, Dimensions, Modal, TouchableOpacity } from 'react-native'
 
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState } from 'react'
 
 import Api from '../services/Api'
 
@@ -9,7 +9,7 @@ function RMCharacter() {
 
     const [character, setCharacter] = useState<ICharacter[]>()
     const [showModal, setShowModal] = useState(false)
-    const [selected, setSelected] = useState<Number>()
+
     const [characterDetails, setCharacterDetails] = useState<ICharacter>()
 
 
@@ -39,6 +39,7 @@ function RMCharacter() {
                     animationType='slide'
                     visible={showModal}
                     onRequestClose={() => setShowModal(!showModal)}
+                    transparent={true}
 
                 >
                     <View style={styles.containerDark}>
