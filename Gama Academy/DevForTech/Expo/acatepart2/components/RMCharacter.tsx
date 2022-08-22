@@ -1,4 +1,4 @@
-import { View, Text, Pressable, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, Dimensions, Modal } from 'react-native'
+import { View, Text, Pressable, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, Dimensions, Modal, TouchableOpacity } from 'react-native'
 
 import { useEffect, useState, useCallback } from 'react'
 
@@ -35,34 +35,41 @@ function RMCharacter() {
     return (
         <SafeAreaView style={styles.containerAndroid}>
             <ScrollView>
-                <View style={styles.container}>
+                <Modal
+                    animationType='slide'
+                    visible={showModal}
+                    onRequestClose={() => setShowModal(!showModal)}
 
+                >
+                    <View style={styles.containerDark}>
+                        <View style={styles.containerModal}>
+                            <Image
+                                style={styles.imageModal}
+                                source={{ uri: characterDetails?.image }}
+                            />
+                            <Text>
+                                Name: {characterDetails?.name}
+                            </Text>
+                            <Text>
+                                Species: {characterDetails?.species}
+                            </Text>
+                            <Text>
+                                Gender: {characterDetails?.gender}
+                            </Text>
+                            <TouchableOpacity
+                                onPress={() => setShowModal(!showModal)}
+                            >
+                                <Text style={styles.pressables}>Back</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                </Modal>
+                <View style={styles.container}>
+                <Text style={styles.title}>Rick and Morty Characters</Text>
                     {character?.map(
                         (item, index) => (
                             <View key={index} style={styles.card}>
-                                <Modal
-                                    animationType='slide'
-                                    visible={showModal}
-                                    onRequestClose={() => setShowModal(!showModal)}
 
-                                >
-                                    <View style={styles.containerModal}>
-                                        <Text>
-                                            Name: {characterDetails?.name}
-                                        </Text>
-                                        <Text>
-                                            Species: {characterDetails?.species}
-                                        </Text>
-                                        <Text>
-                                            Gender: {characterDetails?.gender}
-                                        </Text>
-                                        <Pressable
-                                            onPress={() => setShowModal(!showModal)}
-                                        >
-                                            <Text style={styles.pressables}>Fechar</Text>
-                                        </Pressable>
-                                    </View>
-                                </Modal>
                                 <Image
                                     style={{ width: 100, height: 100 }}
                                     source={{ uri: item.image }}
@@ -72,16 +79,16 @@ function RMCharacter() {
                                         style={styles.textName}
                                     >{item.name}</Text>
 
-                                    <Pressable
-                                    
+                                    <TouchableOpacity
+
                                         onPress={() => {
                                             getDataCharacter(item.id)
                                             setShowModal(!showModal)
                                         }
                                         }
                                     >
-                                        <Text style={styles.pressables}> Ver mais</Text>
-                                    </Pressable>
+                                        <Text style={styles.pressables}> Details</Text>
+                                    </TouchableOpacity>
                                 </View>
                             </View>
                         )
@@ -105,12 +112,21 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#eee'
     },
-    containerModal: {
+    containerDark: {
         flex: 1,
         width: Dimensions.get('window').width,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#00C200'
+        backgroundColor: 'rgba(2,2,2,0.8)'
+    },
+    containerModal: {
+        height: 500,
+        width: Dimensions.get('window').width - 10,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#00C200',
+        borderRadius: 20,
+        paddingVertical: 20,
     },
     card: {
         width: Dimensions.get('window').width - 50,
@@ -134,9 +150,23 @@ const styles = StyleSheet.create({
 
     },
     text: { color: 'white', },
-    pressables:{
-        fontWeight:'bold',
-        marginTop:50,
+    pressables: {
+        fontWeight: 'bold',
+        marginTop: 50,
+        backgroundColor: '#7B25F0',
+        color: 'white',
+        paddingHorizontal: 40,
+        paddingVertical: 20,
+        borderRadius: 10,
+    },
+    imageModal: {
+        width: 200,
+        height: 200,
+        borderRadius: 150,
+    },
+    title:{
+        fontSize: 30,
+        fontWeight: 'bold',
     }
 
 })
