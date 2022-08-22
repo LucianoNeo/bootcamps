@@ -1,4 +1,4 @@
-import { View, Text, Pressable, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, Dimensions, Modal, TouchableOpacity } from 'react-native'
+import { Dimensions, Image, Modal, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 import { useEffect, useState } from 'react'
 
@@ -66,13 +66,13 @@ function RMCharacter() {
                     </View>
                 </Modal>
                 <View style={styles.container}>
-                <Text style={styles.title}>Rick and Morty Characters</Text>
+                    <Text style={styles.title}>Rick and Morty Characters</Text>
                     {character?.map(
                         (item, index) => (
                             <View key={index} style={styles.card}>
 
                                 <Image
-                                    style={{ width: 100, height: 100 , borderRadius: 10}}
+                                    style={{ width: 100, height: 100, borderRadius: 10 }}
                                     source={{ uri: item.image }}
                                 />
                                 <View style={styles.textBox}>
@@ -161,14 +161,14 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderColor: 'white',
         borderWidth: 1,
-        maxWidth:120,
+        maxWidth: 120,
     },
     imageModal: {
         width: 200,
         height: 200,
         borderRadius: 150,
     },
-    title:{
+    title: {
         fontSize: 30,
         fontWeight: 'bold',
         textAlign: 'center'
