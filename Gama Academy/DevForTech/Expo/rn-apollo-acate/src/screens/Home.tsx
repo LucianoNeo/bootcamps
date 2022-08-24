@@ -12,9 +12,7 @@ function Home() {
   return (
 
     <View style={styles.screen}>
-      <StatusBar
-        backgroundColor='black'
-      />
+      <StatusBar backgroundColor='black'/>
       {loading && <Text>Loading ...</Text>}
       {error && <Text>Error ...</Text>}
       {data &&
