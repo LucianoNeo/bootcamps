@@ -1,32 +1,44 @@
 import {
-  StyleSheet
+  StyleSheet,Dimensions
 } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
+    width: Dimensions.get('window').width-50,
+    justifyContent: 'space-between',
     alignItems: 'center',
-    marginRight: 40,
-    paddingVertical: 20
+    paddingVertical: 20,
+    marginTop: 20,
+    flexDirection: 'row'
+  },
+  cartBar: {
+    paddingHorizontal:20,
+    flexDirection: 'row',
+    width: '100%',
+    height: 40,
+    justifyContent:'space-between',
+    marginTop:20
   },
   modalBody: {
+    paddingHorizontal:20,
+    flexDirection: 'row',
     width: '100%',
-    height: '100%',
-    //justifyContent: 'space-evenly',
-    alignItems: 'center',
+    justifyContent:'space-between',
+    marginTop:20
   },
   contentCart: {
     backgroundColor: '#000540',
-    borderRadius: 100,
-    marginHorizontal: 5,
-    padding: 5
+    borderRadius: 150,
+    width: 35,
+    height: 35,
+    justifyContent:'center',
+    translateX: -10,
+    translateY: -10,
   },
   textContentCart: {
     color: '#fff',
     textAlign: 'center',
-    fontSize: 15
+    fontSize: 15,
   },
   items:{
     width: 380,
@@ -38,6 +50,18 @@ export default StyleSheet.create({
     padding: 20,
   },
   texts:{
-    marginRight: 30,
+    marginRight: 15,
+  },
+  title:{
+    fontSize: 22,
+  },
+  cartButton:{
+    flexDirection: 'row',
+  },
+  backButton:{
+    color: '#3ca0f9',
+    fontSize:16,
+    fontWeight: 'bold',
+    padding: 5,
   }
 })

@@ -8,7 +8,8 @@ import {
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 20
+    marginTop: 20,
+    //backgroundColor: 'black'
   },
   card: {
     
@@ -27,24 +28,20 @@ import {
   },
   infoBox: {
     width: 180,
-    height: 200,
     marginLeft: 15,
+    justifyContent:'space-between',
+    paddingVertical: 20
   },
   productName: {
     fontSize: 22,
     fontWeight: 'bold'
   },
   brandName: {
-    fontSize: 12
+    fontSize: 14
   },
   price: {
     fontSize: 18,
-    fontWeight: 'bold'
-  },
-  addCart: {
-    color: '#000'
-  },
-  removeCart: {
-    color: '#000'
+    fontWeight: 'bold',
+    marginBottom: 20
   },
  })

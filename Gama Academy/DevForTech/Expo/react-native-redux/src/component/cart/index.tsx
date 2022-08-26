@@ -2,7 +2,7 @@ import {
   View,
   TouchableOpacity,
   Text,
-  Modal
+  Modal,
 } from 'react-native';
 
 import {
@@ -31,11 +31,12 @@ import { useDispatch } from 'react-redux';
 import { removeCartItem } from '../../store/modules/cart/reducer';
 import "intl";
 import "intl/locale-data/jsonp/pt-BR";
+import Total from '../total';
 
 const Cart = () => {
 
   const [showCartModal, setShowCartModal] = useState(false)
-
+ 
   const cart = useSelector(cartStateData);
 
   const dispatch = useDispatch();
@@ -48,6 +49,7 @@ const Cart = () => {
     <View
       style={styles.container}
     >
+      <Text style={styles.title}>Produtos</Text>
       <Modal
         animationType='slide'
         visible={showCartModal}
@@ -55,27 +57,27 @@ const Cart = () => {
           () => setShowCartModal(!showCartModal)
         }
       >
-        <View
-          style={styles.modalBody}
-        >
+        <View style={styles.cartBar}>
+          <Text style={styles.title}>Carrinho</Text>
           <TouchableOpacity
             onPress={() => setShowCartModal(!showCartModal)}
           >
-            <AntDesign
-              name="close"
-              size={24}
-              color="black"
-            />
-            <Text>Fechar</Text>
+            <Text style={styles.backButton}>Voltar</Text>
           </TouchableOpacity>
-
-          {cart.length > 0 ? (
-            <View>
+        </View>
+        <View
+          style={styles.modalBody}
+        >
+          {cart.length > 0 ? 
+          (
+          
+          <View>    
               {cart.map((item, index) => (
                 <View
                   key={index}
                   style={styles.items}
                 >
+                  <Text style={styles.texts}>{item.brand}</Text>
                   <Text style={styles.texts}>{item.name}</Text>
                   <Text style={styles.texts}>{Intl.NumberFormat('pt-BR', {
                     style: 'currency',
@@ -92,33 +94,38 @@ const Cart = () => {
                     />
                   </TouchableOpacity>
                 </View>
-              ))}
+              ))
+              }
             </View>
           ) : (
             <View>
-              <Text>Adicione itens ao seu carrinho</Text>
+              <Text>O seu carrinho está vazio!</Text>
             </View>
           )}
+        
         </View>
-      </Modal>
-      <TouchableOpacity
-        onPress={() => setShowCartModal(!showCartModal)}
-      >
+        <Total/>
 
-        <AntDesign
-          name="shoppingcart"
-          size={24}
-          color="black"
-        />
-      </TouchableOpacity>
-      <View
-        style={styles.contentCart}
-      >
-        <Text
-          style={styles.textContentCart}
+      </Modal>
+      <View style={styles.cartButton}>
+        <TouchableOpacity
+          onPress={() => setShowCartModal(!showCartModal)}
         >
-          {cart?.length}
-        </Text>
+          <AntDesign
+            name="shoppingcart"
+            size={38}
+            color="black"
+          />
+        </TouchableOpacity>
+        <View
+          style={styles.contentCart}
+        >
+          <Text
+            style={styles.textContentCart}
+          >
+            {cart?.length}
+          </Text>
+        </View>
       </View>
     </View>
   )

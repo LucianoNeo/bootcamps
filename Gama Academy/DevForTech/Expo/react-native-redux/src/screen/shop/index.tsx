@@ -34,6 +34,7 @@ const Shop = () => {
     <View
       style={styles.container}
     >
+      
       <Cart />
       <ScrollView>
         { products?.map( item => (
@@ -69,6 +70,7 @@ const Shop = () => {
               <Button
                 title='Adicionar ao carrinho'
                 onPress={() => addCartItemShop(item)}
+                
               />
             </View>
 
