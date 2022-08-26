@@ -1,5 +1,5 @@
 {
-  "name": "react-native-redux",
+  "name": "rn-redux",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
     "@reduxjs/toolkit": "^1.8.5",
+    "@types/react-redux": "^7.1.24",
     "expo": "~46.0.9",
     "expo-status-bar": "~1.4.0",
     "intl": "^1.2.5",
@@ -20,8 +21,7 @@
     "react-native-vector-icons": "^9.2.0",
     "react-native-web": "~0.18.7",
     "react-redux": "^8.0.2",
-    "redux": "^4.2.0",
-    "redux-toolkit": "^1.1.2"
+    "redux": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

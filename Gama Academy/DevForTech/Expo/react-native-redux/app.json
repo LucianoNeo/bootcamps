@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-redux",
-    "slug": "react-native-redux",
+    "name": "redux",
+    "slug": "redux",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

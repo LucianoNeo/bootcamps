@@ -1,10 +1,7 @@
-import { View, Text } from "react-native"
-import AppStartup from "./src/screen"
+import AppStartup from "./src";
 
 const App = () => {
-  return (
-    <AppStartup />
-  )
-}
+  return <AppStartup />
+};
 
-export default App
+export default App;
