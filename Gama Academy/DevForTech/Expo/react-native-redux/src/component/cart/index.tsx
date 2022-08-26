@@ -77,7 +77,7 @@ const Cart = () => {
                   key={index}
                   style={styles.items}
                 >
-                  <Text style={styles.texts}>{item.brand}</Text>
+                 
                   <Text style={styles.texts}>{item.name}</Text>
                   <Text style={styles.texts}>{Intl.NumberFormat('pt-BR', {
                     style: 'currency',
