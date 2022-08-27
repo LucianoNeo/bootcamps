@@ -4,21 +4,20 @@ const { height } = Dimensions.get('window')
 
 const styles = StyleSheet.create({
     card: {
-      height: height - 300,
-      width: 400,
+      position: "relative",
+      height: 350,
+      width: 350,
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#fff',
-      borderRadius: 5,
       shadowColor: 'black',
+      shadowRadius: 6,
+      shadowOpacity: 0.3,
+      marginBottom: 2,
       shadowOffset: {
         width: 0,
         height: 2
       },
-      shadowRadius: 6,
-      shadowOpacity: 0.3,
-      elevation: 2,
-      marginBottom: 2,
 
     },
     texts: {
@@ -41,11 +40,19 @@ const styles = StyleSheet.create({
         bottom: 10
       },
     image: {
-        borderRadius: 2,
+        borderRadius: 25,
         flex: 1,
-        elevation: 2,
         marginBottom: 2,
         width: '100%',
+    },
+    favoriteButton:{
+      padding: 5,
+      backgroundColor:'black',
+      position: 'absolute',
+      right: 10,
+      top: 10,
+      zIndex: 10,
+      borderRadius: 10
     }
   })
 
