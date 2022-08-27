@@ -37,13 +37,8 @@ function Card({card} : IProps) {
         <View style={styles.card}>
             <TouchableOpacity
             style={styles.favoriteButton}
-                    onPress={() => {
-                        if(favorite.includes(card.id)){
+                    onPress={() => {                       
                             addFavorite(card)
-                        }
-                        else{
-
-                        }
                     }}
                   >
                     <AntDesign
