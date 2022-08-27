@@ -5,7 +5,9 @@ const { height } = Dimensions.get('window')
 const styles = StyleSheet.create({
     card: {
       position: "relative",
-      height: 350,
+      borderRadius: 30,
+      overflow: "hidden",
+      height: 250,
       width: 350,
       justifyContent: 'center',
       alignItems: 'center',
@@ -13,7 +15,7 @@ const styles = StyleSheet.create({
       shadowColor: 'black',
       shadowRadius: 6,
       shadowOpacity: 0.3,
-      marginBottom: 2,
+      marginBottom: 20,
       shadowOffset: {
         width: 0,
         height: 2
@@ -40,7 +42,7 @@ const styles = StyleSheet.create({
         bottom: 10
       },
     image: {
-        borderRadius: 25,
+        
         flex: 1,
         marginBottom: 2,
         width: '100%',
