@@ -1,54 +1,64 @@
-import { Text, View, Image,TouchableOpacity, } from 'react-native';
+import { Text, View, Image, TouchableOpacity, } from 'react-native';
 import styles from './style';
-import {IProps} from '../../type'
+import { IProps } from '../../type'
 
 import {
     AntDesign
-  } from '@expo/vector-icons';
+} from '@expo/vector-icons';
 
 
-  import {
+import {
     useDispatch, useSelector
-  } from 'react-redux';
-  
-  import { 
-    addNewFavorite , removeFavorite
-  } from '../../store/modules/favorites/reducer';
+} from 'react-redux';
 
-  import { favStateData } from '../../store/modules/favorites/reducer';
+import {
+    addNewFavorite, removeFavorite
+} from '../../store/modules/favorites/reducer';
 
-function Card({card} : IProps) {
+import { favStateData } from '../../store/modules/favorites/reducer';
+import { useEffect, useState } from 'react';
 
-     const dispatch = useDispatch();
+function Card({ card }: IProps) {
 
-    const addFavorite = (item: IProps ) => {
+    const dispatch = useDispatch();
+
+    const addFavorite = (item: IProps) => {
         dispatch(addNewFavorite(item));
-      }
+    }
 
-      const removefavorite = (item: IProps ) => {
+    const removefavorite = (item: IProps) => {
         dispatch(removeFavorite(item));
-      }
+    }
 
-      
-      const favorite = useSelector(favStateData);
-      
+    
+
+    const favorite = useSelector(favStateData);
+
+    const isFavorite = favorite.some(item => item.id === card.id)
+
     return (
 
         <View style={styles.card}>
             <TouchableOpacity
-            style={styles.favoriteButton}
-                    onPress={() => {                       
-                            addFavorite(card)
-                    }}
-                  >
-                    <AntDesign
-                      name="star"
-                      size={36}
-                      color='white'
-                      border={1}
-                    />
-                  </TouchableOpacity>
-        
+                style={styles.favoriteButton}
+                onPress={() => {
+                    if(!favorite.some(item => item.id === card.id)){
+                    addFavorite(card)
+                    
+                }
+                else{
+                    removefavorite(card)
+                }
+                }}
+            >
+                <AntDesign
+                    name={isFavorite ? "star" : "staro"}
+                    size={36}
+                    color='white'
+                    border={1}
+                />
+            </TouchableOpacity>
+
             <Image
                 source={{ uri: card.image }}
                 style={styles.image}

@@ -19,13 +19,12 @@ const FavData = createSlice({
   initialState,
   reducers: {
     addNewFavorite: (state: IFavorite, action: PayloadAction<IProps>) => {
-     
-      state.favorite = [...state.favorite, action.payload]
-   
+      state.favorite = [...state.favorite, action.payload]   
     },
-    removeFavorite: (state: IFavorite, action: PayloadAction<number>) => {
-      const { payload } = action;
-      state.favorite.splice(payload, 1)
+    removeFavorite: (state: IFavorite, action: PayloadAction<IProps>) => {
+      
+      let remove = state.favorite.filter((item) => item.id !== action.payload.id)
+      state.favorite = remove
     },
   }
 })

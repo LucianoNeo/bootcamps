@@ -16,14 +16,14 @@ function Home() {
 
     <View style={styles.screen}>
       <View style={styles.menu}>
-      <TouchableOpacity 
-      onPress={()=> setShowFavorites(false)}
-      style={styles.buttons}><Text style={styles.ButtonsText}>All Characters</Text></TouchableOpacity>
-      <TouchableOpacity 
-      onPress={()=> setShowFavorites(true)}
-      style={styles.buttons}><Text style={styles.ButtonsText}>Favorites</Text></TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => setShowFavorites(false)}
+          style={styles.buttons}><Text style={styles.ButtonsText}>All Characters</Text></TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => setShowFavorites(true)}
+          style={styles.buttons}><Text style={styles.ButtonsText}>Favorites</Text></TouchableOpacity>
       </View>
-      <StatusBar backgroundColor='black'/>
+      <StatusBar backgroundColor='black' />
       {loading && <Text>Loading ...</Text>}
       {error && <Text>Error ...</Text>}
 
@@ -33,11 +33,11 @@ function Home() {
           renderItem={({ item }) => <Card card={item} />}
         />
       }
-      
-      {showFavorites && 
+
+      {showFavorites &&
         <FlatList
           data={favorite}
-          renderItem={({ item }) => <Card card={item}/>}
+          renderItem={({ item }) => <Card card={item} />}
         />
       }
 
@@ -58,20 +58,20 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 10
   },
-  ButtonsText:{
-    textAlign:'center',
+  ButtonsText: {
+    textAlign: 'center',
     fontSize: 18,
   },
-  menu:{
-    flexDirection:'row',
-    justifyContent:'space-between',
+  menu: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     width: Dimensions.get('window').width,
     marginBottom: 10,
-    paddingHorizontal:10,
-    marginTop:10
-    
-   
-    
+    paddingHorizontal: 10,
+    marginTop: 10
+
+
+
   }
 })
 
