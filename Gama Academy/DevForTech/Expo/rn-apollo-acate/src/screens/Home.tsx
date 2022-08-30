@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   starText:{
     position: 'absolute',
     right: 18,
-    top: 12,
+    top: 25,
     color: 'black',
     fontWeight: 'bold'
   },

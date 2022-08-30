@@ -1,6 +1,6 @@
 import { Text, View, Image, TouchableOpacity, } from 'react-native';
 import styles from './style';
-import { IProps } from '../../type'
+import { ICard, IProps } from '../../type'
 
 import {
     AntDesign
@@ -22,11 +22,11 @@ function Card({ card }: IProps) {
 
     const dispatch = useDispatch();
 
-    const addFavorite = (item: IProps) => {
+    const addFavorite = (item: any) => {
         dispatch(addNewFavorite(item));
     }
 
-    const removefavorite = (item: IProps) => {
+    const removefavorite = (item: ICard) => {
         dispatch(removeFavorite(item));
     }
 

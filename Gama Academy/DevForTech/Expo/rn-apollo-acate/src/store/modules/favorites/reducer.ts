@@ -6,7 +6,8 @@ import {
 import {
   IProps,
   IFavState,
-  IFavorite
+  IFavorite,
+  ICard
   
 } from '../../../type/index'
 
@@ -21,7 +22,7 @@ const FavData = createSlice({
     addNewFavorite: (state: IFavorite, action: PayloadAction<IProps>) => {
       state.favorite = [...state.favorite, action.payload]   
     },
-    removeFavorite: (state: IFavorite, action: PayloadAction<IProps>) => {
+    removeFavorite: (state: IFavorite, action: PayloadAction<ICard>) => {
       
       let remove = state.favorite.filter((item) => item.id !== action.payload.id)
       state.favorite = remove
