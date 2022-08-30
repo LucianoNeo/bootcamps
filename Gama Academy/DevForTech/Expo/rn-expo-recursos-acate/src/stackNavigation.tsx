@@ -12,7 +12,7 @@ import Maps from './screens/maps';
 
 const { Navigator, Screen } = createStackNavigator();
 
-export default function Routes(){
+export default function StackNavigation(){
   return(
     <NavigationContainer>
       <Navigator

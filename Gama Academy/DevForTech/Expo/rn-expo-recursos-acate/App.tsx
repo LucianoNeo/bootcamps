@@ -1,5 +1,15 @@
-import Routes from './src/routes'
+import BottomNavigator from './src/bottomNavigator'
+import DrawerNavigation from './src/drawerNavigation'
+import StackNavigation from './src/stackNavigation'
+
+
 
 export default function App() {
-  return <Routes />
+  
+  //return <StackNavigation />
+  
+  //return <BottomNavigator />
+  
+  return <DrawerNavigation/>
+
 }
