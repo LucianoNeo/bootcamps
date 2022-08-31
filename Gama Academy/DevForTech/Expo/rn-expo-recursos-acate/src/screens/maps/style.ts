@@ -10,10 +10,20 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   text: {
-    fontSize: 22
+    fontSize: 18,
+    textAlign:'center',
+    fontWeight: 'bold'
   },
   map:{
     width: '100%',
     height: '100%',
+  },
+  logo:{
+    width: 100,
+    height: 80,
+  },
+  modal:{
+    width: 200,
+    height: 200,
   }
 })
