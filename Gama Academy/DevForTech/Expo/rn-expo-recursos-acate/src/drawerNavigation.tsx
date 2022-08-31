@@ -1,19 +1,36 @@
-import { View, Text, } from 'react-native'
+import {
+  NavigationContainer
+} from '@react-navigation/native';
 
-import { NavigationContainer } from '@react-navigation/native'
+import {
+  createDrawerNavigator
+} from '@react-navigation/drawer';
 
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import Home from './screens/home';
+import CameraApp from './screens/camera';
+import MapsApp from './screens/maps';
 
-import { MaterialIcons } from '@expo/vector-icons'
-
-
-import Home from './screens/home'
-import Maps from './screens/maps'
-import CameraScreen from './screens/camera'
+import 'react-native-gesture-handler';
 
 export default function DrawerNavigation() {
+  const Drawer = createDrawerNavigator()
   return (
-    <View>
-        <Text>Drawer</Text>
-    </View>
+    <NavigationContainer>
+      <Drawer.Navigator>
+        <Drawer.Screen
+          name="Home"
+          component={Home}
+        />
+        <Drawer.Screen
+          name="Camera"
+          component={CameraApp}
+        />
+        <Drawer.Screen
+          name="Maps"
+          component={MapsApp}
+        />
+      </ Drawer.Navigator>
+    </NavigationContainer>
+  )
+  
 }

@@ -13,7 +13,7 @@ export default StyleSheet.create({
   text: {
     fontSize: 22,
     fontWeight: 'bold',
-    fontStyle: 'italic'
+   
   },
   buttonContainer: {
     flexDirection: 'row',

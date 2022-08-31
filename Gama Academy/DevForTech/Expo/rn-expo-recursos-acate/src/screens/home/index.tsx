@@ -24,7 +24,7 @@ export default function Home() {
     <View
       style={styles.container}
     >
-      <Text style={styles.text}> NEO TOOLS</Text>
+      <Text style={styles.text}> Neo Nav Tools</Text>
       <Image
       style={styles.image}
       source={require('../../../assets/NEO1.jpg')}

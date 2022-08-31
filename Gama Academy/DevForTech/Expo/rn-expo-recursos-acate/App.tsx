@@ -1,15 +1,16 @@
-import BottomNavigator from './src/bottomNavigator'
-import DrawerNavigation from './src/drawerNavigation'
-import StackNavigation from './src/stackNavigation'
-
+import StackNavigation from './src/stackNavigation';
+import BottomNavigation from './src/bottomNavigation';
+import DrawerNavigation from './src/drawerNavigation';
 
 
 export default function App() {
-  
-  //return <StackNavigation />
-  
-  //return <BottomNavigator />
-  
-  return <DrawerNavigation/>
 
+
+  return (
+    <>
+      {/* <StackNavigation />
+      <BottomNavigation /> */}
+      <DrawerNavigation />
+    </>
+  )
 }
