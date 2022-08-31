@@ -11,7 +11,7 @@ import {
 } from '@expo/vector-icons';
 
 import Home from './screens/home';
-import CameraApp from './screens/camera';
+import CameraScreen from './screens/camera';
 import MapsApp from './screens/maps';
 
 export default function BottomNavigation(){
@@ -36,8 +36,8 @@ export default function BottomNavigation(){
           }}
         />
         <Tab.Screen
-          name='CameraApp'
-          component={CameraApp}
+          name='Camera'
+          component={CameraScreen}
           options={{
             tabBarLabel: 'Camera',
             tabBarIcon: ({color, size}) => (

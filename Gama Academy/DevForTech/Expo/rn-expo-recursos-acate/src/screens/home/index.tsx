@@ -14,7 +14,14 @@ import {
 
 import { MaterialCommunityIcons, Entypo, FontAwesome } from '@expo/vector-icons';
 
+import { showModal, useData, changeStyle } from '../../redux/slice';
+import { useSelector, useDispatch } from 'react-redux'
+
 export default function Home() {
+
+
+  const dispatch = useDispatch()
+
   const navigation = useNavigation();
 
   function handleScreen(screen: any) {
@@ -24,17 +31,13 @@ export default function Home() {
     <View
       style={styles.container}
     >
-      <Text style={styles.text}> Neo Nav Tools</Text>
-      <Image
-      style={styles.image}
-      source={require('../../../assets/NEO1.jpg')}
-      />
+
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.buttons}
           onPress={() => handleScreen('Home')}
         >
-           <FontAwesome name="home" size={24} color="black" />
+          <FontAwesome name="home" size={24} color="black" />
           <Text>
             Home
           </Text>
@@ -58,9 +61,14 @@ export default function Home() {
           <Text>
             Maps
           </Text>
-
         </TouchableOpacity>
+
       </View>
+      <TouchableOpacity
+      onPress={()=> dispatch(showModal())}
+      >
+        <Text style={styles.link}>Change Nav Style</Text>
+      </TouchableOpacity>
     </View>
   )
 };

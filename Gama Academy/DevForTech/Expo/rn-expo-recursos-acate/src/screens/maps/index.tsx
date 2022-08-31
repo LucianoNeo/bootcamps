@@ -2,7 +2,8 @@ import { useState } from 'react';
 import {
   View,
   Text,
-  Image
+  Image,
+  Linking
 } from 'react-native';
 
 
@@ -37,17 +38,23 @@ export default function Maps() {
             latitude: -27.54449138527775,
             longitude: -48.50007649579188,
           }}
-          
+
         >
-          <Callout>
+          <Callout
+          onPress={()=>{Linking.openURL('tel:04821072700');} }
+          >
             <View style={styles.modal}>
               <Text style={styles.text}>
-                Acate
+                ACATE
               </Text>
-              <Image
-                source={require('../../assets/img/logo_acate.png')}
-                style={styles.logo}
-              />
+              <Text>Endereço:</Text>
+              <Text>Rodovia SC 401, 4100 - Km4 - Saco Grande, Florianópolis - SC, 88032-005
+              </Text>
+              <Text>Telefone: </Text>
+              <Text 
+              style={{fontSize:18, color: '#6ba1c4',}}
+              >(48) 2107-2700</Text>
+
 
             </View>
 

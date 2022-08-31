@@ -1,16 +1,13 @@
-import StackNavigation from './src/stackNavigation';
-import BottomNavigation from './src/bottomNavigation';
-import DrawerNavigation from './src/drawerNavigation';
-
+import { Provider } from 'react-redux'
+import store from './src/redux/store'
+import Start from './Start';
 
 export default function App() {
 
-
   return (
-    <>
-      {/* <StackNavigation />
-      <BottomNavigation /> */}
-      <DrawerNavigation />
-    </>
+    <Provider store={store}>
+      <Start />
+    </Provider>
+
   )
 }

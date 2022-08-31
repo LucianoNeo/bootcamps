@@ -8,7 +8,8 @@ export default StyleSheet.create({
     height: '100%',
     //justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 20
+    marginTop: 20,
+    position: 'relative'
   },
   text: {
     fontSize: 22,
@@ -38,5 +39,14 @@ export default StyleSheet.create({
   image:{
     borderRadius: 200,
     marginTop: 20,
+  },
+  link:{
+    fontSize:18,
+    fontWeight: 'bold',
+    color: '#6ba1c4',
+    position: 'absolute',
+    top: -330,
+    left: 35,
+
   }
 })

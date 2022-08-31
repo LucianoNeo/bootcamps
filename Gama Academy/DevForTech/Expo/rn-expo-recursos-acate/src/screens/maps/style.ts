@@ -23,7 +23,9 @@ export default StyleSheet.create({
     height: 80,
   },
   modal:{
+    justifyContent: 'space-around',
     width: 200,
     height: 200,
+    padding: 10
   }
 })
