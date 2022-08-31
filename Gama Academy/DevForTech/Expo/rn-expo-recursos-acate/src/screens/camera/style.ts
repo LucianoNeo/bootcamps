@@ -25,6 +25,7 @@ export default StyleSheet.create({
     padding: 20,
     position: 'absolute',
     right: 10,
+    top: 40
   },
   buttonText:{
     fontSize: 22

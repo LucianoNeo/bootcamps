@@ -4,7 +4,7 @@ import DrawerNavigation from './src/drawerNavigation';
 import Selection from './src/components/selection';
 import { Modal, Text } from 'react-native'
 import store from './src/redux/store'
-import { hideModal, useData, changeStyle } from './src/redux/slice';
+import { handleModal, useData, changeStyle } from './src/redux/slice';
 import { Provider, useSelector, useDispatch } from 'react-redux'
 
 export default function Start() {
@@ -17,10 +17,11 @@ export default function Start() {
     <Provider store={store}>
       <Modal
         visible={appData.showModal}
+        animationType='fade'
       >
         <Text
           onPress={() => {
-            dispatch(hideModal())
+            dispatch(handleModal())
           }}
           style={{ fontSize: 22, alignSelf: 'flex-end', padding: 20, fontWeight: 'bold' }}
         >x</Text>

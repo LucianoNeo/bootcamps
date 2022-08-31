@@ -4,7 +4,7 @@ import {
 } from 'react-native';
 
 import styles from './style';
-import { changeStyle, hideModal, useData } from '../redux/slice';
+import { changeStyle, handleModal, useData } from '../redux/slice';
 import { useDispatch, useSelector } from 'react-redux'
 
 export default function Selection() {
@@ -32,7 +32,7 @@ const dispatch = useDispatch()
         <TouchableOpacity
           style={styles.buttons}
           onPress={() => {
-            dispatch(hideModal())
+            dispatch(handleModal())
             handleScreen('stack')}}
         >
           <Text>
@@ -43,7 +43,7 @@ const dispatch = useDispatch()
         <TouchableOpacity
           style={styles.buttons}
           onPress={() => {
-            dispatch(hideModal())
+            dispatch(handleModal())
             handleScreen('bottom')}}
         >
           <Text>
@@ -54,7 +54,7 @@ const dispatch = useDispatch()
         <TouchableOpacity
           style={styles.buttons}
           onPress={() => {
-            dispatch(hideModal())
+            dispatch(handleModal())
             handleScreen('drawer')}}
         >
           <Text>

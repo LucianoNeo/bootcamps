@@ -8,7 +8,7 @@ export default StyleSheet.create({
     height: '100%',
     //justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 40,
     position: 'relative'
   },
   text: {
@@ -44,9 +44,8 @@ export default StyleSheet.create({
     fontSize:18,
     fontWeight: 'bold',
     color: '#6ba1c4',
-    position: 'absolute',
     top: -330,
-    left: 35,
+    left: 85,
 
   }
 })

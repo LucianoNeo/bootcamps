@@ -19,19 +19,17 @@ const sliceData = createSlice({
         changeStyle(state, action) {
             state.navStyle = action.payload
         },
-        hideModal(state) {
-            state.showModal = false
+        handleModal(state) {
+            state.showModal = !state.showModal
         },
-        showModal(state) {
-            state.showModal = true
-        },
+        
     }
 })
 
 
 export default sliceData.reducer
 
-export const { changeStyle, hideModal, showModal } = sliceData.actions;
+export const { changeStyle, handleModal } = sliceData.actions;
 
 export const useData = (state: any) => {
     return state.appData as IAppData

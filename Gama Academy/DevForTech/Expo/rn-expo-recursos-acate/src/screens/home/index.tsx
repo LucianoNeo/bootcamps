@@ -14,7 +14,7 @@ import {
 
 import { MaterialCommunityIcons, Entypo, FontAwesome } from '@expo/vector-icons';
 
-import { showModal, useData, changeStyle } from '../../redux/slice';
+import { handleModal, useData, changeStyle } from '../../redux/slice';
 import { useSelector, useDispatch } from 'react-redux'
 
 export default function Home() {
@@ -64,11 +64,14 @@ export default function Home() {
         </TouchableOpacity>
 
       </View>
-      <TouchableOpacity
-      onPress={()=> dispatch(showModal())}
-      >
-        <Text style={styles.link}>Change Nav Style</Text>
-      </TouchableOpacity>
+
+
+
+      <Text
+        onPress={() => dispatch(handleModal())}
+        style={styles.link}>Change Nav Style
+      </Text>
+
     </View>
   )
 };
