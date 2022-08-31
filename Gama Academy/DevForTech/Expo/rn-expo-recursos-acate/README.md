@@ -3,23 +3,11 @@ Recursos Nativos | Expo RN <br/>
 
 Utilizando recursos Nativos com Expo<br/>
 
+Neste projeto utilizamos recursos nativos de navegação do tipo:
+- stack
+- bottom
+- drawer
 
-## Para instalar as dependências do stack navigation utili os seguintes comandos:
-```
-expo install @react-navigation/stack @react-navigation/native
+Além da biblioteca para acessar a camêra do dispositivo e a api de mapas (google maps).
 
-expo install react-native-screens react-native-safe-area-context
-
-expo install react-native-gesture-handler
-
-expo install react-native-reanimated
-```
-
-## Para instalar recursos de camera
-
-```
-expo install expo-camera
-```
-
-
-### Prof Douglas Morais
+Como extra foi adicionado redux para gerenciamento de estado da aplicação, para que seja possível trocar entre os 3 modos de navegação, controlados por um componente modal que pode ser chamado em qualquer tela.
