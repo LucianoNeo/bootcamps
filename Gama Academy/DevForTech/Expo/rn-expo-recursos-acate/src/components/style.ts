@@ -38,8 +38,16 @@ export default StyleSheet.create({
     
   },
   image:{
-    borderRadius: 200,
+    borderRadius: 80,
     marginTop: 20,
-    marginBottom: 40
+    marginBottom: 40,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 25,
+      height: 30,
+    },
+    shadowOpacity: 0.8,
+    shadowRadius: 9.11,
+    
   }
 })
