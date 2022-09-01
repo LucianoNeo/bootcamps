@@ -9,7 +9,9 @@ export default StyleSheet.create({
     //justifyContent: 'space-between',
     alignItems: 'center',
     marginTop: 40,
-    position: 'relative'
+    position: 'relative',
+    
+    
   },
   text: {
     fontSize: 22,
@@ -20,9 +22,10 @@ export default StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     height: 300,
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     padding: 20,
     marginTop: 50,
+    flexWrap: 'wrap'
   },
   buttons:{
     width: 120,
@@ -30,7 +33,8 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10
+    borderRadius: 10,
+    margin: 10
   },
   buttonText:{
     justifyContent: 'space-between',

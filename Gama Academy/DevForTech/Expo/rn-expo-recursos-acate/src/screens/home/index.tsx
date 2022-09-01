@@ -63,6 +63,16 @@ export default function Home() {
           </Text>
         </TouchableOpacity>
 
+        <TouchableOpacity
+          style={styles.buttons}
+          onPress={() => handleScreen('Notifications')}
+        >
+          <MaterialCommunityIcons name="message" size={24} color="black" />
+          <Text>
+            Notifications
+          </Text>
+        </TouchableOpacity>
+
       </View>
 
 

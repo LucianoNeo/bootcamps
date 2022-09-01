@@ -13,6 +13,7 @@ import {
 import Home from './screens/home';
 import CameraScreen from './screens/camera';
 import MapsApp from './screens/maps';
+import Notifications from './screens/notifications';
 
 export default function BottomNavigation(){
   const Tab = createBottomTabNavigator();
@@ -53,6 +54,16 @@ export default function BottomNavigation(){
             tabBarLabel: 'Maps',
             tabBarIcon: ({color, size}) => (
               <MaterialIcons name="map" color={color} size={size} />
+            )
+          }}
+        />
+        <Tab.Screen
+          name='Notifications'
+          component={Notifications}
+          options={{
+            tabBarLabel: 'Notifications',
+            tabBarIcon: ({color, size}) => (
+              <MaterialIcons name="message" color={color} size={size} />
             )
           }}
         />

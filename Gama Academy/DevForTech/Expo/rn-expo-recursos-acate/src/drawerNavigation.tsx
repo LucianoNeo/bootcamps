@@ -9,6 +9,8 @@ import {
 import Home from './screens/home';
 import CameraApp from './screens/camera';
 import MapsApp from './screens/maps';
+import Notifications from './screens/notifications';
+
 
 import 'react-native-gesture-handler';
 
@@ -29,8 +31,13 @@ export default function DrawerNavigation() {
           name="Maps"
           component={MapsApp}
         />
+
+        <Drawer.Screen
+          name="Notifications"
+          component={Notifications}
+        />
       </ Drawer.Navigator>
     </NavigationContainer>
   )
-  
+
 }
