@@ -4,3 +4,15 @@ export interface ILocalization{
     latitudeDelta: number,
     longitudeDelta: number,
 }
+
+export interface INotification{
+    date: number;
+    request: {
+        content:{
+            body: string,
+            sound: string,
+            title: string,
+            data: {}
+        }
+    }
+}

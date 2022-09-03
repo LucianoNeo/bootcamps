@@ -4,14 +4,35 @@ import {
 
 export default StyleSheet.create({
   container: {
+    marginTop: 40,
     width: '100%',
     height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent:'center'
   },
   text: {
-    fontSize: 18,
     textAlign:'center',
-    fontWeight: 'bold'
+    margin: 10,
+    color: 'white'
   },
+  buttons:{
+    width: 120,
+    height: 80,
+    backgroundColor: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 10,
+    margin: 10
+  },
+  notificationDataContent:{
+    backgroundColor: '#666',
+    padding: 20,
+    borderRadius: 5,
+    marginBottom: 40
+  },
+  notificationText:{
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold'
+  }
 })
