@@ -84,7 +84,7 @@ export default function Notifications() {
 }
 function dateFormat(timestamp:Date){
     let date = new Date(timestamp);
-    return date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()+" "+date.getHours()+":0"+date.getMinutes()+":"+date.getSeconds();
+    return date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
 }
 
 

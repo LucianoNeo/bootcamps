@@ -14,6 +14,7 @@ import Home from './screens/home';
 import CameraScreen from './screens/camera';
 import MapsApp from './screens/maps';
 import Notifications from './screens/notifications';
+import SlideAnimation from './screens/slideAnimation';
 
 export default function BottomNavigation(){
   const Tab = createBottomTabNavigator();
@@ -64,6 +65,16 @@ export default function BottomNavigation(){
             tabBarLabel: 'Notifications',
             tabBarIcon: ({color, size}) => (
               <MaterialIcons name="message" color={color} size={size} />
+            )
+          }}
+        />
+        <Tab.Screen
+          name='Slide'
+          component={SlideAnimation}
+          options={{
+            tabBarLabel: 'Slide',
+            tabBarIcon: ({color, size}) => (
+              <MaterialIcons name="arrow-right" color={color} size={size} />
             )
           }}
         />

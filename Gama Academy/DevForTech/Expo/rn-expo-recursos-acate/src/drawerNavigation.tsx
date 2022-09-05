@@ -13,6 +13,7 @@ import Notifications from './screens/notifications';
 
 
 import 'react-native-gesture-handler';
+import SlideAnimation from './screens/slideAnimation';
 
 export default function DrawerNavigation() {
   const Drawer = createDrawerNavigator()
@@ -36,6 +37,12 @@ export default function DrawerNavigation() {
           name="Notifications"
           component={Notifications}
         />
+        <Drawer.Screen
+          name="Slide"
+          component={SlideAnimation}
+        />
+
+        
       </ Drawer.Navigator>
     </NavigationContainer>
   )
