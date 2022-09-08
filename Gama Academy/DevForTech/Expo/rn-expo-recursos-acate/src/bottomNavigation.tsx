@@ -15,10 +15,11 @@ import CameraScreen from './screens/camera';
 import MapsApp from './screens/maps';
 import Notifications from './screens/notifications';
 import SlideAnimation from './screens/slideAnimation';
+import SlideHorizontalAnimation from './screens/slideHorizontal';
 
-export default function BottomNavigation(){
+export default function BottomNavigation() {
   const Tab = createBottomTabNavigator();
-  return(
+  return (
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName='Home'
@@ -26,15 +27,15 @@ export default function BottomNavigation(){
           headerShown: false,
           tabBarActiveTintColor: '#08d13e'
         }}
-        >
-        <Tab.Screen 
+      >
+        <Tab.Screen
           name='Home'
           component={Home}
           options={{
             tabBarLabel: 'Home',
-            tabBarIcon: ({color, size}) => (
+            tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="home" color={color} size={size} />
-              )
+            )
           }}
         />
         <Tab.Screen
@@ -42,7 +43,7 @@ export default function BottomNavigation(){
           component={CameraScreen}
           options={{
             tabBarLabel: 'Camera',
-            tabBarIcon: ({color, size}) => (
+            tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="camera" color={color} size={size} />
             )
           }}
@@ -53,7 +54,7 @@ export default function BottomNavigation(){
           component={MapsApp}
           options={{
             tabBarLabel: 'Maps',
-            tabBarIcon: ({color, size}) => (
+            tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="map" color={color} size={size} />
             )
           }}
@@ -63,7 +64,7 @@ export default function BottomNavigation(){
           component={Notifications}
           options={{
             tabBarLabel: 'Notifications',
-            tabBarIcon: ({color, size}) => (
+            tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="message" color={color} size={size} />
             )
           }}
@@ -73,12 +74,23 @@ export default function BottomNavigation(){
           component={SlideAnimation}
           options={{
             tabBarLabel: 'Slide',
-            tabBarIcon: ({color, size}) => (
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons name="arrow-drop-up" color={color} size={size} />
+            )
+          }}
+        />
+        <Tab.Screen
+          name='Slide Horizontal'
+          component={SlideHorizontalAnimation}
+          options={{
+            tabBarLabel: 'Slide Horizontal',
+            tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="arrow-right" color={color} size={size} />
             )
           }}
         />
 
+        
       </Tab.Navigator>
     </NavigationContainer>
   )

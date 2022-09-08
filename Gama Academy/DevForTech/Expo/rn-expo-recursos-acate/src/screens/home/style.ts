@@ -7,37 +7,37 @@ export default StyleSheet.create({
     width: '100%',
     height: '100%',
     //justifyContent: 'space-between',
-    alignItems: 'center',
-    marginTop: 40,
+    //alignItems: 'center',
+    paddingHorizontal: 20,
+    marginTop: 60,
     position: 'relative',
     
     
   },
   text: {
-    fontSize: 22,
     fontWeight: 'bold',
+    textAlign:'left'
    
   },
   buttonContainer: {
     flexDirection: 'row',
     width: '100%',
-    height: 300,
-    justifyContent: 'center',
-    padding: 20,
-    marginTop: 50,
+    justifyContent: 'space-between',
     flexWrap: 'wrap'
   },
   buttons:{
-    width: 120,
+    width: 100,
     height: 80,
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
-    margin: 10
+    marginHorizontal: 10
   },
   buttonText:{
-    justifyContent: 'space-between',
+    padding: 5,
+    textAlign: 'center',
+    fontSize: 10
     
   },
   image:{
@@ -45,11 +45,19 @@ export default StyleSheet.create({
     marginTop: 20,
   },
   link:{
-    fontSize:18,
+    position: 'absolute',
+    color: '#007AFF',
+    bottom: 80,
+    right: 20,
+  },
+  hr:{
+    width: '100%', 
+    height: 1, 
+    backgroundColor: '#888',
+    marginVertical:20
+  },
+  title:{
     fontWeight: 'bold',
-    color: '#6ba1c4',
-    top: -330,
-    left: 85,
-
-  }
+    marginBottom:40
+  },
 })

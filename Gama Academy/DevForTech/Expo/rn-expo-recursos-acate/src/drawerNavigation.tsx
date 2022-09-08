@@ -1,5 +1,6 @@
 import {
-  NavigationContainer
+  NavigationContainer,
+  DefaultTheme, DarkTheme
 } from '@react-navigation/native';
 
 import {
@@ -14,12 +15,15 @@ import Notifications from './screens/notifications';
 
 import 'react-native-gesture-handler';
 import SlideAnimation from './screens/slideAnimation';
+import SlideHorizontalAnimation from './screens/slideHorizontal';
 
 export default function DrawerNavigation() {
   const Drawer = createDrawerNavigator()
   return (
     <NavigationContainer>
-      <Drawer.Navigator>
+      <Drawer.Navigator
+      
+      >
         <Drawer.Screen
           name="Home"
           component={Home}
@@ -41,8 +45,10 @@ export default function DrawerNavigation() {
           name="Slide"
           component={SlideAnimation}
         />
-
-        
+        <Drawer.Screen
+          name="Slide Horizontal"
+          component={SlideHorizontalAnimation}
+        />
       </ Drawer.Navigator>
     </NavigationContainer>
   )
