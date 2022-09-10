@@ -16,6 +16,7 @@ import MapsApp from './screens/maps';
 import Notifications from './screens/notifications';
 import SlideAnimation from './screens/slideAnimation';
 import SlideHorizontalAnimation from './screens/slideHorizontal';
+import DragEffects from 'src/screens/dragEffects';
 
 export default function BottomNavigation() {
   const Tab = createBottomTabNavigator();
@@ -73,7 +74,7 @@ export default function BottomNavigation() {
           name='Slide'
           component={SlideAnimation}
           options={{
-            tabBarLabel: 'Slide',
+            tabBarLabel: 'Slide V',
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="arrow-drop-up" color={color} size={size} />
             )
@@ -83,14 +84,23 @@ export default function BottomNavigation() {
           name='Slide Horizontal'
           component={SlideHorizontalAnimation}
           options={{
-            tabBarLabel: 'Slide Horizontal',
+            tabBarLabel: 'Slide H',
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="arrow-right" color={color} size={size} />
             )
           }}
         />
+        <Tab.Screen
+          name='Drag Effects'
+          component={DragEffects}
+          options={{
+            tabBarLabel: 'Drag',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons name="arrow-circle-up" color={color} size={size} />
+            )
+          }}
+        />
 
-        
       </Tab.Navigator>
     </NavigationContainer>
   )

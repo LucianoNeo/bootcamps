@@ -7,22 +7,23 @@ import {
   } from 'react-native';
   
   const { width } = Dimensions.get('window');
+
   
   export const cards = [
     {
-      picture: require('./cards/pizza1.jpg'),
+      picture: require('../assets/pizza1.jpg'),
       caption: 'Pizza Marguerita'
     },
     {
-      picture: require('./cards/pizza2.png'),
-      caption: 'Pizza Calabresa com cebola'
+      picture: require('../assets/pizza2.png'),
+      caption: 'Pizza Catubresa'
     },
     {
-      picture: require('./cards/pizza3.jpg'),
+      picture: require('../assets/pizza3.jpg'),
       caption: 'Pizza Calabresa'
     },
     {
-      picture: require('./cards/pizza4.png'),
+      picture: require('../assets/pizza4.png'),
       caption: 'Pizza Chocolate com morango'
     }
   ]
@@ -35,11 +36,11 @@ import {
   const Card = ({ picture, caption }: CardProps) => {
     return (
       <>
-        <View>
-          <Image source={picture} />
+        <View style={styles.container}>
+          <Image source={picture}  style={styles.image}/>
         </View>
-        <View>
-          <Text>{caption}</Text>
+        <View style={styles.caption}>
+          <Text style={styles.text}>{caption}</Text>
         </View>
       </>
     )
@@ -48,9 +49,39 @@ import {
   const Cards = () => {
     return (
       <View>
-        <Text>Cards</Text>
+        {cards.map( ({picture, caption}, index) => (
+          <Card key={index} picture={picture} caption={caption} />
+        ))}
       </View>
     )
   }
+  
+  const styles = StyleSheet.create({
+    container: {
+      marginTop: 16,
+      marginHorizontal: 12,
+      height: width
+    },
+    image: {
+      ...StyleSheet.absoluteFillObject,
+      width: undefined,
+      height: undefined,
+      borderTopLeftRadius: 16,
+      borderTopRightRadius: 16,
+    },
+    caption:{
+      marginHorizontal: 24,
+      padding: 24,
+      backgroundColor: '#fff',
+      borderBottomLeftRadius: 16,
+      borderBottomRightRadius: 16,
+      marginBottom: 16
+    },
+    text: {
+      fontSize: 16,
+      textAlign: 'center',
+      color: '#432406'
+    }
+  })
   
   export default Cards;

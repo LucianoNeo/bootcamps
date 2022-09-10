@@ -108,6 +108,16 @@ export default function Home() {
             Slide Horizontal
           </Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.buttons}
+          onPress={() => handleScreen('Drag Effects')}
+        >
+          <MaterialCommunityIcons name="arrow-up-drop-circle-outline" size={24} color="black" />
+          <Text style={styles.buttonText}>
+            Drag Effects
+          </Text>
+        </TouchableOpacity>
       </View>
 
       <Text
