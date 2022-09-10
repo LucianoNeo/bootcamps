@@ -1,9 +1,5 @@
 import {
-  View,
-  Text,
-  Button,
-  TouchableOpacity,
-  Image
+  Text, TouchableOpacity, View
 } from 'react-native';
 
 import styles from './style';
@@ -12,10 +8,10 @@ import {
   useNavigation
 } from '@react-navigation/native';
 
-import { MaterialCommunityIcons, Entypo, FontAwesome } from '@expo/vector-icons';
+import { Entypo, FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons';
 
-import { handleModal, useData, changeStyle } from '../../redux/slice';
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
+import { handleModal } from '../../redux/slice';
 
 export default function Home() {
 
@@ -113,7 +109,7 @@ export default function Home() {
           style={styles.buttons}
           onPress={() => handleScreen('Drag Effects')}
         >
-          <MaterialCommunityIcons name="arrow-up-drop-circle-outline" size={24} color="black" />
+          <MaterialCommunityIcons name="hand-back-right" size={24} color="black" />
           <Text style={styles.buttonText}>
             Drag Effects
           </Text>
@@ -122,7 +118,7 @@ export default function Home() {
 
       <Text
         onPress={() => dispatch(handleModal())}
-        style={styles.link}>Change Nav Style
+        style={styles.link}>Change Navigation Style
       </Text>
     </View>
   )

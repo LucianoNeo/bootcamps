@@ -4,20 +4,20 @@ import {
 
 import {
   createStackNavigator
-} from '@react-navigation/stack'
+} from '@react-navigation/stack';
 
-import Home from './screens/home';
 import CameraScreen from './screens/camera';
+import DragItems from './screens/dragEffects';
+import Home from './screens/home';
 import Maps from './screens/maps';
 import Notifications from './screens/notifications';
 import SlideAnimation from './screens/slideAnimation';
 import SlideHorizontalAnimation from './screens/slideHorizontal';
-import DragItems from './screens/dragEffects';
 
 const { Navigator, Screen } = createStackNavigator();
 
-export default function StackNavigation(){
-  return(
+export default function StackNavigation() {
+  return (
     <NavigationContainer>
       <Navigator
         screenOptions={{
@@ -52,8 +52,8 @@ export default function StackNavigation(){
           name="Drag Effects"
           component={DragItems}
         />
-        
-        
+
+
       </Navigator>
     </NavigationContainer>
   )

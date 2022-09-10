@@ -1,22 +1,21 @@
 import {
-  NavigationContainer,
-  DefaultTheme, DarkTheme
+  NavigationContainer
 } from '@react-navigation/native';
 
 import {
   createDrawerNavigator
 } from '@react-navigation/drawer';
 
-import Home from './screens/home';
 import CameraApp from './screens/camera';
+import Home from './screens/home';
 import MapsApp from './screens/maps';
 import Notifications from './screens/notifications';
 
 
 import 'react-native-gesture-handler';
+import DragEffects from 'src/screens/dragEffects';
 import SlideAnimation from './screens/slideAnimation';
 import SlideHorizontalAnimation from './screens/slideHorizontal';
-import DragEffects from 'src/screens/dragEffects';
 
 
 export default function DrawerNavigation() {

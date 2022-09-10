@@ -6,17 +6,16 @@ import {
   createBottomTabNavigator
 } from '@react-navigation/bottom-tabs';
 
-import {
-  MaterialIcons
-} from '@expo/vector-icons';
 
-import Home from './screens/home';
+import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
+
+import DragEffects from 'src/screens/dragEffects';
 import CameraScreen from './screens/camera';
+import Home from './screens/home';
 import MapsApp from './screens/maps';
 import Notifications from './screens/notifications';
 import SlideAnimation from './screens/slideAnimation';
 import SlideHorizontalAnimation from './screens/slideHorizontal';
-import DragEffects from 'src/screens/dragEffects';
 
 export default function BottomNavigation() {
   const Tab = createBottomTabNavigator();
@@ -96,7 +95,7 @@ export default function BottomNavigation() {
           options={{
             tabBarLabel: 'Drag',
             tabBarIcon: ({ color, size }) => (
-              <MaterialIcons name="arrow-circle-up" color={color} size={size} />
+              <MaterialCommunityIcons name="hand-back-right" color={color} size={size} />
             )
           }}
         />
