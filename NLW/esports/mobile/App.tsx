@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontSize: 22,
     color: 'white',
-
   },
   bg: {
     width: Dimensions.get('window').width,
