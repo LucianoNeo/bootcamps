@@ -12,6 +12,7 @@ import { Entypo, FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons'
 
 import { useDispatch } from 'react-redux';
 import { handleModal } from '../../redux/slice';
+import Breathe from '../breathe';
 
 export default function Home() {
 
@@ -114,6 +115,18 @@ export default function Home() {
             Drag Effects
           </Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.buttons}
+          onPress={() => handleScreen('Breathe')}
+        >
+          <MaterialCommunityIcons name="hand-back-right" size={24} color="black" />
+          <Text style={styles.buttonText}>
+            Breathe
+          </Text>
+        </TouchableOpacity>
+
+
       </View>
 
       <Text

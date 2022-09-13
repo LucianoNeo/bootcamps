@@ -1,7 +1,6 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from 'react';
 
 import Animated, {
-  scrollTo,
   useAnimatedGestureHandler,
   useAnimatedReaction,
   useAnimatedStyle,
@@ -19,20 +18,15 @@ import {
 } from 'react-native-safe-area-context';
 
 import {
+  Dimensions,
+  StyleProp, StyleSheet, ViewStyle
+} from 'react-native';
+import {
   animationConfig,
   COL,
   getOrder,
-  getPosition,
-  SIZE,
-  IPositions,
-  MARGIN
+  getPosition, IPositions, SIZE
 } from './Config';
-import { 
-  Dimensions, 
-  StyleProp, 
-  ViewStyle, 
-  StyleSheet 
-} from 'react-native';
 
 interface IItemProps {
   children: ReactNode;

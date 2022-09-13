@@ -32,12 +32,14 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
-    marginHorizontal: 10
+    marginHorizontal: 10,
+    marginBottom:10,
   },
   buttonText:{
     padding: 5,
     textAlign: 'center',
-    fontSize: 10
+    fontSize: 10,
+    
     
   },
   image:{

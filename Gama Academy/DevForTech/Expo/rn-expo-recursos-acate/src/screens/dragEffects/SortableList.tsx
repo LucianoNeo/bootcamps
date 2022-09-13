@@ -1,16 +1,11 @@
-import { 
-  ReactElement 
+import {
+  ReactElement
 } from 'react';
 
 
-import { 
-  ScrollView 
-} from 'react-native-gesture-handler';
 
-import { 
-  COL, 
-  SIZE,
-  IPositions 
+import {
+  COL, IPositions, SIZE
 } from './Config';
 
 import Animated, {
@@ -22,7 +17,7 @@ import Animated, {
 import Item from './Item';
 
 interface IListProps {
-  children: ReactElement<{ id: string;}>[];
+  children: ReactElement<{ id: string; }>[];
 }
 
 const List = ({ children }: IListProps) => {
@@ -38,10 +33,10 @@ const List = ({ children }: IListProps) => {
   const positions: Animated.SharedValue<IPositions> = useSharedValue(
     Object.assign(
       {},
-      ...children.map((child, index) => ({[child.props.id]: index}))
+      ...children.map((child, index) => ({ [child.props.id]: index }))
     )
   )
-  return(
+  return (
     <Animated.ScrollView
       ref={scrollView}
       contentContainerStyle={{

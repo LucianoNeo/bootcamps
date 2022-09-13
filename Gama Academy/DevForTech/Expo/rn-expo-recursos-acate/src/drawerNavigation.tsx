@@ -16,6 +16,7 @@ import 'react-native-gesture-handler';
 import DragEffects from 'src/screens/dragEffects';
 import SlideAnimation from './screens/slideAnimation';
 import SlideHorizontalAnimation from './screens/slideHorizontal';
+import Breathe from './screens/breathe';
 
 
 export default function DrawerNavigation() {
@@ -54,6 +55,12 @@ export default function DrawerNavigation() {
         <Drawer.Screen
           name="Drag Effects"
           component={DragEffects}
+        />
+
+        <Drawer.Screen
+          name="Breathe"
+          component={Breathe}
+          
         />
       </ Drawer.Navigator>
     </NavigationContainer>
