@@ -32,3 +32,10 @@ tailwind
 ```
 npm install phosphor-react
 ```
+
+## Libs componentes prontos
+- headless ui
+- ariakit
+- radix
+
+```npm install @radix-ui/react-dialog```
