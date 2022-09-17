@@ -39,3 +39,13 @@ npm install phosphor-react
 - radix
 
 ```npm install @radix-ui/react-dialog```
+```npm install @radix-ui/react-checkbox```
+```npm install @radix-ui/react-select```
+```npm install @radix-ui/react-toggle-group```
+
+
+## carrossel
+keen slider
+
+## Validação de campos
+react hook form
