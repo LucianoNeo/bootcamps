@@ -16,13 +16,25 @@ expo install @react-navigation/native
 
 expo install react-native-screens
 
-npm install @react-navigation/native-stack
+yarn add @react-navigation/native-stack
 
 
 # Phosphor Icons
 
-npm install phosphor-react-native
+yarn add phosphor-react-native
 
 
 # SVG
 expo install react-native-svg
+
+
+## Copiar para a clipboard
+
+expo install expo-clipboard
+
+## Notificações
+
+expo install expo-notifications
+
+https://docs.expo.dev/push-notifications/sending-notifications/
+https://expo.dev/notifications
