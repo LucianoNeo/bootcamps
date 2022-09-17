@@ -12,3 +12,17 @@ expo install react-native-safe-area-context
 expo install expo-linear-gradient
 
 ## Instalar React Navigation
+expo install @react-navigation/native
+
+expo install react-native-screens
+
+npm install @react-navigation/native-stack
+
+
+# Phosphor Icons
+
+npm install phosphor-react-native
+
+
+# SVG
+expo install react-native-svg
