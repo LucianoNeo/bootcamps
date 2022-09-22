@@ -1,5 +1,20 @@
 # BOOTCAMPS / EVENTOS
 Repositório dedicado aos projetos desenvolvidos durante bootcamps/eventos.<br><br><br>
+## FIND YOUR DUO
+![Screenshot_2](https://user-images.githubusercontent.com/16579699/191795667-1275b37e-da44-46d2-b243-c57ca0a9eed5.jpg)
+Projeto desenvolvido durante o evento #NLW eSports da RocketSeat, foi construído o back-end com node, página web com reactjs e aplicativo mobile com expo/react-native.<br>
+Detalhes:<br>
+https://github.com/LucianoNeo/bootcamps/tree/main/NLW/esports<br>
+
+<p align:'center'>
+<img src='https://img.shields.io/badge/TYPESCRIPT-yellow'>
+<img src='https://img.shields.io/badge/REACTJS-blue'>
+<img src='https://img.shields.io/badge/REACT_NATIVE-blue'>
+<img src='https://img.shields.io/badge/NODEJS-green'>
+<img src='https://img.shields.io/badge/PRISMA-green'>
+<img src='https://img.shields.io/badge/SQLITE-green'>
+<img src='https://img.shields.io/badge/TAILWIND_CSS-red'>
+</p>
 
 ## CASA VERDE
 ![Screenshot_1](https://user-images.githubusercontent.com/16579699/182496095-70ef51ec-fcfa-484e-9a5f-94192ba97595.jpg)
