@@ -36,3 +36,12 @@ export const parameters = {
 ```
 
 - Deletar pasta stories
+
+
+# Instalar CLSX
+
+npm install --save clsx
+
+# Usar SLOT para trocar tags de components
+
+npm install @radix-ui/react-slot
