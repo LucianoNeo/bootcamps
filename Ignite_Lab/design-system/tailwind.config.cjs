@@ -34,7 +34,6 @@ module.exports = {
       'white': '#FFF'
     },
     extend: {
-
       fontFamily: {
         sans: 'Inter, sans-serif'
       },
