@@ -10,3 +10,13 @@ generator erd {
 
 ## gERAR ERD
 npx prisma generate
+
+
+## CORS FASTIFY
+npm i @fastify/cors
+
+```
+ await fastify.register(cors, {
+        origin: true
+    })
+```
