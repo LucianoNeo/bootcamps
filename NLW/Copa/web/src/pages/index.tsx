@@ -5,7 +5,7 @@ import Avatar from '../assets/avatares.png'
 import Icon from '../assets/iconCheck.svg'
 import { api } from '../lib/axios'
 import { FormEvent, useState } from 'react'
-
+import { GetStaticProps } from 'next'
 
 interface HomeProps {
   poolCount: number;
@@ -32,6 +32,7 @@ export default function Home(props: HomeProps) {
       await navigator.clipboard.writeText(code)
 
       alert('Bolão criado com sucesso! O Código foi copiado para a area de transferencia!')
+      setTitle('')
 
     } catch (error) {
       console.log(error)
@@ -56,6 +57,7 @@ export default function Home(props: HomeProps) {
           <input type="text" required placeholder='Qual o nome do seu bolão?'
             className='flex-1 px-6 py-4 rounded bg-gray-800 border border-gray-600 text-sm'
             onChange={(e) => setTitle(e.target.value)}
+            value={title}
           />
           <button type='submit' className='bg-yellow-500 px-6 py-4 rounded font-bold uppercase text-gray-900 text-sm hover:bg-yellow-700'>Criar meu bolão</button>
         </form>
@@ -91,7 +93,7 @@ export default function Home(props: HomeProps) {
 }
 
 
-export const getServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
 
   const [poolCountResponse, guessCountResponse, userCountResponse] = await Promise.all([
     api.get('pools/count'),
@@ -104,6 +106,7 @@ export const getServerSideProps = async () => {
       poolCount: poolCountResponse.data.count,
       guessCount: guessCountResponse.data.count,
       userCount: userCountResponse.data.count
-    }
+    },
+    revalidate: 60 * 10
   }
 }
