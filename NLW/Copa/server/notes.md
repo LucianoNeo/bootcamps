@@ -20,3 +20,6 @@ npm i @fastify/cors
         origin: true
     })
 ```
+
+## Validação com ZOD
+npm i zod

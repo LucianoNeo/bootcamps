@@ -8,8 +8,8 @@ export default function Home(props: HomeProps) {
 
   return (
     <div>
-      <h1>Hello NEXT</h1>
-      <h1>{props.count}</h1>
+      <h1>Hello NEXT {props.count}</h1>
+
     </div>
   )
 }
