@@ -15,7 +15,7 @@ const StyledHeader = styled.div`
         width: 100%;
         padding: 16px 32px;
         gap: 16px;
-        margin-top: 50px;
+        margin-top: 16px;
     }
   
 `
