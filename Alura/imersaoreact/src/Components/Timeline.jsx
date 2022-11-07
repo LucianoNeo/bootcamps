@@ -115,7 +115,7 @@ export default function Timeline(props) {
         <section className="cardContainer">
           {props.favorites.map((favorite, index) => {
             return (
-              <a href={favorite.url} key={index} className='favoriteCard' target='_blank' noReferer>
+              <a href={favorite.url} key={index} className='favoriteCard' target='_blank' rel="noreferrer">
                 <div>
                   <img src={favorite.thumb} />
                   <p>
