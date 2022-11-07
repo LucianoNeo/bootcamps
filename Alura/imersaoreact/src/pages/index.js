@@ -1,4 +1,5 @@
 import config from '../../config.json'
+import Banner from '../Components/Banner';
 import { CSSReset } from '../Components/CSSReset';
 import Header from "../Components/Header";
 import Menu from "../Components/Menu";
@@ -17,8 +18,9 @@ export default function Home() {
         // backgroundColor: "red",
       }}>
         <Menu />
+        <Banner />
         <Header />
-        <Timeline playlists={config.playlists}>
+        <Timeline playlists={config.playlists} favorites={config.favorites}>
           Conteúdo
         </Timeline>
       </div>

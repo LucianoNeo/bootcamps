@@ -1,5 +1,37 @@
 import styled from "styled-components";
 
+const StyledFavorites = styled.div`
+  width: 100%;
+  padding: 32px;
+  
+  h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+  }
+
+  .cardContainer{
+      display: flex;
+      gap: 8px;
+    }
+
+  .favoriteCard{
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+
+  img {
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+  }
+`
+
 export const StyledTimeline = styled.div`
   flex: 1;
   width: 100%;
@@ -48,31 +80,53 @@ export const StyledTimeline = styled.div`
 
 
 export default function Timeline(props) {
+  console.log(props.favorites)
+  const playlistNames = Object.keys(props.playlists)
+  return (
+    <>
+      <StyledTimeline>
+        {playlistNames.map((playlistName, index) => {
+          const videos = props.playlists[playlistName]
+          return (
+            <section key={index}>
+              <h2>{playlistName}</h2>
+              <div>
+                {videos.map((video, index) => {
+                  return (
+                    <a href={video.url} key={index}>
+                      <img src={video.thumb} />
+                      <span>
+                        {video.title}
+                      </span>
+                    </a>
+                  )
+                })}
+              </div>
 
-    const playlistNames = Object.keys(props.playlists)
-    return (
+            </section>
 
-        <StyledTimeline>
-            {playlistNames.map((playlistName) => {
-                const videos = props.playlists[playlistName]
-                return (
-                    <section>
-                        <h2>{playlistName}</h2>
-                        <div>
-                            {videos.map((video) => {
-                                return (
-                                    <a href={video.url}>
-                                        <img src={video.thumb} />
-                                        <span>
-                                            {video.title}
-                                        </span>
-                                    </a>
-                                )
-                            })}
-                        </div>
-                    </section>
-                )
-            })}
-        </StyledTimeline>
-    )
+          )
+
+        })}
+
+      </StyledTimeline>
+      <StyledFavorites>
+        <h2>AluraTubes Favoritos</h2>
+        <section className="cardContainer">
+          {props.favorites.map((favorite, index) => {
+            return (
+              <a href={favorite.url} key={index} className='favoriteCard' target='_blank' noReferer>
+                <div>
+                  <img src={favorite.thumb} />
+                  <p>
+                    {favorite.name}
+                  </p>
+                </div>
+              </a>
+            )
+          })}
+        </section>
+      </StyledFavorites>
+    </>
+  )
 }
