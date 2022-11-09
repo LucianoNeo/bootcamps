@@ -49,6 +49,7 @@ export const StyledTimeline = styled.div`
     width: 100%;
     max-width: 210px;
     height: auto;
+    border-radius: 10px;
   }
   section {
     width: 100%;
@@ -80,7 +81,9 @@ export const StyledTimeline = styled.div`
 
 
 export default function Timeline(props) {
-  console.log(props.favorites)
+
+
+
   const playlistNames = Object.keys(props.playlists)
   return (
     <>
@@ -91,16 +94,20 @@ export default function Timeline(props) {
             <section key={index}>
               <h2>{playlistName}</h2>
               <div>
-                {videos.map((video, index) => {
-                  return (
-                    <a href={video.url} key={index}>
-                      <img src={video.thumb} />
-                      <span>
-                        {video.title}
-                      </span>
-                    </a>
-                  )
-                })}
+                {videos.filter((video) => {
+                  return video.title.includes(props.searchValue)
+                })
+
+                  .map((video, index) => {
+                    return (
+                      <a href={video.url} key={index}>
+                        <img src={video.thumb} />
+                        <span>
+                          {video.title}
+                        </span>
+                      </a>
+                    )
+                  })}
               </div>
 
             </section>

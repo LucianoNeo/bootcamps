@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import config from '../../config.json'
 import Banner from '../Components/Banner';
 import { CSSReset } from '../Components/CSSReset';
@@ -8,6 +9,8 @@ import Timeline from "../Components/Timeline";
 
 
 export default function Home() {
+  const [search, setSearch] = useState('')
+
   return (
     <>
       <CSSReset />
@@ -17,10 +20,10 @@ export default function Home() {
         flex: 1,
         // backgroundColor: "red",
       }}>
-        <Menu />
+        <Menu search={search} setSearch={setSearch} />
         <Banner />
         <Header />
-        <Timeline playlists={config.playlists} favorites={config.favorites}>
+        <Timeline searchValue={search} playlists={config.playlists} favorites={config.favorites}>
           Conteúdo
         </Timeline>
       </div>
