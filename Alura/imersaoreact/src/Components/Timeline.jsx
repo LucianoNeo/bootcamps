@@ -21,7 +21,10 @@ const StyledFavorites = styled.div`
     text-align: center;
     align-items: center;
     text-decoration: none;
-    color: #000;
+  }
+
+  a:visited {
+    color: ${({ theme }) => theme.textColorBase}
   }
 
   img {
@@ -94,10 +97,12 @@ export default function Timeline(props) {
             <section key={index}>
               <h2>{playlistName}</h2>
               <div>
-                {videos.filter((video) => {
-                  return video.title.includes(props.searchValue)
-                })
-
+                {videos
+                  .filter((video) => {
+                    const titleNormalized = video.title.toLowerCase()
+                    const searchValueNormalized = props.searchValue.toLowerCase()
+                    return titleNormalized.includes(searchValueNormalized)
+                  })
                   .map((video, index) => {
                     return (
                       <a href={video.url} key={index}>
