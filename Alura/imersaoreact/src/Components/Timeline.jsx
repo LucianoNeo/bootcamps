@@ -1,4 +1,7 @@
+import React, { useContext } from 'react'
 import styled from "styled-components";
+import { VideoContext } from '../context/VideoContext';
+import Link from 'next/link'
 
 const StyledFavorites = styled.div`
   width: 100%;
@@ -67,7 +70,7 @@ export const StyledTimeline = styled.div`
       grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
       grid-auto-flow: column;
       grid-auto-columns: minmax(200px,1fr);
-      overflow-x: scroll;
+      overflow-x: hidden;
       scroll-snap-type: x mandatory;
       a {
         scroll-snap-align: start;
@@ -85,7 +88,7 @@ export const StyledTimeline = styled.div`
 
 export default function Timeline(props) {
 
-
+  const videoContext = useContext(VideoContext)
 
   const playlistNames = Object.keys(props.playlists)
   return (
@@ -105,12 +108,18 @@ export default function Timeline(props) {
                   })
                   .map((video, index) => {
                     return (
-                      <a href={video.url} key={index}>
-                        <img src={video.thumb} />
+                      <Link href='/video' key={index}>
+                        <img src={video.thumb}
+                          onClick={() => {
+                            videoContext.title.current = video.title
+                            videoContext.url.current = video.url
+                          }
+                          }
+                        />
                         <span>
                           {video.title}
                         </span>
-                      </a>
+                      </Link>
                     )
                   })}
               </div>
