@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import ColorModeProvider, { ColorModeContext } from '../context/ColorModeContext'
 import { useContext } from 'react';
 import VideoProvider, { VideoContext } from '../context/VideoContext';
+import RegisterVideo from '../Components/RegisterVideo';
 
 function ProviderWrapper(props) {
   return (
@@ -42,6 +43,7 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider theme={theme[context.mode]}>
           <CSSReset />
           <Component {...pageProps} />
+          <RegisterVideo />
         </ThemeProvider>
       </VideoProvider>
 
