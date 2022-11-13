@@ -3,13 +3,14 @@ import { useForm } from "react-hook-form";
 import { supabase } from '../../services/api';
 import { getThumbnail } from '../../Tools/index';
 import { StyledRegisterVideo } from './styles';
-
+import { useRouter } from 'next/router'
 
 
 export default function RegisterVideo() {
     const [visible, setVisible] = useState(false)
     const [url, setURL] = useState('')
     const { register, handleSubmit, formState: { errors }, getValues, resetField } = useForm();
+    const router = useRouter()
 
     const onSubmit = (data) => {
         supabase.from('video').insert({
@@ -19,10 +20,12 @@ export default function RegisterVideo() {
             playlist: data.category,
         })
             .then((res) => {
-                console.log(res)
+                console.log(data)
             })
         setVisible(false)
-
+        resetField('title')
+        resetField('url')
+        router.reload()
     }
 
 
@@ -70,10 +73,8 @@ export default function RegisterVideo() {
                             placeholder='Título do Vídeo'
 
                         />
-                        {errors.url ?
+                        {errors.url &&
                             <span>{errors.url.message}</span>
-                            :
-                            null
                         }
                         <input
                             {...register("url", {
@@ -82,10 +83,7 @@ export default function RegisterVideo() {
                                     value: 43,
                                     message: `URL Inválida! Modelo: ${'\n'} https://www.youtube.com/watch?v=x6oF3Jxu7X0`
                                 },
-                                maxLength: {
-                                    value: 43,
-                                    message: `URL Inválida! Modelo: ${'\n'} https://www.youtube.com/watch?v=x6oF3Jxu7X0`
-                                },
+
                             })}
 
 

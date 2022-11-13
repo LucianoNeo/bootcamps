@@ -13,6 +13,7 @@ export default function Home() {
   const [search, setSearch] = useState('')
   const [playlists, setPlaylists] = useState({})
 
+
   const getAllVideos = () => {
     supabase.from('video')
       .select('*')
@@ -31,8 +32,9 @@ export default function Home() {
   }
 
   useEffect(() => {
+
     getAllVideos()
-  }, [playlists])
+  }, [])
 
 
   return (
