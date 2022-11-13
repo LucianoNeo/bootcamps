@@ -1,41 +1,29 @@
-import React, { useState } from 'react'
-import { StyledRegisterVideo } from './styles'
-import { supabase } from '../../services/api'
-import { getThumbnail } from '../../Tools/index'
-
-
-
-function useForm(formProps) {
-    const [data, setData] = useState(formProps.initialValues)
-    return {
-        data,
-        handleChange: (e) => {
-            const value = e.target.value
-            const name = e.target.name
-            setData(
-                {
-                    ...data,
-                    [name]: value
-                })
-            console.log(data)
-        },
-        clearForm() {
-            setData({ title: '', url: '', category: '', })
-        }
-    }
-}
+import React, { useState } from 'react';
+import { useForm } from "react-hook-form";
+import { supabase } from '../../services/api';
+import { getThumbnail } from '../../Tools/index';
+import { StyledRegisterVideo } from './styles';
 
 
 
 export default function RegisterVideo() {
-
-
-    const formRegistration = useForm({
-        initialValues: {
-            title: '', url: '', category: ''
-        }
-    })
     const [visible, setVisible] = useState(false)
+    const [url, setURL] = useState('')
+    const { register, handleSubmit, formState: { errors }, getValues, resetField } = useForm();
+
+    const onSubmit = (data) => {
+        supabase.from('video').insert({
+            title: data.title,
+            url: data.url,
+            thumb: getThumbnail(data.url),
+            playlist: data.category,
+        })
+            .then((res) => {
+                console.log(res)
+            })
+        setVisible(false)
+
+    }
 
 
     return (
@@ -43,57 +31,80 @@ export default function RegisterVideo() {
         <StyledRegisterVideo>
             <button className='add-video' onClick={() => setVisible(true)}>+</button>
             {visible &&
-                <form onSubmit={(e) => {
-                    e.preventDefault()
-                    supabase.from('video').insert({
-                        title: formRegistration.data.title,
-                        url: formRegistration.data.url,
-                        thumb: getThumbnail(formRegistration.data.url),
-                        playlist: formRegistration.data.category,
-                    })
-                        .then((res) => {
-                            console.log(res)
-                        })
-                    formRegistration.clearForm()
-                    setVisible(false)
-                }}>
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                >
                     <div>
                         <button className='close-modal' onClick={() => {
                             setVisible(false)
-                            formRegistration.clearForm()
+                            resetField('title')
+                            resetField('url')
+
                         }}>X</button>
-                        <select name="category" id="" value='Selecione a categoria'
-                            onChange={formRegistration.handleChange}
+                        <select
+                            {...register("category")}
+
                         >
-                            <option value="Selecione a categoria" disabled>Selecione a categoria</option>
+                            <option value="Selecione a categoria" disabled>
+                                Selecione a categoria
+                            </option>
                             <option value="jogos" >Jogos</option>
-                            <option value="front-End" >Front-End</option>
-                            <option value="back-End" >Back-End</option>
+                            <option value="Front-End" >Front-End</option>
+                            <option value="Back-End" >Back-End</option>
                         </select>
+
+                        {errors.title ?
+                            <span>{errors.title.message}</span>
+                            :
+                            null
+                        }
                         <input
-                            type="text"
+                            {...register("title", {
+                                required: 'Campo obrigatório',
+                                minLength: {
+                                    value: 1,
+                                    message: 'Você deve fornecer um título!'
+                                }
+                            })}
+
                             placeholder='Título do Vídeo'
-                            value={formRegistration.data.title}
-                            onChange={formRegistration.handleChange}
-                            name='title'
+
                         />
+                        {errors.url ?
+                            <span>{errors.url.message}</span>
+                            :
+                            null
+                        }
                         <input
-                            type="text"
+                            {...register("url", {
+                                required: 'Campo obrigatório',
+                                minLength: {
+                                    value: 43,
+                                    message: `URL Inválida! Modelo: ${'\n'} https://www.youtube.com/watch?v=x6oF3Jxu7X0`
+                                },
+                                maxLength: {
+                                    value: 43,
+                                    message: `URL Inválida! Modelo: ${'\n'} https://www.youtube.com/watch?v=x6oF3Jxu7X0`
+                                },
+                            })}
+
+
                             placeholder='https://www.youtube.com/watch?v=ID_do_VIDEO'
-                            value={formRegistration.data.url}
-                            onChange={formRegistration.handleChange}
-                            name='url'
+
+                            onChange={(e) => setURL(e.target.value)}
+
                         />
+
+
                         <button type='submit'>Cadastrar</button>
                         {
-                            formRegistration.data.url.length == 43 ?
-                                <img src={getThumbnail(formRegistration.data.url)} alt="" />
+                            url.length === 43
+                                ?
+                                <img src={getThumbnail(url)}
+                                    alt="Thumbnail do vídeo" />
                                 :
-                                <div>
-                                    <p> URL Inválida!</p>
-                                    <p>Formato aceito: https://www.youtube.com/watch?v=ID_do_VIDEO</p>
+                                null
 
-                                </div>
                         }
                     </div>
 

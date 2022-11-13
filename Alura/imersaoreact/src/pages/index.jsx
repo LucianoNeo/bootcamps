@@ -13,8 +13,7 @@ export default function Home() {
   const [search, setSearch] = useState('')
   const [playlists, setPlaylists] = useState({})
 
-
-  useEffect(() => {
+  const getAllVideos = () => {
     supabase.from('video')
       .select('*')
       .then((res) => {
@@ -26,11 +25,14 @@ export default function Home() {
             ...newPlaylists[video.playlist],
           ];
         });
-        console.log(newPlaylists)
+
         setPlaylists(newPlaylists);
       });
-  }, [])
+  }
 
+  useEffect(() => {
+    getAllVideos()
+  }, [playlists])
 
 
   return (

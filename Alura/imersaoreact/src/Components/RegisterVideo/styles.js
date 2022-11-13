@@ -33,7 +33,8 @@ export const StyledRegisterVideo = styled.div`
     border: none;
     border-radius: 2px;
     cursor: pointer;
-    color: inherit;
+    color: white;
+    font-weight: bold;
   }
   form {
     width: 100%;
@@ -66,20 +67,25 @@ export const StyledRegisterVideo = styled.div`
     }
   }
   input, select {
-    border-radius: 2px;
+    border-radius: 8px;
     border: 1px solid ${({ theme }) => theme.borderBase};
-    padding: 8px 10px;
+    padding: 12px 10px;
     margin-bottom: 10px;
     outline: none;
     color: #222222;
     background-color: #f9f9f9;
     color: ${({ theme }) => theme.textColorBase};
     background-color: ${({ theme }) => theme.backgroundBase};
+    
+    &:focus {
+        border: 2px solid ${({ theme }) => theme.textColorBase};
+ }
   }
-  p{
- 
+
+  span{
     font-weight: bold;
-    margin-top: 16px;
-    text-align: center;
+    font-size: 12px;
+    color: red;
   }
+  
 `;

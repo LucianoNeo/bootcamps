@@ -34,13 +34,14 @@ export default function Video() {
       }}>
         <Menu searchBar={false} />
         <StyledVideoSection>
-          <h1>{router.query.title}</h1>
+
           <iframe width="480" height="315"
             src={`https://www.youtube.com/embed/${router.query.id}`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           >
 
           </iframe>
+          <h1 style={{ paddingTop: '10px' }}>{router.query.title}</h1>
         </StyledVideoSection>
       </div>
     </>

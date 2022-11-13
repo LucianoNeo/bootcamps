@@ -28,7 +28,7 @@ const StyledMenu = styled.header`
 `;
 
 export default function Menu(props) {
-  console.log(props.searchBar)
+
   return (
     <StyledMenu>
       <div>
