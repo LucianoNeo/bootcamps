@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider theme={theme[context.mode]}>
           <CSSReset />
           <Component {...pageProps} />
-          <RegisterVideo />
+
         </ThemeProvider>
       </VideoProvider>
 

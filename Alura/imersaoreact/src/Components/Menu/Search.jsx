@@ -37,12 +37,15 @@ const StyledSearch = styled.div`
 
 export default function Search(props) {
 
-
-
   return (
-    <StyledSearch>
-      <input type="text" onChange={(e) => props.setSearch(e.target.value)} value={props.search} />
-      <button>🔍</button>
-    </StyledSearch>
+    props.searchBar ?
+      <StyledSearch>
+        <input type="text" onChange={(e) => props.setSearch(e.target.value)} value={props.search} />
+        <button>🔍</button>
+      </StyledSearch>
+      :
+      null
   )
+
+
 }

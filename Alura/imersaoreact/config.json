@@ -5,127 +5,122 @@
     "playlists": {
         "jogos": [
             {
-                "title": "HOA - O jogo que me relaxa atualmente!",
-                "url": "https://www.youtube.com/embed/MlBjHUdgaZw",
-                "thumb": "https://img.youtube.com/vi/MlBjHUdgaZw/hqdefault.jpg"
-            },
-            {
                 "title": "The Witcher 3 - O meu top1 até hoje!",
-                "url": "https://www.youtube.com/embed/-7ThCdLNfp8",
+                "url": "https://www.youtube.com/watch?v=-7ThCdLNfp8",
                 "thumb": "https://img.youtube.com/vi/-7ThCdLNfp8/hqdefault.jpg"
             },
             {
                 "title": "Red Dead Redemption - SIM é melhor que o 2 xD",
-                "url": "https://www.youtube.com/embed/-o7rES_3ymA",
+                "url": "https://www.youtube.com/watch?v=-o7rES_3ymA",
                 "thumb": "https://img.youtube.com/vi/-o7rES_3ymA/hqdefault.jpg"
             },
             {
                 "title": "Final Fantasy VII - O jogo do meu coração!",
-                "url": "https://www.youtube.com/embed/Kznek1uNVsg",
+                "url": "https://www.youtube.com/watch?v=Kznek1uNVsg",
                 "thumb": "https://img.youtube.com/vi/Kznek1uNVsg/hqdefault.jpg"
             },
             {
                 "title": "Pokémon FireRed/LeafGreen - Sempre jogarei!",
-                "url": "https://www.youtube.com/embed/7Df6iOkYdHI",
+                "url": "https://www.youtube.com/watch?v=7Df6iOkYdHI",
                 "thumb": "https://img.youtube.com/vi/7Df6iOkYdHI/hqdefault.jpg"
             },
             {
                 "title": "Winning Eleven - Já usei muitas horas da minha vida neste jogo!",
-                "url": "https://www.youtube.com/embed/tHK0wDeqffI",
+                "url": "https://www.youtube.com/watch?v=tHK0wDeqffI",
                 "thumb": "https://img.youtube.com/vi/tHK0wDeqffI/hqdefault.jpg"
             },
             {
                 "title": "We Were Here Together - Os Enigmas deste Mundo",
-                "url": "https://www.youtube.com/embed/UKgQsrHUG40",
+                "url": "https://www.youtube.com/watch?v=UKgQsrHUG40",
                 "thumb": "https://img.youtube.com/vi/UKgQsrHUG40/hqdefault.jpg"
             },
             {
                 "title": "Microsoft Flight Simulator - Top Gun: Oceania - Missão RJ!",
-                "url": "https://www.youtube.com/embed/n3TneUb5c-w",
+                "url": "https://www.youtube.com/watch?v=n3TneUb5c-w",
                 "thumb": "https://img.youtube.com/vi/n3TneUb5c-w/hqdefault.jpg"
             }
         ],
-        "front-end": [
+        "front_end": [
             {
                 "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://youtube.com/embed/jOAU81jdi-c",
+                "url": "https://youtube.com/watch?v=jOAU81jdi-c",
                 "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
             },
             {
                 "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://www.youtube.com/embed/llF6vD-RljE",
+                "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
                 "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
             },
             {
                 "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
-                "url": "https://www.youtube.com/embed/J4BVaXkwmM8",
+                "url": "https://www.youtube.com/watch?v=J4BVaXkwmM8",
                 "thumb": "https://img.youtube.com/vi/J4BVaXkwmM8/hqdefault.jpg"
             },
             {
                 "title": "O QUE SÃO FRAMEWORKS E BIBLIOTECAS? QUAIS AS DIFERENÇAS?",
-                "url": "https://www.youtube.com/embed/dp0zB4n3MUs",
+                "url": "https://www.youtube.com/watch?v=dp0zB4n3MUs",
                 "thumb": "https://img.youtube.com/vi/dp0zB4n3MUs/hqdefault.jpg"
             },
             {
                 "title": "Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador",
-                "url": "https://www.youtube.com/embed/Yf0rC7dERjg",
+                "url": "https://www.youtube.com/watch?v=Yf0rC7dERjg",
                 "thumb": "https://img.youtube.com/vi/Yf0rC7dERjg/hqdefault.jpg"
             },
             {
                 "title": "Como Foi Programado um App Que Faz Mágica",
-                "url": "https://www.youtube.com/embed/I36seuWUe5s",
+                "url": "https://www.youtube.com/watch?v=I36seuWUe5s",
                 "thumb": "https://img.youtube.com/vi/I36seuWUe5s/hqdefault.jpg"
             },
             {
                 "title": "O que todo iniciante em Front End deveria aprender | Como manipular arrays e objetos em JavaScript",
-                "url": "https://www.youtube.com/embed/yS7AcF-xRUg",
+                "url": "https://www.youtube.com/watch?v=yS7AcF-xRUg",
                 "thumb": "https://img.youtube.com/vi/yS7AcF-xRUg/hqdefault.jpg"
             },
             {
                 "title": "5 Erros Históricos do CSS",
-                "url": "https://www.youtube.com/embed/HNjkqONzGS0",
+                "url": "https://www.youtube.com/watch?v=HNjkqONzGS0",
                 "thumb": "https://img.youtube.com/vi/HNjkqONzGS0/hqdefault.jpg"
             },
             {
                 "title": "Deploy de Front End ATUALIZADO! | O que eu uso para hospedagem de Front End",
-                "url": "https://www.youtube.com/embed/d9c0r-J6CdM",
+                "url": "https://www.youtube.com/watch?v=d9c0r-J6CdM",
                 "thumb": "https://img.youtube.com/vi/d9c0r-J6CdM/hqdefault.jpg"
             }
         ],
-        "back-end": [
+        "back_end": [
             {
                 "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/embed/dvd3pNYh7So",
+                "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
                 "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
             },
             {
                 "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/embed/8q36rNS5yVo",
+                "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
                 "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
             },
             {
                 "title": "O que é o Java? #HipstersPontoTube",
-                "url": "https://www.youtube.com/embed/90NcVNsKGik",
+                "url": "https://www.youtube.com/watch?v=90NcVNsKGik",
                 "thumb": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg"
             },
             {
                 "title": "O que é Machine Learning? #HipstersPontoTube",
-                "url": "https://www.youtube.com/embed/Iuz_jc96bQk",
+                "url": "https://www.youtube.com/watch?v=Iuz_jc96bQk",
                 "thumb": "https://img.youtube.com/vi/Iuz_jc96bQk/hqdefault.jpg"
             },
             {
                 "title": "A MELHOR linguagem de programação com Fabio Akita | #HipstersPontoTube",
-                "url": "https://www.youtube.com/embed/imB0QVoNrGc",
+                "url": "https://www.youtube.com/watch?v=imB0QVoNrGc",
                 "thumb": "https://img.youtube.com/vi/imB0QVoNrGc/hqdefault.jpg"
             },
             {
                 "title": "Top 5 libs que todo aplicativo Android deve ter com Alex Felipe | #HipstersPontoTube",
-                "url": "https://www.youtube.com/embed/ldRbnpy-qQs",
+                "url": "https://www.youtube.com/watch?v=ldRbnpy-qQs",
                 "thumb": "https://img.youtube.com/vi/ldRbnpy-qQs/hqdefault.jpg"
             },
             {
                 "title": "O que é o C#? #HipstersPontoTube",
-                "url": "https://www.youtube.com/embed/0JWMVc1CqpA",
+                "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
                 "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
             }
         ]

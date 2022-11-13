@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import { useRouter } from "next/router";
+import React from 'react';
 import styled from "styled-components";
 import Menu from '../Components/Menu';
-import { VideoContext } from '../context/VideoContext';
+
 
 export const StyledVideoSection = styled.div`
   flex: 1;
@@ -17,10 +18,11 @@ export const StyledVideoSection = styled.div`
   
 `;
 
+
+
 export default function Video() {
 
-  const videoContext = useContext(VideoContext)
-  console.log(videoContext.title.current)
+  const router = useRouter();
 
   return (
     <>
@@ -30,11 +32,14 @@ export default function Video() {
         flex: 1,
 
       }}>
-        <Menu />
+        <Menu searchBar={false} />
         <StyledVideoSection>
-          <h1>{videoContext.title.current}</h1>
+          <h1>{router.query.title}</h1>
           <iframe width="480" height="315"
-            src={videoContext.url.current}>
+            src={`https://www.youtube.com/embed/${router.query.id}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          >
+
           </iframe>
         </StyledVideoSection>
       </div>

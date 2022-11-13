@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 import DarkModeSwitch from "./Darkmodeswitch";
 import Search from "./Search";
@@ -27,12 +28,15 @@ const StyledMenu = styled.header`
 `;
 
 export default function Menu(props) {
+  console.log(props.searchBar)
   return (
     <StyledMenu>
       <div>
-        <Logo />
+        <Link href={'/'}>
+          <Logo />
+        </Link>
       </div>
-      <Search search={props.search} setSearch={props.setSearch} />
+      <Search search={props.search} setSearch={props.setSearch} searchBar={props.searchBar} />
       <DarkModeSwitch />
     </StyledMenu>
   );

@@ -2,13 +2,31 @@ import { createGlobalStyle } from "styled-components";
 
 export const CSSReset = createGlobalStyle`
   /* Reset */
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 16px;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme.backgroundLevel1};
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 10px;
+    border: 0px solid #DE8F45;
+
+}
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   body {
-    
+    overflow-x: hidden;
     font-family: sans-serif;
     background-color: ${({ theme }) => theme.backgroundBase};
     color: ${({ theme }) => theme.textColorBase}
@@ -35,7 +53,8 @@ export const CSSReset = createGlobalStyle`
     transition: .3s;
     &:hover,
     &:focus {
-      opacity: .5;
+      /* opacity: .5; */
+      filter: contrast(0.6);
     }
   }
 `;

@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import Link from 'next/link';
+import React from 'react';
 import styled from "styled-components";
-import { VideoContext } from '../context/VideoContext';
-import Link from 'next/link'
+import { getVideoID } from '../Tools';
 
 const StyledFavorites = styled.div`
   width: 100%;
@@ -39,10 +39,11 @@ const StyledFavorites = styled.div`
 `
 
 export const StyledTimeline = styled.div`
+
   flex: 1;
   width: 100%;
   padding: 16px;
-  overflow: hidden;
+  overflow: auto;
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
@@ -53,7 +54,7 @@ export const StyledTimeline = styled.div`
     font-weight: 500;
     object-fit: cover;
     width: 100%;
-    max-width: 210px;
+    //max-width: 210px;
     height: auto;
     border-radius: 10px;
   }
@@ -62,25 +63,57 @@ export const StyledTimeline = styled.div`
     padding: 0;
     overflow: hidden;
     padding: 16px;
+
+    
     div {
-      
-      width: calc(100vw - 16px * 4);
+      padding-bottom: 20px;
+      width: 95vw;
       display: grid;
       grid-gap: 16px;
-      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
       grid-auto-flow: column;
-      grid-auto-columns: minmax(200px,1fr);
-      overflow-x: hidden;
+      grid-auto-columns: minmax(250px,1fr);
+      overflow-x: auto;
       scroll-snap-type: x mandatory;
       a {
         scroll-snap-align: start;
         span {
+    
+          font-size: 14px;
           padding-top: 8px;
           display: block;
           padding-right: 24px;
           color: ${({ theme }) => theme.textColorBase || "#222222"};
+          font-weight: bold;
         }
       }
+    }
+    @media (max-width: 600px) {
+      div {
+  
+      width: 100vw;
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: repeat(auto-fill,minmax(90vw,1fr));
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(90vw,1fr);
+    
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      a {
+        
+        scroll-snap-align: start;
+        span {
+       
+          font-size: 14px;
+          padding-top: 8px;
+          display: block;
+          padding-right: 24px;
+          color: ${({ theme }) => theme.textColorBase || "#222222"};
+          font-weight: bold;
+        }
+      }
+    }
     }
   }
 `;
@@ -88,7 +121,6 @@ export const StyledTimeline = styled.div`
 
 export default function Timeline(props) {
 
-  const videoContext = useContext(VideoContext)
 
   const playlistNames = Object.keys(props.playlists)
   return (
@@ -108,14 +140,16 @@ export default function Timeline(props) {
                   })
                   .map((video, index) => {
                     return (
-                      <Link href='/video' key={index}>
-                        <img src={video.thumb}
-                          onClick={() => {
-                            videoContext.title.current = video.title
-                            videoContext.url.current = video.url
-                          }
-                          }
-                        />
+                      <Link key={index}
+                        href={{
+                          pathname: "/video",
+                          query: {
+                            id: getVideoID(video.url),
+                            title: video.title,
+                          },
+                        }}
+                      >
+                        <img src={video.thumb} />
                         <span>
                           {video.title}
                         </span>
