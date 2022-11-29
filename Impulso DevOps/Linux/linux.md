@@ -2,7 +2,7 @@
 
 ### Criar
 ```
-user add usuario
+useradd usuario
 ```
 -m cria pasta do usuario<br>
 -c adiciona um comentario, ex: "Nome Completo"<br>
@@ -65,4 +65,8 @@ groupadd NOMEDOGRUPO
 ## Excluir grupo
 ```
 groupdel NOMEDOGRUPO
+```
+## Alterar permissões
+```
+chown usuario:GRUPO /diretorio
 ```
