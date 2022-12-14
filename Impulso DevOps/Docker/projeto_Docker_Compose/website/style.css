@@ -1,0 +1,25 @@
+body {
+    background-image: url('./img/bg.jpg');
+    background-size: cover;
+    background-position: 15%;
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
