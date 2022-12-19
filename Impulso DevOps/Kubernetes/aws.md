@@ -36,3 +36,22 @@ criar service role
 aws eks --region sa-east-1 describe-cluster --name kub-lab --query cluster.status
 ```
 
+# Criar node groups
+- compute
+- add node group
+- nomear = cluster-node-group-1
+## criar role
+    - ec2
+    - selecionar regras: 
+        - eks cni
+        - eks worker
+        - ec2 registry container read only
+    - role name = eks-node-role
+    - create
+
+- next
+- selecionar instance type
+- selecionar qtde de nós
+
+# Checar nodes
+kubectl get nodes --watch
