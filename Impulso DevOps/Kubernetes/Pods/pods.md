@@ -27,3 +27,13 @@ kubectl describe node minikube
 ```
 kubectl apply -f simple-deployment.yml
 ```
+
+## Aumentar qtde de replicas
+```
+kubectl scale deployment app-html-deployment --replicas=10
+```
+
+# Expor deployment (load balancer)
+```
+kubectl expose deployment app-html-deployment --type=LoadBalancer --name=app=html --port=80
+```
