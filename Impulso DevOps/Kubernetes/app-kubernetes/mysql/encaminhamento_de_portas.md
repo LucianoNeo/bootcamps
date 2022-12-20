@@ -1,0 +1,1 @@
+kubectl port-forward pod/mysql-pod 3306:3306

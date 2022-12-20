@@ -37,3 +37,8 @@ kubectl scale deployment app-html-deployment --replicas=10
 ```
 kubectl expose deployment app-html-deployment --type=LoadBalancer --name=app=html --port=80
 ```
+# Executar bash dentro do POD
+kubectl exec --stdin --tty myapp-php -- /bin/bash
+
+# Copiar arquivos para um POD
+kubectl cp index.html id-do-pod:/usr/local/apache2/htdocs/

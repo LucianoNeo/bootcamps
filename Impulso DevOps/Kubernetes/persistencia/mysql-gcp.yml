@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-gcp
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: standard-rwo
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+spec:
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+        - image: mysql:5.6
+          name: mysql
+          env:
+            # Use secret in real usage
+            - name: MYSQL_ROOT_PASSWORD
+              value: Senha123
+            - name: MYSQL_DATABASE
+              value: meubanco
+          ports:
+            - containerPort: 3306
+              name: mysql
+
+          volumeMounts:
+            - name: pvc-gcp
+              mountPath: /var/lib/mysql
+      volumes:
+        - name: pvc-gcp
+          PersistentVolumeClaim:
+            claimName: pvc-gcp
