@@ -1,0 +1,4 @@
+FROM httpd:latest
+WORKDIR /usr/local/apache2/httdocs/
+COPY index.html /usr/local/apache2/httdocs/
+EXPOSE 80

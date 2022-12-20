@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: html-deployment
+  labels: 
+    app: app-html
+spec:
+  replicas: 6
+  containers:
+  selector:
+    matchLabels:  
+      app: app-html
+  template:
+    metadata:
+      labels:
+        app: app-html
+    spec:
+      containers:
+      - name: app-html
+        image: neoscancwb/app-html:1.1
+        ports:
+        - containerPort: 80
