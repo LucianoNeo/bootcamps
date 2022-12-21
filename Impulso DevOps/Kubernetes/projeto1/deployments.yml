@@ -1,3 +1,4 @@
+# Subindo PVC
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -12,6 +13,7 @@ spec:
     requests:
       storage: 100Mi
 ---
+# Subindo PV
 apiVersion: apps/v1
 kind: PersistentVolume
 metadata:
@@ -29,6 +31,7 @@ spec:
 ---
 
 ---
+# Subindo Banco de dados
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -50,9 +53,15 @@ spec:
           name: mysql
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: Senha123
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: ROOT_PASSWORD
             - name: MYSQL_DATABASE
-              value: meubanco
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: MYSQL_DATABASE
           ports:
             - containerPort: 3306
               name: mysql
@@ -65,6 +74,7 @@ spec:
           PersistentVolumeClaim:
             claimName: local
 ---
+# Subindo Backend PHP
 apiVersion: apps/v1
 kind: Deployment
 metadata:
